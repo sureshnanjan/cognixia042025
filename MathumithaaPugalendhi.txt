@@ -1,0 +1,50 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421143548
+Username: ASCENDION\mathumithaa.p
+RunAs User: ASCENDION\mathumithaa.p
+Configuration Name: 
+Machine: ASCINLAP61689 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 27136
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is MathumithaaPugalendhi.txt
+PS C:\Users\mathumithaa.p> New-Item -Path "C:\Users\mathumithaa.p\" -Name "QA-Training" -ItemType Directory
+
+
+    Directory: C:\Users\mathumithaa.p
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     14:35                QA-Training
+
+
+PS C:\Users\mathumithaa.p> Set-Location "C:\Users\mathumithaa.p\QA-Training"
+PS C:\Users\mathumithaa.p\QA-Training> git --version
+git version 2.44.0.windows.1
+PS C:\Users\mathumithaa.p\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+remote: Total 63 (delta 14), reused 45 (delta 1), pack-reused 0
+(from 0)
+Receiving objects: 100% (63/63), 690.45 KiB | 2.78 MiB/s, done.
+Resolving deltas: 100% (14/14), done.
+PS C:\Users\mathumithaa.p\QA-Training> Set-Location cognixia042025
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025> git status
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025> git checkout -b Mathumithaa-branch
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025> git status
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421143722
+**********************
