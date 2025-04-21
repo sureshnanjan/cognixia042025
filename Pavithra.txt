@@ -1,0 +1,58 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421115941
+Username: ASCENDION\pavithra.rajendiran
+RunAs User: ASCENDION\pavithra.rajendiran
+Configuration Name: 
+Machine: ASCINLAP61694 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 25868
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Pavithra.txt
+PS C:\Users\pavithra.rajendiran> New-Item -Path . -Name 'QA-Training' -Itemtype Directory
+
+
+    Directory: C:\Users\pavithra.rajendiran
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     12:06                QA-Training
+
+
+PS C:\Users\pavithra.rajendiran> Set-Location QA-Training
+PS C:\Users\pavithra.rajendiran\QA-Training> git --version
+git version 2.47.1.windows.1
+PS C:\Users\pavithra.rajendiran\QA-Training> git clone
+                          apply partial clone filters to submodules
+    --[no-]remote-submodules
+                          any cloned submodules will use their remote-tracking branch
+    --[no-]sparse         initialize sparse-checkout file to include only files at root
+    --[no-]bundle-uri <uri>
+                          a URI for downloading bundles before fetching from origin remote
+PS C:\Users\pavithra.rajendiran\QA-Training> git config --global http.sslVerify false
+
+PS C:\Users\pavithra.rajendiran\QA-Training> git clone
+
+PS C:\Users\pavithra.rajendiran\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\Users\pavithra.rajendiran\QA-Training> Set-Location .\cognixia042025\
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025> git status
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025> git checkout -b PavithraRajendiran-branch
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025> git status
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421123501
+**********************
