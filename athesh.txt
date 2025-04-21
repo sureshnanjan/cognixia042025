@@ -1,0 +1,65 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421115816
+Username: ASCENDION\athesh.alagarsamy
+RunAs User: ASCENDION\athesh.alagarsamy
+Configuration Name: 
+Machine: ASCINLAP60731 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2764
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is athesh.txt
+PS C:\Users\athesh.alagarsamy\HP_Project> New-Item -Path C:\Users\athesh.alagarsamy\HP_Project -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\Users\athesh.alagarsamy\HP_Project
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     11:58                QA-Training
+
+
+PS C:\Users\athesh.alagarsamy\HP_Project> Set-Location C:\Users\athesh.alagarsamy\HP_Project\QA-Training
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training> git status
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git status
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+git : The term 'git' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ git status
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training> git status
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training> git --version
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training> Set-Location cognixia042025
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025> git status
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025> git checkout -b athesh-branch
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025> git status
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421121553
+**********************
