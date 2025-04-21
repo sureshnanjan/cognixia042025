@@ -1,0 +1,77 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421141130
+Username: ASCENDION\aranya.kawale
+RunAs User: ASCENDION\aranya.kawale
+Configuration Name: 
+Machine: ASCINLAP60832 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5164
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Aranya.txt
+PS C:\Users\aranya.kawale> Set-Location C:\\QA-Training
+PS C:\QA-Training> git --version
+git version 2.46.2.windows.1
+PS C:\QA-Training> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\QA-Training> Set-Location cognixia042025
+PS C:\QA-Training\cognixia042025> git status
+On branch aranya-branch
+nothing to commit, working tree clean
+PS C:\QA-Training\cognixia042025> git checkout -b aranya-branch
+fatal: a branch named 'aranya-branch' already exists
+PS C:\QA-Training\cognixia042025> git status
+On branch aranya-branch
+nothing to commit, working tree clean
+PS C:\QA-Training\cognixia042025> Move-Item C:\Users\aranya.kawale\Aranya.txt .
+Move-Item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ Move-Item C:\Users\aranya.kawale\Aranya.txt .
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\aranya.kawale\Aranya.txt:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : The process cannot access the file because it is being used by another process.
+At line:1 char:1
++ Move-Item C:\Users\aranya.kawale\Aranya.txt .
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\aranya.kawale\Aranya.txt:FileInfo) [Move-Item], IOException
+    + FullyQualifiedErrorId : MoveFileInfoItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\QA-Training\cognixia042025> git add .
+
+PS C:\QA-Training\cognixia042025> git commit -m “Adding first file to branch”
+nothing to commit, working tree clean
+PS C:\QA-Training\cognixia042025> git commit
+
+PS C:\QA-Training\cognixia042025> git push
+
+PS C:\QA-Training\cognixia042025> git commit -m “Adding first file to branch”
+
+PS C:\QA-Training\cognixia042025> git commit
+
+PS C:\QA-Training\cognixia042025> git status
+
+PS C:\QA-Training\cognixia042025> git config --global http.sslVerify false
+
+PS C:\QA-Training\cognixia042025> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\QA-Training\cognixia042025> Set-Location cognixia042025
+PS C:\QA-Training\cognixia042025\cognixia042025> git status
+
+PS C:\QA-Training\cognixia042025\cognixia042025> git checkout -b aranya-branch
+
+PS C:\QA-Training\cognixia042025\cognixia042025> git status
+
+PS C:\QA-Training\cognixia042025\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421141720
+**********************
