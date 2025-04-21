@@ -1,0 +1,55 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421232102
+Username: ASCENDION\shriya.jorrigala
+RunAs User: ASCENDION\shriya.jorrigala
+Configuration Name: 
+Machine: ASCINLAP61674 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 17932
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is shriya.txt
+PS C:\Users\shriya.jorrigala> New-Item -Name 'QA-Training' -ItemType Directory
+
+
+    Directory: C:\Users\shriya.jorrigala
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     23:22                QA-Training
+
+
+PS C:\Users\shriya.jorrigala> Set-Location QA-Training
+PS C:\Users\shriya.jorrigala\QA-Training> git --version
+git version 2.47.0.windows.2
+PS C:\Users\shriya.jorrigala\QA-Training> git config --global http.sslVerify false
+
+PS C:\Users\shriya.jorrigala\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+Cloning into 'cognixia042025'...
+remote: Enumerating objects: 118, done.
+remote: Counting objects: 100% (38/38), done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 118 (delta 17), reused 29 (delta 10), pack-reused 80 (from 1)
+Receiving objects: 100% (118/118), 722.90 KiB | 17.21 MiB/s, done.
+Resolving deltas: 100% (33/33), done.
+PS C:\Users\shriya.jorrigala\QA-Training> git checkout -b shriyajorrigala_repository-branch
+
+PS C:\Users\shriya.jorrigala\QA-Training> set-location cognixia042025
+PS C:\Users\shriya.jorrigala\QA-Training\cognixia042025> git status
+
+PS C:\Users\shriya.jorrigala\QA-Training\cognixia042025> git checkout -b shriyajorrigala_repository-branch
+
+PS C:\Users\shriya.jorrigala\QA-Training\cognixia042025> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421232545
+**********************
