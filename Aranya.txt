@@ -1,0 +1,59 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421180857
+Username: ASCENDION\aranya.kawale
+RunAs User: ASCENDION\aranya.kawale
+Configuration Name: 
+Machine: ASCINLAP60832 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2156
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Aranya.txt
+PS C:\Users\aranya.kawale> Set-Location cognixia042025
+PS C:\Users\aranya.kawale\cognixia042025> git status
+On branch aranya-branch
+Your branch is up to date with 'origin/aranya-branch'.
+
+nothing to commit, working tree clean
+PS C:\Users\aranya.kawale\cognixia042025> git checkout -b aranya-branch
+fatal: a branch named 'aranya-branch' already exists
+PS C:\Users\aranya.kawale\cognixia042025> New-Item -Path "example.txt" -ItemType File
+
+
+    Directory: C:\Users\aranya.kawale\cognixia042025
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-04-2025     18:11              0 example.txt
+
+
+PS C:\Users\aranya.kawale\cognixia042025> Add-Content -Path "example.txt" -Value "This is a sample PowerShell file."
+PS C:\Users\aranya.kawale\cognixia042025> Get-Content -Path "example.txt"
+This is a sample PowerShell file.
+PS C:\Users\aranya.kawale\cognixia042025> Rename-Item -Path "example.txt" -NewName "renamed_example.txt"
+PS C:\Users\aranya.kawale\cognixia042025> Get-Item -Path "renamed_example.txt"
+
+
+    Directory: C:\Users\aranya.kawale\cognixia042025
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-04-2025     18:11             35 renamed_example.txt
+
+
+PS C:\Users\aranya.kawale\cognixia042025> Set-Content -Path "renamed_example.txt" -Value "This will replace the entire file content."
+PS C:\Users\aranya.kawale\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421181539
+**********************
