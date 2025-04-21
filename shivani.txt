@@ -51,13 +51,13 @@ PS C:\shivani\Training\QE\Git 2\cognixia042025> git add .
 
 PS C:\shivani\Training\QE\Git 2\cognixia042025> git checkout -d shivani
 
-PS C:\shivani\Training\QE\Git 2\cognixia042025> git checkout -b shivani-mohamed
+PS C:\shivani\Training\QE\Git 2\cognixia042025> git checkout -b shivani
 
 PS C:\shivani\Training\QE\Git 2\cognixia042025> git add .
 
 PS C:\shivani\Training\QE\Git 2\cognixia042025> git commit -m"initial commit"
 nothing to commit, working tree clean
-PS C:\shivani\Training\QE\Git 2\cognixia042025> git push origin shivani-mohamed
+PS C:\shivani\Training\QE\Git 2\cognixia042025> git push origin shivani
 
 PS C:\shivani\Training\QE\Git 2\cognixia042025> Stop-Transcript
 **********************
