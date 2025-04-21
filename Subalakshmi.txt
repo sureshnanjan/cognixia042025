@@ -1,0 +1,85 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421121335
+Username: ASCENDION\subalakshmi.t
+RunAs User: ASCENDION\subalakshmi.t
+Configuration Name: 
+Machine: ASCINLAP60948 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 22916
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Subalakshmi.txt
+PS C:\Users\subalakshmi.t> New-Item -Path "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop" -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     12:17                QA-Training
+
+
+PS C:\Users\subalakshmi.t> Set-Location "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop"\QA-Training
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument '\QA-Training'."
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop"\QA ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument '\QA-Training'.
+At line:1 char:1
++ Set-Location "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop"\QA ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\subalakshmi.t> Set-Location "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training"
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training> git --version
+git version 2.47.1.windows.1
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+fatal: unable to access 'https://github.com/sureshnanjan/cognixia042025.git/': SSL peer certificate or SSH remote key was not OK
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training> git config --global http.sslVerify false
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training> Set-Location cognixia042025
+Set-Location : Cannot find path 'C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025' 
+because it does not exist.
+At line:1 char:1
++ Set-Location cognixia042025
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\subala...\cognixia042025:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025' because it does
+not exist.
+At line:1 char:1
++ Set-Location cognixia042025
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\subala...\cognixia042025:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training> git status
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training> Set-Location cognixia042025
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025> git status
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025> git checkout -b Subalakshmi-branch
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025> git status
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421123510
+**********************
