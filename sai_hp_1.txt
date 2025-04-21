@@ -1,0 +1,64 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421133508
+Username: ASCENDION\sai.palleboina
+RunAs User: ASCENDION\sai.palleboina
+Configuration Name: 
+Machine: ASCINLAP60821 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 28736
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sai_hp_1.txt
+PS C:\Users\sai.palleboina> New-Item -Name 'QuaAuto-Training1' ItemType Directory
+>> TerminatingError(New-Item): "A positional parameter cannot be found that accepts argument 'Directory'."
+New-Item : A positional parameter cannot be found that accepts argument 'Directory'.
+At line:1 char:1
++ New-Item -Name 'QuaAuto-Training1' ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : A positional parameter cannot be found that accepts argument 'Directory'.
+At line:1 char:1
++ New-Item -Name 'QuaAuto-Training1' ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\sai.palleboina> New-Item -Name 'QuaAuto-Training1' -ItemType Directory
+
+
+    Directory: C:\Users\sai.palleboina
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     13:35                QuaAuto-Training1
+
+
+PS C:\Users\sai.palleboina> Set-Location QuaAuto-Training1
+PS C:\Users\sai.palleboina\QuaAuto-Training1> git --version
+
+PS C:\Users\sai.palleboina\QuaAuto-Training1> git config --global http.sslVerify false
+
+PS C:\Users\sai.palleboina\QuaAuto-Training1> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\Users\sai.palleboina\QuaAuto-Training1> git checkout -b saipalleboina_repository-branch
+
+PS C:\Users\sai.palleboina\QuaAuto-Training1> Set-Location cognixia042025
+PS C:\Users\sai.palleboina\QuaAuto-Training1\cognixia042025> git status
+
+PS C:\Users\sai.palleboina\QuaAuto-Training1\cognixia042025> git checkout -b saipalleboina_repository-branch
+
+PS C:\Users\sai.palleboina\QuaAuto-Training1\cognixia042025> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421133915
+**********************
