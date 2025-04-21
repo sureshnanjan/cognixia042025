@@ -1,0 +1,76 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421212842
+Username: ASCENDION\karri.varun
+RunAs User: ASCENDION\karri.varun
+Configuration Name: 
+Machine: ASCINLAP60907 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 28180
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is 21April_Task-1
+PS C:\Users\karri.varun> dir C:\Users\karri.varun\QA-Training
+
+
+    Directory: C:\Users\karri.varun\QA-Training
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     17:08                cognixia042025
+
+
+PS C:\Users\karri.varun> dir C:\Users\karri.varun\QA-Training\cognixia042025
+
+
+    Directory: C:\Users\karri.varun\QA-Training\cognixia042025
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     17:10                assignments
+-a----        21-04-2025     16:18            177 Learning_Links.txt
+-a----        21-04-2025     12:59             66 README.md
+-a----        21-04-2025     13:01           3326 Varun.txt
+
+
+PS C:\Users\karri.varun> cd C:\Users\karri.varun\QA-Training\cognixia042025\assignments
+PS C:\Users\karri.varun\QA-Training\cognixia042025\assignments> mkdir Sample
+
+
+    Directory: C:\Users\karri.varun\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     21:30                Sample
+
+
+PS C:\Users\karri.varun\QA-Training\cognixia042025\assignments> ren Sample Sample2
+PS C:\Users\karri.varun\QA-Training\cognixia042025\assignments> del Sample2
+PS C:\Users\karri.varun\QA-Training\cognixia042025\assignments> mkdir Sample
+
+
+    Directory: C:\Users\karri.varun\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     21:31                Sample
+
+
+PS C:\Users\karri.varun\QA-Training\cognixia042025\assignments> ren Sample Sample2
+PS C:\Users\karri.varun\QA-Training\cognixia042025\assignments> del Sample2
+PS C:\Users\karri.varun\QA-Training\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421213138
+**********************
