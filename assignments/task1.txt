@@ -1,0 +1,94 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421204621
+Username: ASCENDION\athesh.alagarsamy
+RunAs User: ASCENDION\athesh.alagarsamy
+Configuration Name: 
+Machine: ASCINLAP60731 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 376
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is task1.txt
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> dir
+
+
+    Directory: C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-04-2025     15:58            378 21-April.txt
+-a----        21-04-2025     20:46              0 task1.txt
+
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> mkdir sample
+
+
+    Directory: C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     20:47                sample
+
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> rmdir sample
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> rename sample.txt example.txt
+rename : The term 'rename' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ rename sample.txt example.txt
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (rename:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+rename : The term 'rename' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ rename sample.txt example.txt
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (rename:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> move sample.txt ex.txt
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> del ex.txt
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> ipconfig
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> tracet google.com
+tracet : The term 'tracet' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ tracet google.com
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (tracet:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+tracet : The term 'tracet' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ tracet google.com
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (tracet:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> tracert google.com
+  4     *
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> netstat -an
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> ping google.com
+
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\athesh.alagarsamy\HP_Project\QA-Training\cognixia042025\assignments> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421205211
+**********************
