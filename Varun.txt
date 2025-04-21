@@ -1,0 +1,81 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421125832
+Username: ASCENDION\karri.varun
+RunAs User: ASCENDION\karri.varun
+Configuration Name: 
+Machine: ASCINLAP60907 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13948
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Varun.txt
+PS C:\Users\karri.varun> New-Item -Path .  -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\Users\karri.varun
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     12:58                QA-Training
+
+
+PS C:\Users\karri.varun> Set-Location .\QA-Training
+PS C:\Users\karri.varun\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+Cloning into 'cognixia042025'...
+remote: Enumerating objects: 30, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 30 (delta 3), reused 24 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (30/30), 682.12 KiB | 4.46 MiB/s, done.
+Resolving deltas: 100% (3/3), done.
+PS C:\Users\karri.varun\QA-Training> Set-Location QA-Training
+Set-Location : Cannot find path 'C:\Users\karri.varun\QA-Training\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\karri....ing\QA-Training:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : Cannot find path 'C:\Users\karri.varun\QA-Training\QA-Training' because it does not exist.
+At line:1 char:1
++ Set-Location QA-Training
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\karri....ing\QA-Training:String) [Set-Location], ItemNotFoundE
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\karri.varun\QA-Training> git status
+
+PS C:\Users\karri.varun\QA-Training> git checkout -b <yourname>-branch
+At line:1 char:17
++ git checkout -b <yourname>-branch
++                 ~
+The '<' operator is reserved for future use.
+At line:1 char:17
++ git checkout -b <yourname>-branch
++                 ~
+The '<' operator is reserved for future use.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : RedirectionNotSupported
+
+PS C:\Users\karri.varun\QA-Training> git checkout -b Varun-branch
+
+PS C:\Users\karri.varun\QA-Training> Set-Location cognixia042025
+PS C:\Users\karri.varun\QA-Training\cognixia042025> git status
+
+PS C:\Users\karri.varun\QA-Training\cognixia042025> git checkout -b Varun-branch
+
+PS C:\Users\karri.varun\QA-Training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421130133
+**********************
