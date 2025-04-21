@@ -1,0 +1,54 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421162927
+Username: ASCENDION\jayaaksharaa.m
+RunAs User: ASCENDION\jayaaksharaa.m
+Configuration Name: 
+Machine: ASCINLAP61692 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 6912
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is jayaaksharaa.txt
+PS C:\Users\jayaaksharaa.m> New-Item -Path "C:\\Users\\jayaaksharaa.m\\Pictures" -Name ‘QA-Training’ -ItemType Directory
+
+
+    Directory: C:\Users\jayaaksharaa.m\Pictures
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     16:31                QA-Training
+
+
+PS C:\Users\jayaaksharaa.m> Set-Location  "C:\\Users\\jayaaksharaa.m\\Pictures\\QA-Training"
+PS C:\Users\jayaaksharaa.m\Pictures\QA-Training> git config --global http.sslVerify false
+
+PS C:\Users\jayaaksharaa.m\Pictures\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+Cloning into 'cognixia042025'...
+remote: Enumerating objects: 88, done.
+remote: Counting objects: 100% (88/88), done.
+remote: Compressing objects: 100% (80/80), done.
+remote: Total 88 (delta 22), reused 60 (delta 5), pack-reused 0 (from 0)
+Receiving objects: 100% (88/88), 698.98 KiB | 11.09 MiB/s, done.
+Resolving deltas: 100% (22/22), done.
+PS C:\Users\jayaaksharaa.m\Pictures\QA-Training> Set-Location cognixia042025
+PS C:\Users\jayaaksharaa.m\Pictures\QA-Training\cognixia042025> git status
+
+nothing to commit, working tree clean
+PS C:\Users\jayaaksharaa.m\Pictures\QA-Training\cognixia042025> git checkout -b jayaaksharaa-branch
+
+PS C:\Users\jayaaksharaa.m\Pictures\QA-Training\cognixia042025> git status
+
+PS C:\Users\jayaaksharaa.m\Pictures\QA-Training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421170106
+**********************
