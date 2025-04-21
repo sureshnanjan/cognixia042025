@@ -1,0 +1,66 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421120849
+Username: ASCENDION\raihan.mohamed
+RunAs User: ASCENDION\raihan.mohamed
+Configuration Name: 
+Machine: ASCINLAP60744 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 31720
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is raihan.txt
+PS C:\Raihan\Training\QE\Git 2> New-Item -Path C:\Raihan\Training\QE\Git 2 -Name 'QA-Training' -ItemType Directory
+PS C:\Raihan\Training\QE\Git 2> TerminatingError(New-Item): "A positional parameter cannot be found that accepts argument '2'."
+New-Item : A positional parameter cannot be found that accepts argument '2'.
+At line:1 char:1
++ New-Item -Path C:\Raihan\Training\QE\Git 2 -Name 'QA-Training' -ItemT ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : A positional parameter cannot be found that accepts argument '2'.
+At line:1 char:1
++ New-Item -Path C:\Raihan\Training\QE\Git 2 -Name 'QA-Training' -ItemT ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindin
+   gException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell
+   .Commands.NewItemCommand
+
+PS C:\Raihan\Training\QE\Git 2> git clone https://github.com/sureshnanjan/cognixia042025.git
+Cloning into 'cognixia042025'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 16 (delta 2), reused 11 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (16/16), 675.63 KiB | 9.94 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+PS C:\Raihan\Training\QE\Git 2> Set-Location cognixia042025
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> git status
+
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> git checkout -b raihan
+
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> git add .
+
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> git checkout -d raihan
+
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> git checkout -b raihan-mohamed
+
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> git add .
+
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> git commit -m"initial commit"
+nothing to commit, working tree clean
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> git push origin raihan-mohamed
+
+PS C:\Raihan\Training\QE\Git 2\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421121547
+**********************
