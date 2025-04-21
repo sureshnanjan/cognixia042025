@@ -1,0 +1,45 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421030112
+Username: ASCENDION\revathi.banuka
+RunAs User: ASCENDION\revathi.banuka
+Configuration Name: 
+Machine: ASCINLAP31921 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 17984
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is revathi.txt
+PS C:\QE Training\Git Hub> git --version
+git version 2.44.0.windows.1
+PS C:\QE Training\Git Hub> git clone https://github.com/sureshnanjan/cognixia042025.git
+Cloning into 'cognixia042025'...
+remote: Enumerating objects: 82, done.
+remote: Counting objects: 100% (82/82), done.
+remote: Compressing objects: 100% (76/76), done.
+remote: Total 82 (delta 20), reused 54 (delta 3), pack-reused 0 (from 0)
+Receiving objects: 100% (82/82), 696.92 KiB | 3.50 MiB/s, done.
+Resolving deltas: 100% (20/20), done.
+PS C:\QE Training\Git Hub> Set-Location cognixia042025
+PS C:\QE Training\Git Hub\cognixia042025> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\QE Training\Git Hub\cognixia042025> git checkout -b revathi-branch
+Switched to a new branch 'revathi-branch'
+PS C:\QE Training\Git Hub\cognixia042025> git status
+On branch revathi-branch
+nothing to commit, working tree clean
+PS C:\QE Training\Git Hub\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421030520
+**********************
