@@ -1,0 +1,52 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421165557
+Username: ASCENDION\divya.senthilkumar
+RunAs User: ASCENDION\divya.senthilkumar
+Configuration Name: 
+Machine: ASCINLAP61685 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 15508
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Divya.txt
+PS C:\Users\divya.senthilkumar> New-Item -Path "C:\Users\divya.senthilkumar" -Name 'QA-Training' -ItemType Directory
+
+
+    Directory: C:\Users\divya.senthilkumar
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     17:00                QA-Training
+
+
+PS C:\Users\divya.senthilkumar> Set-Location "C:\Users\divya.senthilkumar\QA-Training"
+PS C:\Users\divya.senthilkumar\QA-Training> git --version
+git version 2.47.1.windows.1
+PS C:\Users\divya.senthilkumar\QA-Training> git clone
+lude only files at root
+    --[no-]bundle-uri <uri>
+                          a URI for downloading bundles before f
+etching from origin remote
+PS C:\Users\divya.senthilkumar\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\Users\divya.senthilkumar\QA-Training> Set-Location cognixia042025
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025> git status
+
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025> git checkout -b Divya-branch
+
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025> git status
+
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421170550
+**********************
