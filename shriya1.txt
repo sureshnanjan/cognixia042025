@@ -1,0 +1,67 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421125912
+Username: ASCENDION\shriya.jorrigala
+RunAs User: ASCENDION\shriya.jorrigala
+Configuration Name: 
+Machine: ASCINLAP61674 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 8952
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is shriya1.txt
+PS C:\Users\shriya.jorrigala> New-Item -Path . -Name 'QA-Training1' -ItemType Directory
+
+
+    Directory: C:\Users\shriya.jorrigala
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     13:00                QA-Training1
+
+
+PS C:\Users\shriya.jorrigala> Set-Location QA-Training1
+PS C:\Users\shriya.jorrigala\QA-Training1> git --version
+git version 2.47.0.windows.2
+PS C:\Users\shriya.jorrigala\QA-Training1> git clone https://github.com/sureshnanjan/cognixia042025.git 
+Cloning into 'cognixia042025'...
+remote: Enumerating objects: 33, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 33 (delta 4), reused 26 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (33/33), 682.66 KiB | 9.89 MiB/s, done.
+Resolving deltas: 100% (4/4), done.
+PS C:\Users\shriya.jorrigala\QA-Training1> Set-Location cognixia042025
+PS C:\Users\shriya.jorrigala\QA-Training1\cognixia042025> git status
+nothing to commit, working tree clean
+PS C:\Users\shriya.jorrigala\QA-Training1\cognixia042025> git checkout -b shriya_repository-branch
+
+PS C:\Users\shriya.jorrigala\QA-Training1\cognixia042025> stop transcript
+stop : The term 'stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ stop transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+stop : The term 'stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ stop transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\shriya.jorrigala\QA-Training1\cognixia042025> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421130326
+**********************
