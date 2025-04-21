@@ -1,0 +1,68 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421123254
+Username: ASCENDION\sreelakshmi.c
+RunAs User: ASCENDION\sreelakshmi.c
+Configuration Name: 
+Machine: ASCINLAP61552 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 30640
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Vaishnavi.txt
+PS C:\Users\sreelakshmi.c> New-Item -path -Name 'QA Training' -ItemType Directory
+PS C:\Users\sreelakshmi.c> TerminatingError(New-Item): "Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again."
+New-Item : Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:10
++ New-Item -path -Name 'QA Training' -ItemType Directory
++          ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Missing an argument for parameter 'Path'. Specify a parameter of type 'System.String[]' and try again.
+At line:1 char:10
++ New-Item -path -Name 'QA Training' -ItemType Directory
++          ~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [New-Item], ParameterBindingException
+    + FullyQualifiedErrorId : MissingArgument,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\sreelakshmi.c> New-Item -path  'QA Training' -ItemType Directory
+
+
+    Directory: C:\Users\sreelakshmi.c
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     12:34                QA Training
+
+
+PS C:\Users\sreelakshmi.c> Set-Location QA-Training
+PS C:\Users\sreelakshmi.c\QA-Training> git --version
+git version 2.49.0.windows.1
+PS C:\Users\sreelakshmi.c\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\Users\sreelakshmi.c\QA-Training> git config --global http.sslVerify false
+
+PS C:\Users\sreelakshmi.c\QA-Training> git clone https://github.com/sureshnanjan/cognixia042025.git
+Resolving deltas: 100% (1/1), done.
+PS C:\Users\sreelakshmi.c\QA-Training> Set-Location cognixia042025
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> git status
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> git checkout -b VaishnaviCh-branch
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> git status
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> git push origin VaishnaviCh-branch
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421130021
+**********************
