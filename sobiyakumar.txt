@@ -1,0 +1,103 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421154331
+Username: ASCENDION\sobiya.kumar
+RunAs User: ASCENDION\sobiya.kumar
+Configuration Name: 
+Machine: ASCINLAP60944 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 23688
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is sobiyakumar.txt
+PS C:\Users\sobiya.kumar> New-Item -Path "C:\Users\sobiya.kumar" -Name 'QA-Training' -ItemType Directory
+New-Item : An item with the specified name C:\Users\sobiya.kumar\QA-Training already exists.
+At line:1 char:1
++ New-Item -Path "C:\Users\sobiya.kumar" -Name 'QA-Training' -ItemType  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\sobiya.kumar\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name C:\Users\sobiya.kumar\QA-Training already exists.
+At line:1 char:1
++ New-Item -Path "C:\Users\sobiya.kumar" -Name 'QA-Training' -ItemType  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\sobiya.kumar\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\sobiya.kumar> New-Item -Name 'QA-Training' -ItemType Directory
+New-Item : An item with the specified name C:\Users\sobiya.kumar\QA-Training already exists.
+At line:1 char:1
++ New-Item -Name 'QA-Training' -ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\sobiya.kumar\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name C:\Users\sobiya.kumar\QA-Training already exists.
+At line:1 char:1
++ New-Item -Name 'QA-Training' -ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\sobiya.kumar\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\sobiya.kumar> New-Item -Name 'hp-Training' -ItemType Directory
+New-Item : An item with the specified name C:\Users\sobiya.kumar\hp-Training already exists.
+At line:1 char:1
++ New-Item -Name 'hp-Training' -ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\sobiya.kumar\hp-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name C:\Users\sobiya.kumar\hp-Training already exists.
+At line:1 char:1
++ New-Item -Name 'hp-Training' -ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\sobiya.kumar\hp-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\sobiya.kumar> New-Item -Name 'hp-Training' -ItemType Directory
+New-Item : An item with the specified name C:\Users\sobiya.kumar\hp-Training already exists.
+At line:1 char:1
++ New-Item -Name 'hp-Training' -ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\sobiya.kumar\hp-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name C:\Users\sobiya.kumar\hp-Training already exists.
+At line:1 char:1
++ New-Item -Name 'hp-Training' -ItemType Directory
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\sobiya.kumar\hp-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\sobiya.kumar> New-Item -Name 'qe-training' -ItemType Directory
+
+
+    Directory: C:\Users\sobiya.kumar
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     15:44                qe-training
+
+
+PS C:\Users\sobiya.kumar> Set-Location "C:\Users\sobiya.kumar\qe-training"
+PS C:\Users\sobiya.kumar\qe-training> git --version
+
+PS C:\Users\sobiya.kumar\qe-training> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\Users\sobiya.kumar\qe-training> Set-Location cognixia042025
+PS C:\Users\sobiya.kumar\qe-training\cognixia042025> git status
+
+PS C:\Users\sobiya.kumar\qe-training\cognixia042025> git checkout -b sobiyakumar-branch
+
+PS C:\Users\sobiya.kumar\qe-training\cognixia042025> git status
+
+PS C:\Users\sobiya.kumar\qe-training\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421154736
+**********************
