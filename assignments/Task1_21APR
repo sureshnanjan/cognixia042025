@@ -1,0 +1,56 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422065939
+Username: ASCENDION\subalakshmi.t
+RunAs User: ASCENDION\subalakshmi.t
+Configuration Name: 
+Machine: ASCINLAP60948 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell.exe
+Process ID: 18288
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Task1_21APR
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> Remove-Item -Path "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\global_tshirts_db.sql" -Recurse -Force
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> Get-ChildItem -Path "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training" -Recurse | Select-Object FullName
+
+FullName
+--------
+C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025
+C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments
+C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\README.md
+C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\Subalakshmi.txt
+C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments\Task1_21APR
+
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> Move-Item -Path "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\Files\03_03_25.txt" -Destination "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training"
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> (Get-Item "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\03_03_25.txt").Attributes += 'ReadOnly'
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> (Get-Item "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\03_03_25.txt").Attributes += 'ReadOnly'
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> (Get-Item "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\03_03_25.txt").Attributes
+Get-Item : Could not find item C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\03_03_25.txt.
+At line:1 char:2
++ (Get-Item "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Tra ...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\subala...ng\03_03_25.txt:String) [Get-Item], IOException
+    + FullyQualifiedErrorId : ItemNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+Get-Item : Could not find item C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\03_03_25.txt.
+At line:1 char:2
++ (Get-Item "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Tra ...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\subala...ng\03_03_25.txt:String) [Get-Item], IOException
+    + FullyQualifiedErrorId : ItemNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> (Get-Item "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\Hello.txt").Attributes += 'ReadOnly'
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> (Get-Item "C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\Hello.txt").Attributes
+ReadOnly, Archive, ReparsePoint
+PS C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422071023
+**********************
