@@ -1,0 +1,108 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422105826
+Username: ASCENDION\mathumithaa.p
+RunAs User: ASCENDION\mathumithaa.p
+Configuration Name: 
+Machine: ASCINLAP61689 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 26516
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is task-2.txt
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git pull origin Mathumithaa-branch
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git add .
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git commit -m "Merge changes, from remote"
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git push origin Mathumithaa-branch
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git status
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.22621.4391
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.22621.4391
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> $PSVersionTable.PSVersion
+
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+5      1      22621  4391
+
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> Get-Command -Noun alias*
+
+CommandType     Name
+-----------     ----
+Cmdlet          Export-Alias
+Cmdlet          Get-Alias
+Cmdlet          Import-Alias
+Cmdlet          New-Alias
+Cmdlet          Set-Alias
+
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> Get-Command -Verb Get -Noun alias*
+
+CommandType     Name
+-----------     ----
+Cmdlet          Get-Alias
+
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> Get-Command -Noun File*
+
+CommandType     Name
+-----------     ----
+Alias           Write-FileSystemCache
+Alias           Write-FileSystemCache
+Function        Block-FileShareAccess
+Function        Clear-FileStorageTier
+Function        Debug-FileShare
+Function        Get-FileHash
+Function        Get-FileIntegrity
+Function        Get-FileShare
+Function        Get-FileShareAccessControlEntry
+Function        Get-FileStorageTier
+Function        Grant-FileShareAccess
+Function        New-FileShare
+Function        Remove-FileShare
+Function        Repair-FileIntegrity
+Function        Revoke-FileShareAccess
+Function        Set-FileIntegrity
+Function        Set-FileShare
+Function        Set-FileStorageTier
+Function        Unblock-FileShareAccess
+Cmdlet          New-FileCatalog
+Cmdlet          Out-File
+Cmdlet          Test-FileCatalog
+Cmdlet          Unblock-File
+
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> Get-Command -Verb Get -Noun File*
+
+CommandType     Name
+-----------     ----
+Function        Get-FileHash
+Function        Get-FileIntegrity
+Function        Get-FileShare
+Function        Get-FileShareAccessControlEntry
+Function        Get-FileStorageTier
+
+
