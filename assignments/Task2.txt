@@ -1,0 +1,85 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422113908
+Username: ASCENDION\shivani.gudiboyana
+RunAs User: ASCENDION\shivani.gudiboyana
+Configuration Name: 
+Machine: ASCINLAP61636 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 23164
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Task2.txt
+PS C:\Users\shivani.gudiboyana\QA-Training\cognixia042025\assignments> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.22621.4391
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.22621.4391
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\shivani.gudiboyana\QA-Training\cognixia042025\assignments> $PSVersionTable.PSVersion
+
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+5      1      22621  4391
+
+
+PS C:\Users\shivani.gudiboyana\QA-Training\cognixia042025\assignments> Get-Command -Noun File*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           Write-FileSystemCache                              2.0.0.0    Storage
+Alias           Write-FileSystemCache                              1.0.0.0    VMDirectStorage
+Function        Block-FileShareAccess                              2.0.0.0    Storage
+Function        Clear-FileStorageTier                              2.0.0.0    Storage
+Function        Debug-FileShare                                    2.0.0.0    Storage
+Function        Get-FileHash                                       3.1.0.0    Microsoft.PowerShell.Utility
+Function        Get-FileIntegrity                                  2.0.0.0    Storage
+Function        Get-FileShare                                      2.0.0.0    Storage
+Function        Get-FileShareAccessControlEntry                    2.0.0.0    Storage
+Function        Get-FileStorageTier                                2.0.0.0    Storage
+Function        Grant-FileShareAccess                              2.0.0.0    Storage
+Function        New-FileShare                                      2.0.0.0    Storage
+Function        Remove-FileShare                                   2.0.0.0    Storage
+Function        Repair-FileIntegrity                               2.0.0.0    Storage
+Function        Revoke-FileShareAccess                             2.0.0.0    Storage
+Function        Set-FileIntegrity                                  2.0.0.0    Storage
+Function        Set-FileShare                                      2.0.0.0    Storage
+Function        Set-FileStorageTier                                2.0.0.0    Storage
+Function        Unblock-FileShareAccess                            2.0.0.0    Storage
+Cmdlet          New-FileCatalog                                    3.0.0.0    Microsoft.PowerShell.Security
+Cmdlet          Out-File                                           3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Test-FileCatalog                                   3.0.0.0    Microsoft.PowerShell.Security
+Cmdlet          Unblock-File                                       3.1.0.0    Microsoft.PowerShell.Utility
+
+
+PS C:\Users\shivani.gudiboyana\QA-Training\cognixia042025\assignments> Get-Command -Verb Get -Noun File*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        Get-FileHash                                       3.1.0.0    Microsoft.PowerShell.Utility
+Function        Get-FileIntegrity                                  2.0.0.0    Storage
+Function        Get-FileShare                                      2.0.0.0    Storage
+Function        Get-FileShareAccessControlEntry                    2.0.0.0    Storage
+Function        Get-FileStorageTier                                2.0.0.0    Storage
+
+
+PS C:\Users\shivani.gudiboyana\QA-Training\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422114225
+**********************
