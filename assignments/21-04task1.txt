@@ -1,0 +1,96 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422100131
+Username: ASCENDION\divya.senthilkumar
+RunAs User: ASCENDION\divya.senthilkumar
+Configuration Name: 
+Machine: ASCINLAP61685 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 21772
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\21-04task1.txt
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments> Copy-Item -Path ".\assignment\21-04task1.txt" -Destination ".\backup\21-04task11.txt"
+Copy-Item : Cannot find path 
+'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\assignment\21-04task1.txt' because it does not 
+exist.
+At line:1 char:1
++ Copy-Item -Path ".\assignment\21-04task1.txt" -Destination ".\backup\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\divya....\21-04task1.txt:String) [Copy-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find path 'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\assignment\21-04task1.txt' because
+it does not exist.
+At line:1 char:1
++ Copy-Item -Path ".\assignment\21-04task1.txt" -Destination ".\backup\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\divya....\21-04task1.txt:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments> Copy-Item -Path ".\assignments\21-04task1.txt" -Destination ".\backup\21-04task11.txt"
+Copy-Item : Cannot find path 
+'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\assignments\21-04task1.txt' because it does not 
+exist.
+At line:1 char:1
++ Copy-Item -Path ".\assignments\21-04task1.txt" -Destination ".\backup ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\divya....\21-04task1.txt:String) [Copy-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find path 'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\assignments\21-04task1.txt'
+because it does not exist.
+At line:1 char:1
++ Copy-Item -Path ".\assignments\21-04task1.txt" -Destination ".\backup ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\divya....\21-04task1.txt:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments> Copy-Item -Path ".\21-04task1.txt" -Destination ".\backup\21-04task11.txt"
+>> TerminatingError(Copy-Item): "Could not find a part of the path 'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\21-04task1.txt'."
+Copy-Item : Could not find a part of the path 
+'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\21-04task1.txt'.
+At line:1 char:1
++ Copy-Item -Path ".\21-04task1.txt" -Destination ".\backup\21-04task11 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Copy-Item], DirectoryNotFoundException
+    + FullyQualifiedErrorId : System.IO.DirectoryNotFoundException,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Could not find a part of the path 'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\21-04task1.txt'.
+At line:1 char:1
++ Copy-Item -Path ".\21-04task1.txt" -Destination ".\backup\21-04task11 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Copy-Item], DirectoryNotFoundException
+    + FullyQualifiedErrorId : System.IO.DirectoryNotFoundException,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments> Copy-Item -Path .\21-04task1.txt -Destination ".\backup\21-04task11.txt"
+>> TerminatingError(Copy-Item): "Could not find a part of the path 'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\21-04task1.txt'."
+Copy-Item : Could not find a part of the path 
+'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\21-04task1.txt'.
+At line:1 char:1
++ Copy-Item -Path .\21-04task1.txt -Destination ".\backup\21-04task11.t ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Copy-Item], DirectoryNotFoundException
+    + FullyQualifiedErrorId : System.IO.DirectoryNotFoundException,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Could not find a part of the path 'C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\21-04task1.txt'.
+At line:1 char:1
++ Copy-Item -Path .\21-04task1.txt -Destination ".\backup\21-04task11.t ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Copy-Item], DirectoryNotFoundException
+    + FullyQualifiedErrorId : System.IO.DirectoryNotFoundException,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments> Copy-Item -Path "C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments\21-04task1.txt" -Destination "C:\Users\divya.senthilkumar\OneDrive - ascendion\Documents\Backup\backuptask1.txt"
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments> Remove-Item -Path "C:\Users\divya.senthilkumar\OneDrive - ascendion\Documents\Backup\backuptask1.txt"
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments> Test-Path "C:\Users\divya.senthilkumar\OneDrive - ascendion\Documents\Backup\backuptask1.txt"
+False
+PS C:\Users\divya.senthilkumar\QA-Training\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422102111
+**********************
