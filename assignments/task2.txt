@@ -1,0 +1,119 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422103003
+Username: ASCENDION\jeevanaa.selvan
+RunAs User: ASCENDION\jeevanaa.selvan
+Configuration Name: 
+Machine: ASCINLAP61684 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 19420
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\task2.txt
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.22621.4391
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.22621.4391
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> $PSVersionTable.PSVersion
+
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+5      1      22621  4391
+
+
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Get-Command *File*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           Set-AppPackageProvisionedDataFile                  3.0        Dism
+Alias           Set-ProvisionedAppPackageDataFile                  3.0        Dism
+Alias           Set-ProvisionedAppXDataFile                        3.0        Dism
+Alias           Write-FileSystemCache                              2.0.0.0    Storage
+Alias           Write-FileSystemCache                              1.0.0.0    VMDirectStorage
+Function        Block-FileShareAccess                              2.0.0.0    Storage
+Function        Clear-FileStorageTier                              2.0.0.0    Storage
+Function        Close-SmbOpenFile                                  2.0.0.0    SmbShare
+Function        Debug-FileShare                                    2.0.0.0    Storage
+Function        Disable-NetIPHttpsProfile                          1.0.0.0    NetworkTransition
+Function        Enable-NetIPHttpsProfile                           1.0.0.0    NetworkTransition
+Function        Get-FileHash                                       3.1.0.0    Microsoft.PowerShell.Utility
+Function        Get-FileIntegrity                                  2.0.0.0    Storage
+Function        Get-FileShare                                      2.0.0.0    Storage
+Function        Get-FileShareAccessControlEntry                    2.0.0.0    Storage
+Function        Get-FileStorageTier                                2.0.0.0    Storage
+Function        Get-NetConnectionProfile                           2.0.0.0    NetConnection
+Function        Get-NetFirewallHyperVProfile                       2.0.0.0    NetSecurity
+Function        Get-NetFirewallProfile                             2.0.0.0    NetSecurity
+Function        Get-SmbOpenFile                                    2.0.0.0    SmbShare
+Function        Get-StorageFileServer                              2.0.0.0    Storage
+Function        Get-SupportedFileSystems                           2.0.0.0    Storage
+Function        Grant-FileShareAccess                              2.0.0.0    Storage
+Function        Import-PowerShellDataFile                          3.1.0.0    Microsoft.PowerShell.Utility
+Function        New-FileShare                                      2.0.0.0    Storage
+Function        New-NetFirewallHyperVProfile                       2.0.0.0    NetSecurity
+Function        New-ScriptFileInfo                                 1.0.0.1    PowerShellGet
+Function        New-StorageFileServer                              2.0.0.0    Storage
+Function        New-TemporaryFile                                  3.1.0.0    Microsoft.PowerShell.Utility
+Function        Publish-BCFileContent                              1.0.0.0    BranchCache
+Function        Remove-FileShare                                   2.0.0.0    Storage
+Function        Remove-NetFirewallHyperVProfile                    2.0.0.0    NetSecurity
+Function        Remove-StorageFileServer                           2.0.0.0    Storage
+Function        Repair-FileIntegrity                               2.0.0.0    Storage
+Function        Revoke-FileShareAccess                             2.0.0.0    Storage
+Function        Set-FileIntegrity                                  2.0.0.0    Storage
+Function        Set-FileShare                                      2.0.0.0    Storage
+Function        Set-FileStorageTier                                2.0.0.0    Storage
+Function        Set-NetConnectionProfile                           2.0.0.0    NetConnection
+Function        Set-NetFirewallHyperVProfile                       2.0.0.0    NetSecurity
+Function        Set-NetFirewallProfile                             2.0.0.0    NetSecurity
+Function        Set-StorageBusProfile                              1.0.0.0    StorageBusCache
+Function        Set-StorageFileServer                              2.0.0.0    Storage
+Function        Test-ScriptFileInfo                                1.0.0.1    PowerShellGet
+Function        Unblock-FileShareAccess                            2.0.0.0    Storage
+Function        Update-ScriptFileInfo                              1.0.0.1    PowerShellGet
+Cmdlet          Add-BitsFile                                       2.0.0.0    BitsTransfer
+Cmdlet          Get-AppLockerFileInformation                       2.0.0.0    AppLocker
+Cmdlet          New-FileCatalog                                    3.0.0.0    Microsoft.PowerShell.Security
+Cmdlet          New-PSRoleCapabilityFile                           3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          New-PSSessionConfigurationFile                     3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Out-File                                           3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Set-AppXProvisionedDataFile                        3.0        Dism
+Cmdlet          Set-UevTemplateProfile                             2.1.639.0  UEV
+Cmdlet          Test-FileCatalog                                   3.0.0.0    Microsoft.PowerShell.Security
+Cmdlet          Test-PSSessionConfigurationFile                    3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Unblock-File                                       3.1.0.0    Microsoft.PowerShell.Utility
+Application     FileDialogBroker.exe                               10.0.22... C:\Windows\system32\FileDialogBroker.exe
+Application     FileHistory.exe                                    10.0.22... C:\Windows\system32\FileHistory.exe
+Application     forfiles.exe                                       10.0.22... C:\Windows\system32\forfiles.exe
+Application     openfiles.exe                                      10.0.22... C:\Windows\system32\openfiles.exe
+
+
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Get-Command -Verb Get -Noun alias*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Get-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+
+
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422103717
+**********************
