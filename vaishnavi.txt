@@ -1,1 +1,60 @@
-Vaishnavi 
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421164638
+Username: ASCENDION\sreelakshmi.c
+RunAs User: ASCENDION\sreelakshmi.c
+Configuration Name: 
+Machine: ASCINLAP61552 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 19144
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Vaishnavi.txt
+PS C:\Users\sreelakshmi.c> New-Item -path  'QA Training' -ItemType Directory
+
+
+    Directory: C:\Users\sreelakshmi.c
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     16:47                QA Training
+
+
+PS C:\Users\sreelakshmi.c> git --version
+git version 2.49.0.windows.1
+PS C:\Users\sreelakshmi.c> git clone https://github.com/sureshnanjan/cognixia042025.git
+remote: Enumerating objects: 90, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 90 (delta 8), reused 6 (delta 6), pack-reused 80 (
+from 1)
+Receiving objects: 100% (90/90), 698.83 KiB | 9.08 MiB/s, done.
+Resolving deltas: 100% (24/24), done.
+PS C:\Users\sreelakshmi.c> git config --global http.sslVerify false
+
+PS C:\Users\sreelakshmi.c> git clone https://github.com/sureshnanjan/cognixia042025.git
+
+PS C:\Users\sreelakshmi.c> Set-Location cognixia042025
+PS C:\Users\sreelakshmi.c\cognixia042025> git status
+
+PS C:\Users\sreelakshmi.c\cognixia042025> git checkout -b VaishnaviCh-branch
+
+PS C:\Users\sreelakshmi.c\cognixia042025> git checkout -b VaishnaviCh-branch
+
+PS C:\Users\sreelakshmi.c\cognixia042025> git push origin VaishnaviCh-branch
+
+PS C:\Users\sreelakshmi.c\cognixia042025> git commit -m"initial"
+
+PS C:\Users\sreelakshmi.c\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421165158
+**********************
