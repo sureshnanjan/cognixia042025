@@ -1,0 +1,99 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422102247
+Username: ASCENDION\pavithra.rajendiran
+RunAs User: ASCENDION\pavithra.rajendiran
+Configuration Name: 
+Machine: ASCINLAP61694 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 21812
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is task1-apr21.txt
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> Get-ChildItem
+
+
+    Directory: C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-04-2025     16:42            378 21-April.txt
+-a----        21-04-2025     17:38           4112 pavithra-21Apr-task1.txt
+-a----        22-04-2025     10:22              0 task1-apr21.txt
+-a----        22-04-2025     09:58         166785 task2-apr21.txt
+
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> get-date
+
+22 April 2025 10:23:47
+
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> dir
+
+
+    Directory: C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-04-2025     16:42            378 21-April.txt
+-a----        21-04-2025     17:38           4112 pavithra-21Apr-task1.txt
+-a----        22-04-2025     10:22              0 task1-apr21.txt
+-a----        22-04-2025     09:58         166785 task2-apr21.txt
+
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> Write-Output "All commands executed successfully."
+All commands executed successfully.
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> New-Item -Path "C:\example.txt" -ItemType File
+New-Item : Access to the path 'C:\example.txt' is denied.
+At line:1 char:1
++ New-Item -Path "C:\example.txt" -ItemType File
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\example.txt:String) [New-Item], UnauthorizedAccessException
+    + FullyQualifiedErrorId : NewItemUnauthorizedAccessError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : Access to the path 'C:\example.txt' is denied.
+At line:1 char:1
++ New-Item -Path "C:\example.txt" -ItemType File
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\example.txt:String) [New-Item], UnauthorizedAccessException
+    + FullyQualifiedErrorId : NewItemUnauthorizedAccessError,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> new-item -path "C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments\example.txt" -itemtype file
+
+
+    Directory: C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        22-04-2025     10:28              0 example.txt
+
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> Remove-Item -Path "C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments\example.txt"
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> dir
+
+
+    Directory: C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-04-2025     16:42            378 21-April.txt
+-a----        21-04-2025     17:38           4112 pavithra-21Apr-task1.txt
+-a----        22-04-2025     10:22              0 task1-apr21.txt
+-a----        22-04-2025     09:58         166785 task2-apr21.txt
+
+
+PS C:\Users\pavithra.rajendiran\QA-Training\cognixia042025\assignments> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422102946
+**********************
