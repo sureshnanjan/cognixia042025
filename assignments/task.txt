@@ -1,0 +1,57 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421183003
+Username: ASCENDION\vaishnavi.sivakumar
+RunAs User: ASCENDION\vaishnavi.sivakumar
+Configuration Name: 
+Machine: ASCINLAP60975 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2652
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is task.txt
+PS C:\Users\vaishnavi.sivakumar\QA-Training\cognixia042025\assignments> date
+
+21 April 2025 18:30:18
+
+
+PS C:\Users\vaishnavi.sivakumar\QA-Training\cognixia042025\assignments> hostname
+ASCINLAP60975
+PS C:\Users\vaishnavi.sivakumar\QA-Training\cognixia042025\assignments> help
+
+  ONLINE HELP
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518.
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online
+PS C:\Users\vaishnavi.sivakumar\QA-Training\cognixia042025\assignments> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\vaishnavi.sivakumar\QA-Training\cognixia042025\assignments> cd
+PS C:\Users\vaishnavi.sivakumar\QA-Training\cognixia042025\assignments> dir
+
+
+    Directory: C:\Users\vaishnavi.sivakumar\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-04-2025     15:04            378 21-April.txt
+-a----        21-04-2025     18:30              0 task.txt
+
+
+PS C:\Users\vaishnavi.sivakumar\QA-Training\cognixia042025\assignments> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421183245
+**********************
