@@ -1,0 +1,883 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421192010
+Username: ASCENDION\revathi.banuka
+RunAs User: ASCENDION\revathi.banuka
+Configuration Name: 
+Machine: ASCINLAP31921 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 29720
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is task1.txt
+PS C:\Users\revathi.banuka.ASCENDION> Get-Service
+
+Status   Name               DisplayName
+------   ----               -----------
+Stopped  AarSvc_3e0637fe    Agent Activation Runtime_3e0637fe
+Running  AdobeARMservice    Adobe Acrobat Update Service
+Stopped  AJRouter           AllJoyn Router Service
+Stopped  ALG                Application Layer Gateway Service
+Running  AOTAgentSvc        Trend Micro Telemetry Service
+Stopped  AppIDSvc           Application Identity
+Running  Appinfo            Application Information
+Running  AppMgmt            Application Management
+Stopped  AppReadiness       App Readiness
+Stopped  AppVClient         Microsoft App-V Client
+Running  AppXSvc            AppX Deployment Service (AppXSVC)
+Running  ApsInsMonitorSvc   ApsInsMonitorSvc
+Running  ApsInsSvc          ApsInsSvc
+Stopped  AssignedAccessM... AssignedAccessManager Service
+Running  AudioEndpointBu... Windows Audio Endpoint Builder
+Running  Audiosrv           Windows Audio
+Stopped  autotimesvc        Cellular Time
+Stopped  AxInstSV           ActiveX Installer (AxInstSV)
+Stopped  BcastDVRUserSer... GameDVR and Broadcast User Service_...
+Running  BDESVC             BitLocker Drive Encryption Service
+Running  BFE                Base Filtering Engine
+Running  BITS               Background Intelligent Transfer Ser...
+Running  BluetoothUserSe... Bluetooth User Support Service_3e06...
+Running  BrokerInfrastru... Background Tasks Infrastructure Ser...
+Running  Browser            Computer Browser
+Running  BTAGService        Bluetooth Audio Gateway Service
+Running  BthAvctpSvc        AVCTP service
+Running  bthserv            Bluetooth Support Service
+Running  camsvc             Capability Access Manager Service
+Stopped  CaptureService_... CaptureService_3e0637fe
+Running  cbdhsvc_3e0637fe   Clipboard User Service_3e0637fe
+Running  CDPSvc             Connected Devices Platform Service
+Running  CDPUserSvc_3e06... Connected Devices Platform User Ser...
+Running  CertPropSvc        Certificate Propagation
+Stopped  CETASvc            Trend Micro Cloud Endpoint Telemetr...
+Running  ClickToRunSvc      Microsoft Office Click-to-Run Service
+Running  ClipSVC            Client License Service (ClipSVC)
+Stopped  CloudBackupRest... Cloud Backup and Restore Service_3e...
+Running  CloudEndpointSe... Cloud Endpoint Service
+Stopped  cloudidsvc         Microsoft Cloud Identity Service
+Stopped  COMSysApp          COM+ System Application
+Stopped  ConsentUxUserSv... ConsentUX User Service_3e0637fe
+Running  CoreMessagingRe... CoreMessaging
+Running  cplspcon           Intel(R) Content Protection HDCP Se...
+Stopped  CredentialEnrol... CredentialEnrollmentManagerUserSvc_...
+Running  CryptSvc           Cryptographic Services
+Stopped  CscService         Offline Files
+Running  DcomLaunch         DCOM Server Process Launcher
+Stopped  dcsvc              Declared Configuration(DC) service
+Stopped  defragsvc          Optimize drives
+Stopped  DeviceAssociati... DeviceAssociationBroker_3e0637fe
+Running  DeviceAssociati... Device Association Service
+Stopped  DeviceInstall      Device Install Service
+Stopped  DevicePickerUse... DevicePicker_3e0637fe
+Running  DevicesFlowUser... DevicesFlow_3e0637fe
+Running  DevQueryBroker     DevQuery Background Discovery Broker
+Running  Dhcp               DHCP Client
+Stopped  diagnosticshub.... Microsoft (R) Diagnostics Hub Stand...
+Stopped  diagsvc            Diagnostic Execution Service
+Running  DiagTrack          Connected User Experiences and Tele...
+Stopped  DialogBlockingS... DialogBlockingService
+Running  DispBrokerDeskt... Display Policy Service
+Running  DisplayEnhancem... Display Enhancement Service
+Stopped  DmEnrollmentSvc    Device Management Enrollment Service
+Running  dmwappushservice   Device Management Wireless Applicat...
+Running  Dnscache           DNS Client
+Running  DolbyDAXAPI        Dolby DAX API Service
+Running  DoSvc              Delivery Optimization
+Stopped  dot3svc            Wired AutoConfig
+Running  DPS                Diagnostic Policy Service
+Running  DSASvc             Trend Micro Apex One Data Protectio...
+Stopped  DsmSvc             Device Setup Manager
+Running  DsSvc              Data Sharing Service
+Running  DusmSvc            Data Usage
+Stopped  EapHost            Extensible Authentication Protocol
+Stopped  edgeupdate         Microsoft Edge Update Service (edge...
+Stopped  edgeupdatem        Microsoft Edge Update Service (edge...
+Stopped  EFS                Encrypting File System (EFS)
+Stopped  embeddedmode       Embedded Mode
+Stopped  EntAppSvc          Enterprise App Management Service
+Running  esifsvc            Intel(R) Dynamic Tuning service
+Running  EventLog           Windows Event Log
+Running  EventSystem        COM+ Event System
+Running  FA_Scheduler       FortiClient Service Scheduler
+Stopped  Fax                Fax
+Stopped  fdPHost            Function Discovery Provider Host
+Stopped  FDResPub           Function Discovery Resource Publica...
+Stopped  fhsvc              File History Service
+Running  FileSyncHelper     FileSyncHelper
+Running  FMAPOService       Fortemedia APO Control Service
+Running  FontCache          Windows Font Cache Service
+Stopped  FrameServer        Windows Camera Frame Server
+Stopped  FrameServerMonitor Windows Camera Frame Server Monitor
+Stopped  GameInputSvc       GameInput Service
+Stopped  GoogleChromeEle... Google Chrome Elevation Service (Go...
+Stopped  GoogleUpdaterIn... Google Updater Internal Service (Go...
+Stopped  GoogleUpdaterSe... Google Updater Service (GoogleUpdat...
+Running  gpsvc              Group Policy Client
+Stopped  GraphicsPerfSvc    GraphicsPerfSvc
+Running  hidserv            Human Interface Device Service
+Running  HvHost             HV Host Service
+Running  IBMPMSVC           Lenovo PM Service
+Stopped  icssvc             Windows Mobile Hotspot Service
+Running  igccservice        Intel(R) Graphics Command Center Se...
+Running  igfxCUIService2... Intel(R) HD Graphics Control Panel ...
+Running  IKEEXT             IKE and AuthIP IPsec Keying Modules
+Running  ImControllerSer... System Interface Foundation Service
+Running  InstallService     Microsoft Store Install Service
+Stopped  Intel(R) TPM Pr... Intel(R) TPM Provisioning Service
+Running  IntelAudioService  Intel(R) Audio Service
+Running  IntuneManagemen... Microsoft Intune Management Extension
+Stopped  InventorySvc       Inventory and Compatibility Apprais...
+Running  iphlpsvc           IP Helper
+Stopped  IpxlatCfgSvc       IP Translation Configuration Service
+Running  iVPAgent           Trend Micro Vulnerability Protectio...
+Running  jhi_service        Intel(R) Dynamic Application Loader...
+Running  KeyIso             CNG Key Isolation
+Stopped  KtmRm              KtmRm for Distributed Transaction C...
+Running  LanmanServer       Server
+Running  LanmanWorkstation  Workstation
+Stopped  LenovoBrightCtrl   Lenovo Display Brightness Control S...
+Running  LenovoSmartStandby Lenovo Smart Standby
+Running  LenovoVantageSe... LenovoVantageService
+Running  lfsvc              Geolocation Service
+Running  LicenseManager     Windows License Manager Service
+Running  LITSSVC            Lenovo Intelligent Thermal Solution...
+Stopped  lltdsvc            Link-Layer Topology Discovery Mapper
+Running  lmhosts            TCP/IP NetBIOS Helper
+Running  LMS                Intel(R) Management and Security Ap...
+Stopped  lpasvc             Microsoft Policy Platform Local Aut...
+Stopped  LPlatSvc           Lenovo Platform Service
+Stopped  lppsvc             Microsoft Policy Platform Processor
+Running  LSM                Local Session Manager
+Stopped  LxpSvc             Language Experience Service
+Stopped  MapsBroker         Downloaded Maps Manager
+Stopped  McpManagementSe... McpManagementService
+Stopped  MessagingServic... MessagingService_3e0637fe
+Stopped  MicrosoftEdgeEl... Microsoft Edge Elevation Service (M...
+Running  MicrosoftSearch... Microsoft Search in Bing
+Stopped  MixedRealityOpe... Windows Mixed Reality OpenXR Service
+Running  mpssvc             Windows Defender Firewall
+Stopped  MSDTC              Distributed Transaction Coordinator
+Stopped  MSiSCSI            Microsoft iSCSI Initiator Service
+Stopped  msiserver          Windows Installer
+Stopped  MsKeyboardFilter   Microsoft Keyboard Filter
+Stopped  NaturalAuthenti... Natural Authentication
+Stopped  NcaSvc             Network Connectivity Assistant
+Running  NcbService         Network Connection Broker
+Stopped  NcdAutoSetup       Network Connected Devices Auto-Setup
+Stopped  Netlogon           Netlogon
+Running  Netman             Network Connections
+Running  netprofm           Network List Service
+Running  NetSetupSvc        Network Setup Service
+Stopped  NetTcpPortSharing  Net.Tcp Port Sharing Service
+Running  NgcCtnrSvc         Microsoft Passport Container
+Running  NgcSvc             Microsoft Passport
+Stopped  NlaSvc             Network Location Awareness
+Running  NPSMSvc_3e0637fe   NPSMSvc_3e0637fe
+Running  nsi                Network Store Interface Service
+Running  ntrtscan           Apex One NT RealTime Scan
+Stopped  OneDrive Update... OneDrive Updater Service
+Running  OneSyncSvc_3e06... Sync Host_3e0637fe
+Stopped  p2pimsvc           Peer Networking Identity Manager
+Stopped  p2psvc             Peer Networking Grouping
+Stopped  P9RdrService_3e... P9RdrService_3e0637fe
+Running  PanGPS             PanGPS
+Running  PcaSvc             Program Compatibility Assistant Ser...
+Stopped  PeerDistSvc        BranchCache
+Stopped  PenService_3e06... PenService_3e0637fe
+Stopped  perceptionsimul... Windows Perception Simulation Service
+Stopped  PerfHost           Performance Counter DLL Host
+Running  PhoneSvc           Phone Service
+Running  PimIndexMainten... Contact Data_3e0637fe
+Stopped  pla                Performance Logs & Alerts
+Running  PlugPlay           Plug and Play
+Stopped  PNRPAutoReg        PNRP Machine Name Publication Service
+Stopped  PNRPsvc            Peer Name Resolution Protocol
+Running  PolicyAgent        IPsec Policy Agent
+Running  Power              Power
+Stopped  PrintNotify        Printer Extensions and Notifications
+Stopped  PrintWorkflowUs... PrintWorkflow_3e0637fe
+Running  ProfSvc            User Profile Service
+Stopped  PushToInstall      Windows PushToInstall Service
+Stopped  QWAVE              Quality Windows Audio Video Experience
+Stopped  RasAuto            Remote Access Auto Connection Manager
+Running  RasMan             Remote Access Connection Manager
+Stopped  RemoteAccess       Routing and Remote Access
+Stopped  RemoteRegistry     Remote Registry
+Stopped  RetailDemo         Retail Demo Service
+Running  RmSvc              Radio Management Service
+Running  RpcEptMapper       RPC Endpoint Mapper
+Stopped  RpcLocator         Remote Procedure Call (RPC) Locator
+Running  RpcSs              Remote Procedure Call (RPC)
+Running  RtkAudioUnivers... Realtek Audio Universal Service
+Running  SamSs              Security Accounts Manager
+Running  SCardSvr           Smart Card
+Stopped  ScDeviceEnum       Smart Card Device Enumeration Service
+Running  Schedule           Task Scheduler
+Stopped  SCPolicySvc        Smart Card Removal Policy
+Stopped  SDRSVC             Windows Backup
+Running  seclogon           Secondary Logon
+Running  SecurityHealthS... Windows Security Service
+Stopped  SEMgrSvc           Payments and NFC/SE Manager
+Running  SENS               System Event Notification Service
+Stopped  Sense              Windows Defender Advanced Threat Pr...
+Stopped  SensorDataService  Sensor Data Service
+Stopped  SensorService      Sensor Service
+Stopped  SensrSvc           Sensor Monitoring Service
+Stopped  SessionEnv         Remote Desktop Configuration
+Stopped  SharedAccess       Internet Connection Sharing (ICS)
+Stopped  SharedRealitySvc   Spatial Data Service
+Running  ShellHWDetection   Shell Hardware Detection
+Stopped  shpamsvc           Shared PC Account Manager
+Stopped  smphost            Microsoft Storage Spaces SMP
+Stopped  SmsRouter          Microsoft Windows SMS Router Service.
+Stopped  SNMPTrap           SNMP Trap
+Stopped  spectrum           Windows Perception Service
+Running  Spooler            Print Spooler
+Stopped  sppsvc             Software Protection
+Running  SSDPSRV            SSDP Discovery
+Stopped  ssh-agent          OpenSSH Authentication Agent
+Running  SstpSvc            Secure Socket Tunneling Protocol Se...
+Running  StateRepository    State Repository Service
+Stopped  StiSvc             Windows Image Acquisition (WIA)
+Running  StorSvc            Storage Service
+Stopped  svsvc              Spot Verifier
+Stopped  swprv              Microsoft Software Shadow Copy Prov...
+Running  SynHsaService      SynHsaService
+Running  SynTPEnhService    SynTPEnhService
+Running  SysMain            SysMain
+Running  SystemEventsBroker System Events Broker
+Stopped  TapiSrv            Telephony
+Running  TbtP2pShortcutS... Thunderbolt(TM) Peer to Peer Shortcut
+Running  TeamViewer         TeamViewer
+Stopped  TermService        Remote Desktop Services
+Running  TextInputManage... Text Input Management Service
+Running  Themes             Themes
+Stopped  TieringEngineSe... Storage Tiers Management
+Running  TimeBrokerSvc      Time Broker
+Running  TMBMServer         Trend Micro Unauthorized Change Pre...
+Running  tmccsf             Apex One Common Client Solution Fra...
+Stopped  TMiACAgentSvc      Trend Micro Application Control Ser...
+Running  tmlisten           Apex One NT Listener
+Running  TmPfw              Apex One NT Firewall
+Running  TmWSCSvc           Apex One NT WSC Service
+Running  TokenBroker        Web Account Manager
+Running  TPHKLOAD           Lenovo Hotkey Client Loader
+Running  TrkWks             Distributed Link Tracking Client
+Stopped  TroubleshootingSvc Recommended Troubleshooting Service
+Stopped  TrustedInstaller   Windows Modules Installer
+Stopped  tzautoupdate       Auto Time Zone Updater
+Running  UDCService         Universal Device Client Service
+Running  UdkUserSvc_3e06... Udk User Service_3e0637fe
+Stopped  UevAgentService    User Experience Virtualization Service
+Running  uhssvc             Microsoft Update Health Service
+Stopped  UmRdpService       Remote Desktop Services UserMode Po...
+Running  UnistoreSvc_3e0... User Data Storage_3e0637fe
+Stopped  upnphost           UPnP Device Host
+Running  UserDataSvc_3e0... User Data Access_3e0637fe
+Running  UserManager        User Manager
+Running  UsoSvc             Update Orchestrator Service
+Stopped  VacSvc             Volumetric Audio Compositor Service
+Running  VaultSvc           Credential Manager
+Stopped  vds                Virtual Disk
+Stopped  vmicguestinterface Hyper-V Guest Service Interface
+Stopped  vmicheartbeat      Hyper-V Heartbeat Service
+Stopped  vmickvpexchange    Hyper-V Data Exchange Service
+Stopped  vmicrdv            Hyper-V Remote Desktop Virtualizati...
+Stopped  vmicshutdown       Hyper-V Guest Shutdown Service
+Stopped  vmictimesync       Hyper-V Time Synchronization Service
+Stopped  vmicvmsession      Hyper-V PowerShell Direct Service
+Stopped  vmicvss            Hyper-V Volume Shadow Copy Requestor
+Stopped  VSS                Volume Shadow Copy
+Running  W32Time            Windows Time
+Stopped  WaaSMedicSvc       WaaSMedicSvc
+Stopped  WalletService      WalletService
+Stopped  WarpJITSvc         Warp JIT Service
+Stopped  wbengine           Block Level Backup Engine Service
+Stopped  WbioSrvc           Windows Biometric Service
+Running  Wcmsvc             Windows Connection Manager
+Stopped  wcncsvc            Windows Connect Now - Config Registrar
+Stopped  WdiServiceHost     Diagnostic Service Host
+Running  WdiSystemHost      Diagnostic System Host
+Stopped  WdNisSvc           Microsoft Defender Antivirus Networ...
+Running  WebClient          WebClient
+Running  webthreatdefsvc    Web Threat Defense Service
+Running  webthreatdefuse... Web Threat Defense User Service_3e0...
+Stopped  Wecsvc             Windows Event Collector
+Stopped  WEPHOSTSVC         Windows Encryption Provider Host Se...
+Stopped  wercplsupport      Problem Reports Control Panel Support
+Stopped  WerSvc             Windows Error Reporting Service
+Stopped  WFDSConMgrSvc      Wi-Fi Direct Services Connection Ma...
+Stopped  WiaRpc             Still Image Acquisition Events
+Stopped  WinDefend          Microsoft Defender Antivirus Service
+Running  WinHttpAutoProx... WinHTTP Web Proxy Auto-Discovery Se...
+Running  Winmgmt            Windows Management Instrumentation
+Stopped  WinRM              Windows Remote Management (WS-Manag...
+Stopped  wisvc              Windows Insider Service
+Running  WlanSvc            WLAN AutoConfig
+Stopped  wlidsvc            Microsoft Account Sign-in Assistant
+Stopped  wlpasvc            Local Profile Assistant Service
+Stopped  WManSvc            Windows Management Service
+Stopped  wmiApSrv           WMI Performance Adapter
+Running  WMIRegistration... Intel(R) Management Engine WMI Prov...
+Stopped  WMPNetworkSvc      Windows Media Player Network Sharin...
+Stopped  workfolderssvc     Work Folders
+Stopped  WpcMonSvc          Parental Controls
+Stopped  WPDBusEnum         Portable Device Enumerator Service
+Running  WpnService         Windows Push Notifications System S...
+Running  WpnUserService_... Windows Push Notifications User Ser...
+Running  wscsvc             Security Center
+Running  WSearch            Windows Search
+Running  wuauserv           Windows Update
+Stopped  WwanSvc            WWAN AutoConfig
+Stopped  XblAuthManager     Xbox Live Auth Manager
+Stopped  XblGameSave        Xbox Live Game Save
+Stopped  XboxGipSvc         Xbox Accessory Management Service
+Stopped  XboxNetApiSvc      Xbox Live Networking Service
+Running  ZoomCptService     Zoom Sharing Service
+Running  ZSAService         ZSAService
+Running  ZSATrayManager     ZSATrayManager
+Running  ZSATunnel          ZSATunnel
+Stopped  ZSAUpdater         ZSAUpdater
+Stopped  ZSAUpm             ZSAUpm
+
+
+PS C:\Users\revathi.banuka.ASCENDION> Get-ComputerInfo
+
+
+WindowsBuildLabEx                                       : 22621.1.amd64fre.ni_release.220506-1250
+WindowsCurrentVersion                                   : 6.3
+WindowsEditionId                                        : Professional
+WindowsInstallationType                                 : Client
+WindowsInstallDateFromRegistry                          : 27-08-2024 10:36:31
+WindowsProductId                                        : 00330-80000-00000-AA995
+WindowsProductName                                      : Windows 10 Pro
+WindowsRegisteredOrganization                           :
+WindowsRegisteredOwner                                  :
+WindowsSystemRoot                                       : C:\WINDOWS
+WindowsVersion                                          : 2009
+OSDisplayVersion                                        : 23H2
+BiosCharacteristics                                     : {7, 9, 11, 12...}
+BiosBIOSVersion                                         : {LENOVO - 1680, R1JET68W (1.68 ), Lenovo - 1680}
+BiosBuildNumber                                         :
+BiosCaption                                             : R1JET68W (1.68 )
+BiosCodeSet                                             :
+BiosCurrentLanguage                                     : en-US
+BiosDescription                                         : R1JET68W (1.68 )
+BiosEmbeddedControllerMajorVersion                      : 1
+BiosEmbeddedControllerMinorVersion                      : 49
+BiosFirmwareType                                        : Uefi
+BiosIdentificationCode                                  :
+BiosInstallableLanguages                                : 1
+BiosInstallDate                                         :
+BiosLanguageEdition                                     :
+BiosListOfLanguages                                     : {en-US}
+BiosManufacturer                                        : LENOVO
+BiosName                                                : R1JET68W (1.68 )
+BiosOtherTargetOS                                       :
+BiosPrimaryBIOS                                         : True
+BiosReleaseDate                                         : 29-01-2024 16:00:00
+BiosSeralNumber                                         : PG03B6J5
+BiosSMBIOSBIOSVersion                                   : R1JET68W (1.68 )
+BiosSMBIOSMajorVersion                                  : 3
+BiosSMBIOSMinorVersion                                  : 2
+BiosSMBIOSPresent                                       : True
+BiosSoftwareElementState                                : Running
+BiosStatus                                              : OK
+BiosSystemBiosMajorVersion                              : 1
+BiosSystemBiosMinorVersion                              : 68
+BiosTargetOperatingSystem                               : 0
+BiosVersion                                             : LENOVO - 1680
+CsAdminPasswordStatus                                   : Disabled
+CsAutomaticManagedPagefile                              : True
+CsAutomaticResetBootOption                              : True
+CsAutomaticResetCapability                              : True
+CsBootOptionOnLimit                                     :
+CsBootOptionOnWatchDog                                  :
+CsBootROMSupported                                      : True
+CsBootStatus                                            :
+CsBootupState                                           : Normal boot
+CsCaption                                               : ASCINLAP31921
+CsChassisBootupState                                    : Unknown
+CsChassisSKUNumber                                      :
+CsCurrentTimeZone                                       : -420
+CsDaylightInEffect                                      : True
+CsDescription                                           : AT/AT COMPATIBLE
+CsDNSHostName                                           : ASCINLAP31921
+CsDomain                                                : workgroup
+CsDomainRole                                            : StandaloneWorkstation
+CsEnableDaylightSavingsTime                             : True
+CsFrontPanelResetStatus                                 : NotImplemented
+CsHypervisorPresent                                     : True
+CsInfraredSupported                                     : False
+CsInitialLoadInfo                                       :
+CsInstallDate                                           :
+CsKeyboardPasswordStatus                                : NotImplemented
+CsLastLoadInfo                                          :
+CsManufacturer                                          : LENOVO
+CsModel                                                 : 20X1S1BP00
+CsName                                                  : ASCINLAP31921
+CsNetworkAdapters                                       : {Ethernet 3, Ethernet 4, Local Area Connection, Wi-Fi...}
+CsNetworkServerModeEnabled                              : True
+CsNumberOfLogicalProcessors                             : 8
+CsNumberOfProcessors                                    : 1
+CsProcessors                                            : {11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz}
+CsOEMStringArray                                        :
+CsPartOfDomain                                          : False
+CsPauseAfterReset                                       : -1
+CsPCSystemType                                          : Mobile
+CsPCSystemTypeEx                                        : Mobile
+CsPowerManagementCapabilities                           :
+CsPowerManagementSupported                              :
+CsPowerOnPasswordStatus                                 : Disabled
+CsPowerState                                            : Unknown
+CsPowerSupplyState                                      : Unknown
+CsPrimaryOwnerContact                                   :
+CsPrimaryOwnerName                                      :
+CsResetCapability                                       : Other
+CsResetCount                                            : -1
+CsResetLimit                                            : -1
+CsRoles                                                 : {LM_Workstation, LM_Server, NT, Potential_Browser...}
+CsStatus                                                : OK
+CsSupportContactDescription                             :
+CsSystemFamily                                          : ThinkPad L14 Gen 2
+CsSystemSKUNumber                                       : LENOVO_MT_20X1_BU_Think_FM_ThinkPad L14 Gen 2
+CsSystemType                                            : x64-based PC
+CsThermalState                                          : Unknown
+CsTotalPhysicalMemory                                   : 16818388992
+CsPhyicallyInstalledMemory                              : 16777216
+CsUserName                                              : ASCENDION\revathi.banuka
+CsWakeUpType                                            : PowerSwitch
+CsWorkgroup                                             : workgroup
+OsName                                                  : Microsoft Windows 11 Pro
+OsType                                                  : WINNT
+OsOperatingSystemSKU                                    : 48
+OsVersion                                               : 10.0.22631
+OsCSDVersion                                            :
+OsBuildNumber                                           : 22631
+OsHotFixes                                              : {KB5054980, KB5027397, KB5055528, KB5053665}
+OsBootDevice                                            : \Device\HarddiskVolume1
+OsSystemDevice                                          : \Device\HarddiskVolume3
+OsSystemDirectory                                       : C:\WINDOWS\system32
+OsSystemDrive                                           : C:
+OsWindowsDirectory                                      : C:\WINDOWS
+OsCountryCode                                           : 1
+OsCurrentTimeZone                                       : -420
+OsLocaleID                                              : 0409
+OsLocale                                                : en-US
+OsLocalDateTime                                         : 21-04-2025 19:28:30
+OsLastBootUpTime                                        : 11-04-2025 02:32:04
+OsUptime                                                : 10.16:56:25.7590550
+OsBuildType                                             : Multiprocessor Free
+OsCodeSet                                               : 1252
+OsDataExecutionPreventionAvailable                      : True
+OsDataExecutionPrevention32BitApplications              : True
+OsDataExecutionPreventionDrivers                        : True
+OsDataExecutionPreventionSupportPolicy                  : OptIn
+OsDebug                                                 : False
+OsDistributed                                           : False
+OsEncryptionLevel                                       : 256
+OsForegroundApplicationBoost                            : Maximum
+OsTotalVisibleMemorySize                                : 16424208
+OsFreePhysicalMemory                                    : 7148224
+OsTotalVirtualMemorySize                                : 18843120
+OsFreeVirtualMemory                                     : 8310676
+OsInUseVirtualMemory                                    : 10532444
+OsTotalSwapSpaceSize                                    :
+OsSizeStoredInPagingFiles                               : 2418912
+OsFreeSpaceInPagingFiles                                : 2357300
+OsPagingFiles                                           : {C:\pagefile.sys}
+OsHardwareAbstractionLayer                              : 10.0.22621.2506
+OsInstallDate                                           : 27-08-2024 03:36:31
+OsManufacturer                                          : Microsoft Corporation
+OsMaxNumberOfProcesses                                  : 4294967295
+OsMaxProcessMemorySize                                  : 137438953344
+OsMuiLanguages                                          : {en-US, en-GB}
+OsNumberOfLicensedUsers                                 :
+OsNumberOfProcesses                                     : 298
+OsNumberOfUsers                                         : 5
+OsOrganization                                          :
+OsArchitecture                                          : 64-bit
+OsLanguage                                              : en-US
+OsProductSuites                                         : {TerminalServicesSingleSession}
+OsOtherTypeDescription                                  :
+OsPAEEnabled                                            :
+OsPortableOperatingSystem                               : False
+OsPrimary                                               : True
+OsProductType                                           : WorkStation
+OsRegisteredUser                                        :
+OsSerialNumber                                          : 00330-80000-00000-AA995
+OsServicePackMajorVersion                               : 0
+OsServicePackMinorVersion                               : 0
+OsStatus                                                : OK
+OsSuites                                                : {TerminalServices, TerminalServicesSingleSession}
+OsServerLevel                                           :
+KeyboardLayout                                          : en-US
+TimeZone                                                : (UTC-08:00) Pacific Time (US & Canada)
+LogonServer                                             : \\ASCINLAP31921
+PowerPlatformRole                                       : Mobile
+HyperVisorPresent                                       : True
+HyperVRequirementDataExecutionPreventionAvailable       :
+HyperVRequirementSecondLevelAddressTranslation          :
+HyperVRequirementVirtualizationFirmwareEnabled          :
+HyperVRequirementVMMonitorModeExtensions                :
+DeviceGuardSmartStatus                                  : Off
+DeviceGuardRequiredSecurityProperties                   : {0}
+DeviceGuardAvailableSecurityProperties                  : {BaseVirtualizationSupport, SecureBoot, DMAProtection, 5...}
+DeviceGuardSecurityServicesConfigured                   : {3}
+DeviceGuardSecurityServicesRunning                      : {CredentialGuard}
+DeviceGuardCodeIntegrityPolicyEnforcementStatus         : EnforcementMode
+DeviceGuardUserModeCodeIntegrityPolicyEnforcementStatus : Off
+
+
+
+PS C:\Users\revathi.banuka.ASCENDION> Get-Process
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    241      14     6412      13712              8948   0 AggregatorHost
+    642      36    34760      48372             23524   0 AOTAgent
+    423      27    16656      39244       0.63   1432  12 ApplicationFrameHost
+    504      56    40744      33160             14328   0 AppProvisioningPlugin
+    143       8     1276       5496              5980   0 ApsInsMonSvc
+    173       9     1756       6760              5828   0 ApsInsSvc
+    145      10     1780       7356             20104   0 armsvc
+    247      12     6796      15900       0.09  11992   0 audiodg
+    240      20    15272      33544       0.27   1464  12 chrome
+    381      33   125104     193168       4.42   8388  12 chrome
+    351      29    37964      88156       0.61  11408  12 chrome
+    387      38   113604     181680      24.70  15888  12 chrome
+    322      30    27240      61832       0.23  21400  12 chrome
+    302      26    25820      56912       0.28  21684  12 chrome
+   1583      67    77452     182976      14.20  24860  12 chrome
+    434      35    28076      60336       3.89  26832  12 chrome
+    268      24    20048      42728       0.23  29020  12 chrome
+    233      16    12276      14400       0.14  29240  12 chrome
+   1053      38   173904     208992      18.92  29392  12 chrome
+    697      55   148640     130816       6.39  22364  12 CiscoCollabHost
+   1207      66   148644     136520              5860   0 CloudEndpointService
+    179      12     3120       7568             20424   0 CNTAoSMgr
+    119       8     5328       5348              1996   0 conhost
+    119       8     5332       5908              2700   0 conhost
+    119       8     5344       5084              6284   0 conhost
+    119       8     5344       5032              8088   0 conhost
+    119       8     5356       5040              8096   0 conhost
+    119       8     5340       4980              8332   0 conhost
+    119       8     5340       5076              9244   0 conhost
+    162      10     5780       8288             13160   0 conhost
+    162      10     5780       2384             14280   0 conhost
+    119       8     5340       5344             20376   0 conhost
+    162      10     5800       8276             22564   0 conhost
+    142       8     1368       8328       0.02  28700  12 conhost
+    207      11     2340       8604              6684   0 CptService
+    733      79    25096      79588       6.72  19772  12 CrossDeviceService
+   1098      38     2624       6020              1248   0 csrss
+    766      27     3060       7948              3868  12 csrss
+    566      25    13136      34172       1.58  28504  12 ctfmon
+    606      21     9368      17804              5904   0 DAX3API
+    277      16     8384      18036             30120  12 DAX3API
+    333      35     8928      20508       0.59  25156  12 dllhost
+    533      19    10000      17576             10476   0 dsagent
+   1635      67   175496     216412             24456  12 dwm
+    437      22    14620      23812              6496   0 EndpointBasecamp
+    238      14     8276      12912              7416   0 EndpointBasecamp
+    238      14     8492      14240              7964   0 EndpointBasecamp
+    238      14     8704      13696              8056   0 EndpointBasecamp
+    742      42    40048      43892              8912   0 EndpointBasecamp
+    143       9     1892       5992              5972   0 esif_uf
+   3089      93   140396     228860      15.97  20900  12 explorer
+    634      24    24900      19448              5416   0 FCDBLog
+    464      18     5832      22180             22336   0 FileSyncHelper
+    214      10     1840       7596              5876   0 FMService64
+     42       7     1916       2988              1696   0 fontdrvhost
+     42      15     7604      13028              4544  12 fontdrvhost
+    372      24    11044      16540              6904   0 FortiESNAC
+    216      17     7656      10116              6956   0 FortiSettings
+    223      17     7856      10716              6940   0 FortiSSLVPNdaemon
+    817      32    13956      34624       2.11  19028  12 FortiTray
+    138      10     1956       5744              3512   0 ibmpmsvc
+      0       0       60          8                 0   0 Idle
+    199      11     2320       9836              2876   0 igfxCUIServiceN
+    335      20     9172      20108       0.67   6084  12 igfxEMN
+    195      17     8480      16588       0.33  21136  12 igfxextN
+    440      61    37204      28008              5988   0 IntelAudioService
+    153       8     1464       5664              2200   0 IntelCpHDCPSvc
+    624      52    34348      43832              6024   0 InventoryService
+    364      86     5924      18660             23356   0 iVPAgent
+    148       9     1320       5968              6128   0 jhi_service
+   1050      61    33544      58300              5868   0 Lenovo.Modern.ImController
+    615      34    27876      43996             10300   0 Lenovo.Modern.ImController.PluginHost.Device
+    828      50    42892       8012       2.30  17296  12 LenovoVantage-(GenericMessagingAddin)
+    867      65    43268       6212             16068   0 LenovoVantage-(VantageCoreAddin)
+   2538      62    57156      75664              5736   0 LenovoVantageService
+  57607    7191     2384       7656              3536   0 LITSSvc
+    228      12     3232      16100              5692   0 LMS
+    853      38    48512     103752       1.94  28760  12 LockApp
+    318      25    13064      12532              8316   0 LogServer
+     72      46     3732       4192              1436   0 LsaIso
+   2483      33    18192      37040              1452   0 lsass
+      0       0     3280     316252              4316   0 Memory Compression
+   2076      79    72876      95340             23100   0 Microsoft.Management.Services.IntuneWindowsAgent
+    533      41    16280      27772              5724   0 MicrosoftSearchInBing
+    303      21    14252      29748             15504   0 MoUsoCoreWorker
+    564      41    97284     120836       3.45  10160  12 Move Mouse
+   1702      46   227396     230976      15.11    968  12 msedge
+    519      31   124192     184264       3.05   4644  12 msedge
+    379      31    79552     142796       1.05   8604  12 msedge
+    372      34   119920     180836       5.27  11496  12 msedge
+    291      28    44700      78508       2.84  11876  12 msedge
+    429      36    26228      56540       3.80  12152  12 msedge
+    365      33   115524     181756       2.59  15248  12 msedge
+    211      17    17100      31176       0.75  15708  12 msedge
+    362      32    79228     139768       1.55  15964  12 msedge
+    274      20    14960      33784       0.28  16388  12 msedge
+    532      40   131424     199644       8.83  23496  12 msedge
+    195      17    13448      26772       0.13  23800  12 msedge
+    242      22    22044      41360       0.13  27124  12 msedge
+    255      15     7908      13872       0.27  27896  12 msedge
+   2074      90   125604     250232      24.06  28068  12 msedge
+    287      24    26332      55868       0.89  28100  12 msedge
+    199      16    16176      27084       0.86  13440  12 msedgewebview2
+    260      20    13940      27100       0.70  16780  12 msedgewebview2
+   1220      43   152888     170416      18.09  18456  12 msedgewebview2
+    191      15     7816      13580       0.27  18864  12 msedgewebview2
+    494      62   522064     581892      84.97  27296  12 msedgewebview2
+    380      29    18320      44280       1.89  29968  12 msedgewebview2
+   1390      58    75216     160580      20.08  30068  12 msedgewebview2
+   1260      63    64892     117340       8.91  17332  12 ms-teams
+   1289      63    83340      99408       3.27  24524  12 ms-teams
+   3079      69   144836      10664              6172   0 Ntrtscan
+    875      28    46092      56964             26804   0 OfficeClickToRun
+    908      36    25900      50004             10664   0 omadmclient
+    165      13     6864      12880             29200   0 omadmprc
+    645      37    22452      32676              5936   0 OneApp.IGCC.WinService
+   1141      67    91612     156396       5.80  26628  12 OneDrive
+    298      19     9448       5492       0.69  28252  12 ONENOTEM
+    324      18     8632      21032       0.45  28216  12 OpenConsole
+    382      29    11652      29116       0.69  12008  12 PanGPA
+    332      22    11936      16916              6364   0 PanGPS
+   1428     104    78684     176964       3.22  29156  12 PhoneExperienceHost
+    452      28     9344       8520       1.17   4120  12 PowerMgr
+    782      39    78868      98500       2.30  29720  12 powershell
+      0      18    11548      27196               140   0 Registry
+    400      14     4116      12112              6224   0 RtkAudUService64
+    368      18     8804       5908       0.83  10468  12 RtkAudUService64
+    363      18     8720      18728             23136  12 RtkAudUService64
+    548      26    11856      41752       2.25   2560  12 RuntimeBroker
+    300      17     8640      24836       0.23   3812  12 RuntimeBroker
+    186      13     4620      13932       0.52   9204  12 RuntimeBroker
+    185      13     4592      13888       0.28  10860  12 RuntimeBroker
+    153      10     3716       9880       0.20  14424  12 RuntimeBroker
+    165      11     4248      12040       0.17  15824  12 RuntimeBroker
+    816      36    16664      55312       2.02  16976  12 RuntimeBroker
+    425      24     8156      31648       0.92  17784  12 RuntimeBroker
+    177      12     4516      13436       0.19  25852  12 RuntimeBroker
+    579      18     5724      18172              4672   0 scheduler
+   1881     158   221040     322624       9.98  27736  12 SearchHost
+    861      28    38152      48580             23148   0 SearchIndexer
+    268       9     1704       1800             26808  12 SearchProtocolHost
+      0       0      184      40856               108   0 Secure System
+    662      29     8468      22040              2240   0 SecurityHealthService
+    229      15     7540      16248       0.28  30356  12 SecurityHealthSystray
+   1009      15     8692      12416              1416   0 services
+    638      32    41624      20832       0.27  10620  12 ShellExperienceHost
+    378      19     8788      18684             17772  12 shtctky
+    681      26    11980      39584       6.64  18440  12 sihost
+    316      19     9444      21792       0.25  11668  12 smartscreen
+    196      12     1948      10160              5444   0 SmartStandby
+     58       4     1156       1160               900   0 smss
+    471      24     6264      18084              4748   0 spoolsv
+   1035      51    88116     150596       3.33  15204  12 StartMenuExperienceHost
+    290      11     2632       3172             26564   0 SupportConnector
+    202      12     2728      11912                 8   0 svchost
+    178      36     7588      11448               944   0 svchost
+    213      14     1980       7476               948   0 svchost
+    314      17     3804      12976              1096   0 svchost
+   2770      32    34188      54308              1660   0 svchost
+   2199      22    21948      25824              1840   0 svchost
+    580      14     4472      13056              1908   0 svchost
+    112      10     1264       5064              2036   0 svchost
+    482      18     4428      14192              2044   0 svchost
+    440      14     2968      10388              2052   0 svchost
+    258      13     3020      10584              2084   0 svchost
+    515      10     2456       9708              2124   0 svchost
+    213      11     2496      10560              2208   0 svchost
+    347      13     2944       9012              2256   0 svchost
+   1117      23     9484      19408              2280   0 svchost
+    130       9     1608       5524              2292   0 svchost
+    189      10     2144       7780              2384   0 svchost
+    393      12     3256      12116              2396   0 svchost
+    259      12     3500       8420              2572   0 svchost
+    233      15     2396       9528              2664   0 svchost
+    287      15     4916      15136              2692   0 svchost
+    183       9     1748       6936              2796   0 svchost
+    358      17     4496      10220              2884   0 svchost
+    210      11     2304       7436              2944   0 svchost
+    540      22     9204      35964       4.94   3112  12 svchost
+    182       8     4448       7184              3196   0 svchost
+    443      22     8096      17144              3504   0 svchost
+    154      10     1840       7968              3516   0 svchost
+    274      15     2716       7520              3532   0 svchost
+    124       8     1484       6500              3652   0 svchost
+    367      12     2468      12252              3832   0 svchost
+    324      12    26072      29392              4060   0 svchost
+    570      17    26568      24856              4216   0 svchost
+    254      18     3660      12932              4244   0 svchost
+    251       8     1280       5532              4252   0 svchost
+    251      11     2220       8704              4300   0 svchost
+    200      14     2328       8980              4308   0 svchost
+    526      16     4804      15588              4476   0 svchost
+    169       9     1532       6952              4504   0 svchost
+    223      12     2288       9852              4572   0 svchost
+    581      31     7544      21528              4624   0 svchost
+    348      15     3608      13864              4648   0 svchost
+    514      36    20024      24996              4860   0 svchost
+   2959      50    93224      68052              4880   0 svchost
+    194      11     2016       7568              4984   0 svchost
+    170      13     1720       7176              5048   0 svchost
+    214      13     2552       8772              5136   0 svchost
+    154      13     1652       6852              5500   0 svchost
+    881      31    34292      19824              5844   0 svchost
+    799      31    23020      43524              5852   0 svchost
+    415      29    26572      35896              5944   0 svchost
+    376      21     2876      10816              6096   0 svchost
+    152       9     1812       7240              6292   0 svchost
+    138       8     1356       5416              6608   0 svchost
+    628      22    17076      25868              6624   0 svchost
+    468      22     5452      21996              6704   0 svchost
+    347      15     4292      12512              7972   0 svchost
+    202      16     6784      10000              8880   0 svchost
+    150      10     2024       9560       0.17   9192  12 svchost
+    124       8     1364       6564              9296   0 svchost
+    193      11     2500      12068       0.06   9852  12 svchost
+    407      21     5564      19540              9936   0 svchost
+    504      25    28348      25636             10768   0 svchost
+    475      26     6420      22796             11120   0 svchost
+    323      16    10208      24264             11648   0 svchost
+    161      42     1720       6924             11772   0 svchost
+    228      12     3056      12340             12240   0 svchost
+    266      12     2532       8452             13108   0 svchost
+    170      11     1972       9180             13404   0 svchost
+    213      13     2484      11816             13604   0 svchost
+    290      15     3460      11724             13896   0 svchost
+    199      10     1960       8736             13904   0 svchost
+    655      19     6708      19912             14108   0 svchost
+    113       8     1188       6184             14168   0 svchost
+    206      13     1784       7752             14256   0 svchost
+    486      19     6348      28628       1.41  16320  12 svchost
+    149       9     1680       9960       0.05  16568  12 svchost
+    605      37    12320      23544             16692   0 svchost
+    256      14    10452      16352             16836   0 svchost
+    231      16     2312       7388             17044   0 svchost
+    321      15     3308      13184             17372   0 svchost
+    145       9     1460       7216             17396   0 svchost
+    337      18     4616      19696             17832   0 svchost
+    182      10     1984       7576             18136   0 svchost
+    378      20     8008      23584             19256   0 svchost
+    499      25     3820      13048             19792   0 svchost
+    176      10     1824       7852             21284   0 svchost
+    184      12     4384      13308             22648   0 svchost
+    221      11     2296      10664             23436   0 svchost
+    128       9     1780       7312             24044   0 svchost
+    149       9     2024       9568       0.14  27348  12 svchost
+    474      50    13236      27144             28296   0 svchost
+    201      11     2004      10752             28324   0 svchost
+    437      26     6000      24164       0.52  28584  12 svchost
+    254      14     3336      17212       0.13  30124  12 svchost
+    147       9     1520       7144             30392   0 svchost
+    258      15     3400      18624       0.08  30656  12 svchost
+     80       6      792       3484              6240   0 SynRpcServer
+    950      32    17288      39780       1.38  27284  12 SynTPEnh
+    427      15     5452      11736              3720   0 SynTPEnhService
+    265      14     7848      13128       0.28  23244  12 SynTPHelper
+   8028       0       92      14856                 4   0 System
+   1229      62    71640      11148       2.08  12144  12 SystemSettings
+    343      45    14096      25724       1.03   2972  12 taskhostw
+    135       8     1436       5320              6272   0 TbtP2pShortcutService
+    678      37    36136      45840       1.67   6700  12 TeamViewer
+    647      37    21704      29008              6312   0 TeamViewer_Service
+    236      19    10228      19420             20228   0 TiWorker
+   1142      41   209688     146244             14580   0 TMBMSRV
+   2445      75   193220      14348              5760   0 TmCCSF
+   1526      84   117320      21108              7908   0 TmListen
+    351      23     6004      15808             21512   0 TmPfw
+    148      11    34728      11328              8032   0 TmsaInstance64
+    288      15    11540      17500              1528   0 TmSSClient
+    195      12     4128       9740              6392   0 tmwscsvc
+    392      16     4112      13348              7512   0 tphkload
+    258      22     8032      17068       0.50    564  12 tposd
+    145      10     2172       8516             27208   0 TrustedInstaller
+    349      19     7988      15908             15908  12 tv_w32
+    330      16     7664      15516             27628  12 tv_x64
+    981      89    64860      43368              6788   0 UDClientService
+    417      14     5720      16228              4580   0 uhssvc
+    171      15     7496      15184       0.16  23464  12 UserOOBEBroker
+    436      24    13164      25060       1.47   1640  12 WebexHost
+    713      35    15156      50104       1.95  21068  12 Widgets
+    312      20     7816      24240       0.47  16812  12 WidgetService
+    733      36   101956     145856       2.70  11320  12 WindowsTerminal
+    194      12     1808       7356              1336   0 wininit
+    269      13     2560      11820              9208  12 winlogon
+    169      13     7056      10216             15352   0 wlanext
+    210      14     6248      13824              2704   0 WmiPrvSE
+    191      13     5212      10984             13488   0 WmiPrvSE
+    353      21     7056      19228             27788   0 WmiPrvSE
+    564      24    16000      28964             30292   0 WmiPrvSE
+    288      15     3072      21560              6672   0 WMIRegistrationService
+    534      28    11728      19908              6596   0 WSCommunicator
+    330      11     5480       8164              1728   0 WUDFHost
+    418      19    15400      24068              1984   0 WUDFHost
+    300      13     2492       9356              2976   0 WUDFHost
+    219       8     1424       5648              3440   0 WUDFHost
+    226       8     1692       6024              3824   0 WUDFHost
+    235       9     1580       6136              3952   0 WUDFHost
+    431      16     7100      14968              6664   0 ZSAService
+    915      53   114492     142024       4.89  20940  12 ZSATray
+    590      21     8100      27964             24040   0 ZSATrayManager
+   1882     132    40500      47064             21832   0 ZSATunnel
+
+
+PS C:\Users\revathi.banuka.ASCENDION> Get-Date
+
+21 April 2025 19:29:23
+
+
+PS C:\Users\revathi.banuka.ASCENDION> Get-Data
+Get-Data : The term 'Get-Data' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Data
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Data:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Get-Data : The term 'Get-Data' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Get-Data
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-Data:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\revathi.banuka.ASCENDION> Get-NetAdapter
+
+Name                      InterfaceDescription                    ifIndex Status       MacAddress             LinkSpeed
+----                      --------------------                    ------- ------       ----------             ---------
+Ethernet 3                Fortinet Virtual Ethernet Adapter (N...      26 Disconnected 00-09-0F-FE-00-01       100 Mbps
+Ethernet 4                Fortinet SSL VPN Virtual Ethernet Ad...      20 Not Present  00-09-0F-AA-00-01          0 bps
+Ethernet 5                PANGP Virtual Ethernet Adapter Sec...#2      19 Disabled     02-50-41-00-00-01         2 Gbps
+Wi-Fi                     Intel(R) Wi-Fi 6E AX210 160MHz               17 Up           84-7B-57-E5-FB-D7       1.2 Gbps
+Ethernet                  Intel(R) Ethernet Connection (13) I2...      13 Disconnected 6C-24-08-A1-46-52          0 bps
+Bluetooth Network Conn... Bluetooth Device (Personal Area Netw...       7 Disconnected 84-7B-57-E5-FB-DB         3 Mbps
+Local Area Connection     PPPoP WAN Adapter                             3 Disconnected 00-00-00-00-00-00          0 bps
+
+
+PS C:\Users\revathi.banuka.ASCENDION> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421193154
+**********************
