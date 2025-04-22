@@ -1,0 +1,74 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422100043
+Username: ASCENDION\jeevanaa.selvan
+RunAs User: ASCENDION\jeevanaa.selvan
+Configuration Name: 
+Machine: ASCINLAP61684 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 19420
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\task1.txt
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> echo New assignment C:\Users\jeevanaa.selvan\Documents\task11.txt
+New
+assignment
+C:\Users\jeevanaa.selvan\Documents\task11.txt
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> where /r C:\ task1.txt
+>> TerminatingError(Where-Object): "A positional parameter cannot be found that accepts argument 'task1.txt'."
+Where-Object : A positional parameter cannot be found that accepts argument 'task1.txt'.
+At line:1 char:1
++ where /r C:\ task1.txt
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Where-Object], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.WhereObjectCommand
+Where-Object : A positional parameter cannot be found that accepts argument 'task1.txt'.
+At line:1 char:1
++ where /r C:\ task1.txt
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Where-Object], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.WhereObjectCommand
+
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> copy C:\Users\jeevanaa.selvan\Documents\task1.txt C:\Copied\
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Copy-Item -Path "C:\Users\jeevanaa.selvan\Documents\task1.txt" -Destination "C:\Copied\"
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Test-Path "C:\Users\jeevanaa.selvan\Documents\task1.txt"
+True
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Copy-Item -Path "C:\Users\jeevanaa.selvan\Documents\task1.txt" -Destination "C:\Copied\"
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Get-ChildItem -Path "C:\Copied\"
+
+
+    Directory: C:\Copied
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-04-2025     23:00             19 task1.txt
+
+
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Move-Item -Path "C:\Source\path\to\file.txt" -Destination "C:\Moved\"
+Move-Item : Cannot find path 'C:\Source\path\to\file.txt' because it does not exist.
+At line:1 char:1
++ Move-Item -Path "C:\Source\path\to\file.txt" -Destination "C:\Moved\"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Source\path\to\file.txt:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : Cannot find path 'C:\Source\path\to\file.txt' because it does not exist.
+At line:1 char:1
++ Move-Item -Path "C:\Source\path\to\file.txt" -Destination "C:\Moved\"
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Source\path\to\file.txt:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Move-Item -Path "C:\Users\jeevanaa.selvan\Documents\task1.txt" -Destination "C:\Moved\"
+PS C:\Users\jeevanaa.selvan\QA-Training1\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422101617
+**********************
