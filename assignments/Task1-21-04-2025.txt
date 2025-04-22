@@ -1,0 +1,107 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421220131
+Username: ASCENDION\anudharshini.kamaraj
+RunAs User: ASCENDION\anudharshini.kamaraj
+Configuration Name: 
+Machine: ASCINLAP60852 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14112
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\anudharshini.kamaraj\Documents\Task1-21-04-2025.txt
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> date
+
+21 April 2025 22:01:42
+
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Rename demo.txt demo1.txt
+Rename : The term 'Rename' is not recognized as the name of a cmdlet, function, script file, or operable program. Check 
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Rename demo.txt demo1.txt
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Rename:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Rename : The term 'Rename' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Rename demo.txt demo1.txt
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Rename:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Move demo.txt demo1.txt
+Move : Cannot find path 'C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025\demo.txt' because it does not exist.
+At line:1 char:1
++ Move demo.txt demo1.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\anudha...042025\demo.txt:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move : Cannot find path 'C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025\demo.txt' because it does not exist.
+At line:1 char:1
++ Move demo.txt demo1.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\anudha...042025\demo.txt:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Set-Location C:\Users\anudharshini.kamaraj
+PS C:\Users\anudharshini.kamaraj> move demo.txt demo1.txt
+move : Cannot find path 'C:\Users\anudharshini.kamaraj\demo.txt' because it does not exist.
+At line:1 char:1
++ move demo.txt demo1.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\anudharshini.kamaraj\demo.txt:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+move : Cannot find path 'C:\Users\anudharshini.kamaraj\demo.txt' because it does not exist.
+At line:1 char:1
++ move demo.txt demo1.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\anudharshini.kamaraj\demo.txt:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\anudharshini.kamaraj> move demo1.txt demo.txt
+PS C:\Users\anudharshini.kamaraj> Mkdir
+
+
+    Directory: C:\Users\anudharshini.kamaraj
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        21-04-2025     22:15                hello
+d-----        21-04-2025     22:15                hello 1
+
+
+PS C:\Users\anudharshini.kamaraj> time
+time : The term 'time' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ time
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (time:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+time : The term 'time' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ time
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (time:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\anudharshini.kamaraj> select disk
+PS C:\Users\anudharshini.kamaraj> del demo.txt
+PS C:\Users\anudharshini.kamaraj> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421222219
+**********************

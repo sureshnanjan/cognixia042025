@@ -1,0 +1,207 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250421215234
+Username: ASCENDION\anudharshini.kamaraj
+RunAs User: ASCENDION\anudharshini.kamaraj
+Configuration Name: 
+Machine: ASCINLAP60852 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 1376
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\anudharshini.kamaraj\Documents\Task2-21-04-2025.txt
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.22621.4391
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, ...
+BuildVersion                   10.0.22621.4391
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> $PSVersionTable.PSVersion
+
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+5      1      22621  4391
+
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Get-Verb
+
+Verb        Group
+----        -----
+Add         Common
+Clear       Common
+Close       Common
+Copy        Common
+Enter       Common
+Exit        Common
+Find        Common
+Format      Common
+Get         Common
+Hide        Common
+Join        Common
+Lock        Common
+Move        Common
+New         Common
+Open        Common
+Optimize    Common
+Pop         Common
+Push        Common
+Redo        Common
+Remove      Common
+Rename      Common
+Reset       Common
+Resize      Common
+Search      Common
+Select      Common
+Set         Common
+Show        Common
+Skip        Common
+Split       Common
+Step        Common
+Switch      Common
+Undo        Common
+Unlock      Common
+Watch       Common
+Backup      Data
+Checkpoint  Data
+Compare     Data
+Compress    Data
+Convert     Data
+ConvertFrom Data
+ConvertTo   Data
+Dismount    Data
+Edit        Data
+Expand      Data
+Export      Data
+Group       Data
+Import      Data
+Initialize  Data
+Limit       Data
+Merge       Data
+Mount       Data
+Out         Data
+Publish     Data
+Restore     Data
+Save        Data
+Sync        Data
+Unpublish   Data
+Update      Data
+Approve     Lifecycle
+Assert      Lifecycle
+Complete    Lifecycle
+Confirm     Lifecycle
+Deny        Lifecycle
+Disable     Lifecycle
+Enable      Lifecycle
+Install     Lifecycle
+Invoke      Lifecycle
+Register    Lifecycle
+Request     Lifecycle
+Restart     Lifecycle
+Resume      Lifecycle
+Start       Lifecycle
+Stop        Lifecycle
+Submit      Lifecycle
+Suspend     Lifecycle
+Uninstall   Lifecycle
+Unregister  Lifecycle
+Wait        Lifecycle
+Debug       Diagnostic
+Measure     Diagnostic
+Ping        Diagnostic
+Repair      Diagnostic
+Resolve     Diagnostic
+Test        Diagnostic
+Trace       Diagnostic
+Connect     Communications
+Disconnect  Communications
+Read        Communications
+Receive     Communications
+Send        Communications
+Write       Communications
+Block       Security
+Grant       Security
+Protect     Security
+Revoke      Security
+Unblock     Security
+Unprotect   Security
+Use         Other
+
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Get-Command -Noun alias*
+
+CommandType     Name
+-----------     ----
+Cmdlet          Export-Alias
+Cmdlet          Get-Alias
+Cmdlet          Import-Alias
+Cmdlet          New-Alias
+Cmdlet          Set-Alias
+
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Get-Command -Verb Get -Noun alias*
+
+CommandType     Name
+-----------     ----
+Cmdlet          Get-Alias
+
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Get-Command -Noun File*
+
+CommandType     Name
+-----------     ----
+Alias           Write-FileSystemCache
+Alias           Write-FileSystemCache
+Function        Block-FileShareAccess
+Function        Clear-FileStorageTier
+Function        Debug-FileShare
+Function        Get-FileHash
+Function        Get-FileIntegrity
+Function        Get-FileShare
+Function        Get-FileShareAccessControlEntry
+Function        Get-FileStorageTier
+Function        Grant-FileShareAccess
+Function        New-FileShare
+Function        Remove-FileShare
+Function        Repair-FileIntegrity
+Function        Revoke-FileShareAccess
+Function        Set-FileIntegrity
+Function        Set-FileShare
+Function        Set-FileStorageTier
+Function        Unblock-FileShareAccess
+Cmdlet          New-FileCatalog
+Cmdlet          Out-File
+Cmdlet          Test-FileCatalog
+Cmdlet          Unblock-File
+
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Get-Command -Verb Get -Noun File*
+
+CommandType     Name
+-----------     ----
+Function        Get-FileHash
+Function        Get-FileIntegrity
+Function        Get-FileShare
+Function        Get-FileShareAccessControlEntry
+Function        Get-FileStorageTier
+
+
+PS C:\Users\anudharshini.kamaraj\QA-training 1\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250421215438
+**********************
