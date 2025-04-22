@@ -1,0 +1,213 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422132320
+Username: ASCENDION\aviral.anand
+RunAs User: ASCENDION\aviral.anand
+Configuration Name: 
+Machine: ASCINLAP60896 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 19488
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Task1.txt
+PS C:\Users\aviral.anand> dir
+
+
+    Directory: C:\Users\aviral.anand
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        30-09-2024     11:50                .anaconda
+d-----        21-04-2025     18:00                .android
+d-----        30-09-2024     11:50                .conda
+d-----        30-09-2024     11:50                .continuum
+d-----        05-11-2024     15:18                .ipynb_checkpoints
+d-----        15-10-2024     14:00                .ipython
+d-----        15-10-2024     13:58                .jupyter
+d-----        16-10-2024     12:15                .matplotlib
+d-----        27-09-2024     14:48                .ms-ad
+d-----        16-10-2024     15:13                .streamlit
+d-----        14-10-2024     16:52                .vscode
+d-----        22-04-2025     12:10                cognixia042025
+d-r---        26-09-2024     15:14                Contacts
+d-----        22-04-2025     11:41                DemoFolder
+d-----        14-04-2025     13:17                doc
+d-----        25-10-2024     10:18                Documents
+dar---        22-04-2025     11:22                Downloads
+d-r---        26-09-2024     15:14                Favorites
+d-r---        26-09-2024     15:14                Links
+d-----        30-09-2024     10:28                Microsoft
+d-r---        26-09-2024     15:14                Music
+d-r---        26-09-2024     15:27                OneDrive
+dar--l        22-04-2025     09:55                OneDrive - ascendion
+d-r---        10-12-2024     12:59                Pictures
+d-----        21-04-2025     12:08                QA-Training
+d-r---        26-09-2024     15:14                Saved Games
+d-r---        26-09-2024     15:24                Searches
+d-----        24-10-2024     12:03                source
+d-----        14-04-2025     13:17                tessdata
+d-r---        15-10-2024     09:12                Videos
+-a----        21-04-2025     12:28             26 .gitconfig
+-a----        14-04-2025     14:43             46 .python_history
+-a----        22-04-2025     11:59            854 .viminfo
+-a----        11-11-2024     12:55          17823 ambiguous_words.1.html
+-a----        11-11-2024     12:55          59528 ambiguous_words.exe
+-a----        16-10-2024     15:26           8884 Aviral.ipynb
+-a----        11-11-2024     12:55          19529 classifier_tester.1.html
+-a----        11-11-2024     12:55         205960 classifier_tester.exe
+-a----        11-11-2024     12:55          18156 cntraining.1.html
+-a----        11-11-2024     12:56         206984 cntraining.exe
+-a----        11-11-2024     12:55          21055 combine_lang_model.1.html
+-a----        11-11-2024     12:56         139400 combine_lang_model.exe
+-a----        11-11-2024     12:55          27130 combine_tessdata.1.html
+-a----        11-11-2024     12:56          64648 combine_tessdata.exe
+-a----        11-11-2024     12:55          18336 dawg2wordlist.1.html
+-a----        11-11-2024     12:56          57992 dawg2wordlist.exe
+-a----        14-10-2024     10:40         790117 libarchive-13.dll
+-a----        18-02-2022     20:33          34372 libb2-1.dll
+-a----        04-11-2024     09:17         143397 libbrotlicommon.dll
+-a----        04-11-2024     09:17          61436 libbrotlidec.dll
+-a----        27-09-2023     12:27         100964 libbz2-1.dll
+-a----        01-09-2024     23:33        1224975 libcairo-2.dll
+-a----        27-10-2024     14:22        5298204 libcrypto-3-x64.dll
+-a----        08-11-2024     14:42        1006162 libcurl-4.dll
+-a----        06-06-2023     01:05          34386 libdatrie-1.dll
+-a----        02-11-2024     02:48          94619 libdeflate.dll
+-a----        08-11-2024     16:29         192011 libexpat-1.dll
+-a----        20-02-2024     01:46          33708 libffi-8.dll
+-a----        21-02-2024     03:31         350185 libfontconfig-1.dll
+-a----        13-08-2024     11:09         787954 libfreetype-6.dll
+-a----        27-09-2024     13:51         156403 libfribidi-0.dll
+-a----        04-11-2024     02:48         151731 libgcc_s_seh-1.dll
+-a----        21-02-2024     14:34          41367 libgif-7.dll
+-a----        19-10-2024     17:42        1830118 libgio-2.0-0.dll
+-a----        19-10-2024     17:42        1481203 libglib-2.0-0.dll
+-a----        19-10-2024     17:42          26783 libgmodule-2.0-0.dll
+-a----        19-10-2024     17:42         356817 libgobject-2.0-0.dll
+-a----        27-09-2023     13:29         152538 libgraphite2.dll
+-a----        08-11-2024     23:02        1357741 libharfbuzz-0.dll
+-a----        02-02-2024     18:18        1118202 libiconv-2.dll
+-a----        20-06-2024     14:34       30743046 libicudt75.dll
+-a----        20-06-2024     14:34        3381215 libicuin75.dll
+-a----        20-06-2024     14:34        1932464 libicuuc75.dll
+-a----        02-02-2024     14:18         242965 libidn2-0.dll
+-a----        23-02-2024     13:11         188681 libintl-8.dll
+-a----        18-08-2023     15:17          62083 libjbig-0.dll
+-a----        13-10-2024     11:34         924010 libjpeg-8.dll
+-a----        19-10-2024     17:34        2774254 libleptonica-6.dll
+-a----        29-07-2022     14:04         761261 libLerc.dll
+-a----        23-07-2024     05:38         158649 liblz4.dll
+-a----        08-11-2024     22:34         187227 liblzma-5.dll
+-a----        29-02-2024     11:37         462194 libopenjp2-7.dll
+-a----        10-06-2024     12:37         411128 libpango-1.0-0.dll
+-a----        10-06-2024     12:37          74028 libpangocairo-1.0-0.dll
+-a----        10-06-2024     12:37         102773 libpangoft2-1.0-0.dll
+-a----        10-06-2024     12:37         115107 libpangowin32-1.0-0.dll
+-a----        10-06-2024     12:35         405881 libpcre2-8-0.dll
+-a----        08-11-2024     23:01         709180 libpixman-1-0.dll
+-a----        14-09-2024     16:06         255572 libpng16-16.dll
+-a----        02-02-2024     18:39         103768 libpsl-5.dll
+-a----        16-04-2024     20:34          57852 libsharpyuv-0.dll
+-a----        10-09-2023     20:34         255839 libssh2-1.dll
+-a----        04-11-2024     02:48        2400680 libstdc++-6.dll
+-a----        11-11-2024     13:05        3336896 libtesseract-5.dll
+-a----        06-06-2023     01:07          69739 libthai-0.dll
+-a----        19-09-2024     17:35         600981 libtiff-6.dll
+-a----        29-03-2024     20:33        1999287 libunistring-5.dll
+-a----        16-04-2024     20:34         743580 libwebp-7.dll
+-a----        16-04-2024     20:34          78730 libwebpmux-3.dll
+-a----        31-10-2024     03:35          61343 libwinpthread-1.dll
+-a----        03-04-2024     01:29        1179848 libzstd.dll
+-a----        11-11-2024     12:55          19519 lstmeval.1.html
+-a----        11-11-2024     12:56         304776 lstmeval.exe
+-a----        11-11-2024     12:55          22643 lstmtraining.1.html
+-a----        11-11-2024     12:56         316040 lstmtraining.exe
+-a----        11-11-2024     12:55          18944 merge_unicharsets.1.html
+-a----        11-11-2024     12:56          55944 merge_unicharsets.exe
+-a----        11-11-2024     12:55          19427 mftraining.1.html
+-a----        11-11-2024     12:56         216712 mftraining.exe
+-a----        11-11-2024     12:55          19109 set_unicharset_properties.1.html
+-a----        11-11-2024     12:56         253064 set_unicharset_properties.exe
+-a----        11-11-2024     12:55          19448 shapeclustering.1.html
+-a----        11-11-2024     12:56         205960 shapeclustering.exe
+-a----        22-04-2025     13:23            621 Task1.txt
+-a----        22-04-2025     11:40           2259 Task_1.txt
+-a----        14-04-2025     13:17         154888 tesseract-uninstall.exe
+-a----        11-11-2024     12:55          42220 tesseract.1.html
+-a----        11-11-2024     13:04          86152 tesseract.exe
+-a----        11-11-2024     12:55          25663 text2image.1.html
+-a----        11-11-2024     12:57         368264 text2image.exe
+-a----        22-04-2025     11:42           4893 Text_1.txt
+-a----        11-11-2024     12:55          21249 unicharambigs.5.html
+-a----        11-11-2024     12:55          23829 unicharset.5.html
+-a----        11-11-2024     12:55          18811 unicharset_extractor.1.html
+-a----        11-11-2024     12:57         145544 unicharset_extractor.exe
+-a----        16-10-2024     15:25           8884 Untitled.ipynb
+-a----        16-10-2024     15:46           4733 Untitled1.ipynb
+-a----        17-10-2024     11:05          10581 Untitled2.ipynb
+-a----        05-11-2024     12:51          27199 Untitled3.ipynb
+-a----        05-11-2024     16:41          14524 Untitled4.ipynb
+-a----        11-11-2024     13:07          17602 winpath.exe
+-a----        11-11-2024     12:55          19492 wordlist2dawg.1.html
+-a----        11-11-2024     12:57          92808 wordlist2dawg.exe
+-a----        23-01-2024     13:19         120814 zlib1.dll
+
+
+PS C:\Users\aviral.anand> get date
+get : The term 'get' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get date
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (get:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get : The term 'get' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get date
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (get:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\aviral.anand> date
+
+22 April 2025 13:24:44
+
+
+PS C:\Users\aviral.anand> time
+time : The term 'time' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ time
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (time:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+time : The term 'time' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ time
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (time:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\aviral.anand> hostname
+
+PS C:\Users\aviral.anand> ping google.com
+
+PS C:\Users\aviral.anand> echo "PowerShell is awesome!" > note.txt
+>> ParameterBinding(Out-File): name="InputObject"; value="PowerShell is awesome!"
+PS C:\Users\aviral.anand> Get-Content note.txt
+PowerShell is awesome!
+PS C:\Users\aviral.anand> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422133239
+**********************

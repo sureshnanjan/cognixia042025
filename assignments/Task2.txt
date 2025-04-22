@@ -1,0 +1,207 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422133509
+Username: ASCENDION\aviral.anand
+RunAs User: ASCENDION\aviral.anand
+Configuration Name: 
+Machine: ASCINLAP60896 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 3216
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Task2.txt
+PS C:\Users\aviral.anand> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.22621.4391
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.22621.4391
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\aviral.anand> $PSVersionTable.PSVersion
+
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+5      1      22621  4391
+
+
+PS C:\Users\aviral.anand> Get-verb
+
+Verb        Group
+----        -----
+Add         Common
+Clear       Common
+Close       Common
+Copy        Common
+Enter       Common
+Exit        Common
+Find        Common
+Format      Common
+Get         Common
+Hide        Common
+Join        Common
+Lock        Common
+Move        Common
+New         Common
+Open        Common
+Optimize    Common
+Pop         Common
+Push        Common
+Redo        Common
+Remove      Common
+Rename      Common
+Reset       Common
+Resize      Common
+Search      Common
+Select      Common
+Set         Common
+Show        Common
+Skip        Common
+Split       Common
+Step        Common
+Switch      Common
+Undo        Common
+Unlock      Common
+Watch       Common
+Backup      Data
+Checkpoint  Data
+Compare     Data
+Compress    Data
+Convert     Data
+ConvertFrom Data
+ConvertTo   Data
+Dismount    Data
+Edit        Data
+Expand      Data
+Export      Data
+Group       Data
+Import      Data
+Initialize  Data
+Limit       Data
+Merge       Data
+Mount       Data
+Out         Data
+Publish     Data
+Restore     Data
+Save        Data
+Sync        Data
+Unpublish   Data
+Update      Data
+Approve     Lifecycle
+Assert      Lifecycle
+Complete    Lifecycle
+Confirm     Lifecycle
+Deny        Lifecycle
+Disable     Lifecycle
+Enable      Lifecycle
+Install     Lifecycle
+Invoke      Lifecycle
+Register    Lifecycle
+Request     Lifecycle
+Restart     Lifecycle
+Resume      Lifecycle
+Start       Lifecycle
+Stop        Lifecycle
+Submit      Lifecycle
+Suspend     Lifecycle
+Uninstall   Lifecycle
+Unregister  Lifecycle
+Wait        Lifecycle
+Debug       Diagnostic
+Measure     Diagnostic
+Ping        Diagnostic
+Repair      Diagnostic
+Resolve     Diagnostic
+Test        Diagnostic
+Trace       Diagnostic
+Connect     Communications
+Disconnect  Communications
+Read        Communications
+Receive     Communications
+Send        Communications
+Write       Communications
+Block       Security
+Grant       Security
+Protect     Security
+Revoke      Security
+Unblock     Security
+Unprotect   Security
+Use         Other
+
+
+PS C:\Users\aviral.anand> Get-Command -Noun alias*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Export-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Get-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Import-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          New-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Set-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+
+
+PS C:\Users\aviral.anand> Get-Command -Verb Get -Noun alias*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Get-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
+
+
+PS C:\Users\aviral.anand> Get-Command -Noun File*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           Write-FileSystemCache                              2.0.0.0    Storage
+Alias           Write-FileSystemCache                              1.0.0.0    VMDirectStorage
+Function        Block-FileShareAccess                              2.0.0.0    Storage
+Function        Clear-FileStorageTier                              2.0.0.0    Storage
+Function        Debug-FileShare                                    2.0.0.0    Storage
+Function        Get-FileHash                                       3.1.0.0    Microsoft.PowerShell.Utility
+Function        Get-FileIntegrity                                  2.0.0.0    Storage
+Function        Get-FileShare                                      2.0.0.0    Storage
+Function        Get-FileShareAccessControlEntry                    2.0.0.0    Storage
+Function        Get-FileStorageTier                                2.0.0.0    Storage
+Function        Grant-FileShareAccess                              2.0.0.0    Storage
+Function        New-FileShare                                      2.0.0.0    Storage
+Function        Remove-FileShare                                   2.0.0.0    Storage
+Function        Repair-FileIntegrity                               2.0.0.0    Storage
+Function        Revoke-FileShareAccess                             2.0.0.0    Storage
+Function        Set-FileIntegrity                                  2.0.0.0    Storage
+Function        Set-FileShare                                      2.0.0.0    Storage
+Function        Set-FileStorageTier                                2.0.0.0    Storage
+Function        Unblock-FileShareAccess                            2.0.0.0    Storage
+Cmdlet          New-FileCatalog                                    3.0.0.0    Microsoft.PowerShell.Security
+Cmdlet          Out-File                                           3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Test-FileCatalog                                   3.0.0.0    Microsoft.PowerShell.Security
+Cmdlet          Unblock-File                                       3.1.0.0    Microsoft.PowerShell.Utility
+
+
+PS C:\Users\aviral.anand> Get-Command -Verb Get -Noun File*
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        Get-FileHash                                       3.1.0.0    Microsoft.PowerShell.Utility
+Function        Get-FileIntegrity                                  2.0.0.0    Storage
+Function        Get-FileShare                                      2.0.0.0    Storage
+Function        Get-FileShareAccessControlEntry                    2.0.0.0    Storage
+Function        Get-FileStorageTier                                2.0.0.0    Storage
+
+
+PS C:\Users\aviral.anand> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422133908
+**********************
