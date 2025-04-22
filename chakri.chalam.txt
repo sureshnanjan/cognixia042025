@@ -1,0 +1,61 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422165849
+Username: ASCENDION\chakri.chalam
+RunAs User: ASCENDION\chakri.chalam
+Configuration Name: 
+Machine: ASCINLAP61925 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13544
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is chakri.chalam.txt
+PS C:\Users\chakri.chalam>  New-Item -Path C:\Users\chakri.chalam -Name ‘QA-Training’ -ItemType Directory
+New-Item : An item with the specified name C:\Users\chakri.chalam\QA-Training already exists.
+At line:1 char:2
++  New-Item -Path C:\Users\chakri.chalam -Name ‘QA-Training’ -ItemType  ...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\chakri.chalam\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name C:\Users\chakri.chalam\QA-Training already exists.
+At line:1 char:2
++  New-Item -Path C:\Users\chakri.chalam -Name ‘QA-Training’ -ItemType  ...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\chakri.chalam\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\chakri.chalam> git --version
+git version 2.44.0.windows.1
+PS C:\Users\chakri.chalam>  git clone https://github.com/sureshnanjan/cognixia042025.git
+Cloning into 'cognixia042025'...
+fatal: unable to access 'https://github.com/sureshnanjan/cognixia042025.git/': SSL certificate problem: unable to get local issuer ce
+rtificate
+PS C:\Users\chakri.chalam> git config --global http.sslVerify false
+
+PS C:\Users\chakri.chalam> git clone https://github.com/sureshnanjan/cognixia042025.git
+Cloning into 'cognixia042025'...
+remote: Enumerating objects: 300, done.
+remote: Counting objects: 100% (63/63), done.
+remote: Compressing objects: 100% (42/42), done.
+remote: Total 300 (delta 31), reused 47 (delta 20), pack-reused 237 (from 1)
+Receiving objects: 100% (300/300), 856.64 KiB | 132.00 KiB/s, done.
+Resolving deltas: 100% (116/116), done.
+PS C:\Users\chakri.chalam> Set-Location cognixia042025
+PS C:\Users\chakri.chalam\cognixia042025> git status
+
+PS C:\Users\chakri.chalam\cognixia042025>  git checkout -b chakri.chalam-branch
+
+PS C:\Users\chakri.chalam\cognixia042025>  git status
+
+PS C:\Users\chakri.chalam\cognixia042025> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422170642
+**********************
