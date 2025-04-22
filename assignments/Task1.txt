@@ -1,0 +1,86 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422113128
+Username: ASCENDION\sreelakshmi.c
+RunAs User: ASCENDION\sreelakshmi.c
+Configuration Name: 
+Machine: ASCINLAP61552 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 26832
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Task1.txt
+PS C:\Users\sreelakshmi.c> Set-Location QA-Training
+PS C:\Users\sreelakshmi.c\QA-Training>  Set-Location cognixia042025
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025>  Set-Location assignments
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments> add Task1.txt
+add : The term 'add' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ add Task1.txt
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (add:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+add : The term 'add' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of
+the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ add Task1.txt
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (add:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments> dir
+
+
+    Directory: C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        22-04-2025     10:57         153365 Task2.txt
+
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments> mkdir sample
+
+
+    Directory: C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        22-04-2025     11:34                sample
+
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments> rmdir sample
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments> move sample.txt ex.txt
+move : Cannot find path 'C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments\sample.txt' because it does not 
+exist.
+At line:1 char:1
++ move sample.txt ex.txt
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sreela...ents\sample.txt:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+move : Cannot find path 'C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments\sample.txt' because it does not exist.
+At line:1 char:1
++ move sample.txt ex.txt
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\sreela...ents\sample.txt:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments> netstat -an
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments> ping google.com
+
+PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422113637
+**********************
