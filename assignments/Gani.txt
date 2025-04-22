@@ -1,0 +1,68 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422090454
+Username: ASCENDION\ganesh.korasala
+RunAs User: ASCENDION\ganesh.korasala
+Configuration Name: 
+Machine: ASCINLAP60705 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2648
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Gani.txt
+PS C:\Users\ganesh.korasala> dir C:\Users\ganesh.korasala\QA-Training\cognixia042025
+
+
+    Directory: C:\Users\ganesh.korasala\QA-Training\cognixia042025
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/22/2025   8:59 AM                assignments
+-a----         4/21/2025   4:43 PM           2150 Abhi.txt
+-a----         4/21/2025   4:44 PM            177 Learning_Links.txt
+-a----         4/21/2025  12:27 PM             66 README.md
+-a----         4/21/2025   4:44 PM           2793 vaishnavi.txt
+
+
+PS C:\Users\ganesh.korasala> cd assignments
+cd : Cannot find path 'C:\Users\ganesh.korasala\assignments' because it does not exist.
+At line:1 char:1
++ cd assignments
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ganesh.korasala\assignments:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : Cannot find path 'C:\Users\ganesh.korasala\assignments' because it does not exist.
+At line:1 char:1
++ cd assignments
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\ganesh.korasala\assignments:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\ganesh.korasala> cd C:\Users\ganesh.korasala\QA-Training\cognixia042025
+PS C:\Users\ganesh.korasala\QA-Training\cognixia042025> mkdir sample.txt
+
+
+    Directory: C:\Users\ganesh.korasala\QA-Training\cognixia042025
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/22/2025   9:07 AM                sample.txt
+
+
+PS C:\Users\ganesh.korasala\QA-Training\cognixia042025> ren sample.txt sample1.txt
+PS C:\Users\ganesh.korasala\QA-Training\cognixia042025> del sample1.txt
+PS C:\Users\ganesh.korasala\QA-Training\cognixia042025> stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422090946
+**********************
