@@ -1,0 +1,76 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422174044
+Username: ASCENDION\chakri.chalam
+RunAs User: ASCENDION\chakri.chalam
+Configuration Name: 
+Machine: ASCINLAP61925 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 13544
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is task1.txt
+PS C:\Users\chakri.chalam\cognixia042025\assignments> dir
+
+
+    Directory: C:\Users\chakri.chalam\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         4/22/2025   5:04 PM            378 21-April.txt
+-a----         4/22/2025   5:04 PM            262 22-April.txt
+-a----         4/22/2025   5:40 PM              0 task1.txt
+-a----         4/22/2025   5:38 PM         175183 task2.txt
+
+
+PS C:\Users\chakri.chalam\cognixia042025\assignments> date
+
+Tuesday, April 22, 2025 5:41:08 PM
+
+
+PS C:\Users\chakri.chalam\cognixia042025\assignments> hostname
+
+PS C:\Users\chakri.chalam\cognixia042025\assignments> ping google.com
+
+PS C:\Users\chakri.chalam\cognixia042025\assignments> mkdir chakri
+
+
+    Directory: C:\Users\chakri.chalam\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         4/22/2025   5:42 PM                chakri
+
+
+PS C:\Users\chakri.chalam\cognixia042025\assignments> rmdir chakri
+PS C:\Users\chakri.chalam\cognixia042025\assignments> stop-transcprit
+stop-transcprit : The term 'stop-transcprit' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ stop-transcprit
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (stop-transcprit:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+stop-transcprit : The term 'stop-transcprit' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ stop-transcprit
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (stop-transcprit:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\chakri.chalam\cognixia042025\assignments> stop-transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422174341
+**********************
