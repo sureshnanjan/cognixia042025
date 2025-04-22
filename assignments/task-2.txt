@@ -106,3 +106,18 @@ Function        Get-FileShareAccessControlEntry
 Function        Get-FileStorageTier
 
 
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git commit -m "task-2"
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git push origin Mathumithaa-branch
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git add task-2.txt
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git commit -m "task-2"
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> git push origin Mathumithaa-branch
+
+PS C:\Users\mathumithaa.p\QA-Training\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422110541
+**********************
