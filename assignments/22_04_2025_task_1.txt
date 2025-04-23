@@ -1,0 +1,111 @@
+ Volume in drive C is Windows
+ Volume Serial Number is C677-40A3
+
+ Directory of C:\Users\sai.palleboina\cmds
+
+23-04-2025  16:51    <DIR>          .
+22-04-2025  20:29    <DIR>          ..
+23-04-2025  17:01                 0 22_04_2025_task_1.txt
+22-04-2025  15:21    <DIR>          normal1
+22-04-2025  15:21                 0 one.txt.txt
+22-04-2025  15:21                 0 three.txt.txt
+22-04-2025  15:21                 0 two.txt.txt
+               4 File(s)              0 bytes
+               3 Dir(s)  326,462,148,608 bytes free
+
+
+
+ Volume in drive C is Windows
+ Volume Serial Number is C677-40A3
+
+ Directory of C:\Users\sai.palleboina\cmds
+
+[.]                     [normal1]               two.txt.txt
+[..]                    one.txt.txt             
+22_04_2025_task_1.txt   three.txt.txt           
+               4 File(s)            547 bytes
+               3 Dir(s)  326,461,562,880 bytes free
+
+
+
+ Volume in drive C is Windows
+ Volume Serial Number is C677-40A3
+
+ Directory of C:\Users\sai.palleboina\cmds
+
+[.]                     [..]                    22_04_2025_task_1.txt
+[normal1]               one.txt.txt             three.txt.txt
+two.txt.txt             
+               4 File(s)            923 bytes
+               3 Dir(s)  326,460,932,096 bytes free
+
+
+
+ Volume in drive C is Windows
+ Volume Serial Number is C677-40A3
+
+ Directory of C:\Users\sai.palleboina\cmds
+
+23-04-2025  16:51    <DIR>          .
+22-04-2025  20:29    <DIR>          ..
+23-04-2025  17:04             1,310 22_04_2025_task_1.txt
+22-04-2025  15:21    <DIR>          normal1
+22-04-2025  15:21                 0 one.txt.txt
+22-04-2025  15:21                 0 three.txt.txt
+22-04-2025  15:21                 0 two.txt.txt
+               4 File(s)          1,310 bytes
+               3 Dir(s)  326,461,673,472 bytes free
+
+
+
+
+ Volume in drive C is Windows
+ Volume Serial Number is C677-40A3
+
+ Directory of C:\Users\sai.palleboina\cmds
+
+23-04-2025  16:51    <DIR>          ASCENDION\sai.palleboin.
+22-04-2025  20:29    <DIR>          NT AUTHORITY\SYSTEM    ..
+23-04-2025  17:05             1,871 ASCENDION\sai.palleboin22_04_2025_task_1.txt
+22-04-2025  15:21    <DIR>          ASCENDION\sai.palleboinnormal1
+22-04-2025  15:21                 0 ASCENDION\sai.palleboinone.txt.txt
+22-04-2025  15:21                 0 ASCENDION\sai.pallebointhree.txt.txt
+22-04-2025  15:21                 0 ASCENDION\sai.pallebointwo.txt.txt
+               4 File(s)          1,871 bytes
+               3 Dir(s)  326,461,472,768 bytes free
+
+
+
+
+ Volume in drive C is Windows
+ Volume Serial Number is C677-40A3
+
+ Directory of C:\Users\sai.palleboina\cmds
+
+[.]                     [normal1]               two.txt.txt
+[..]                    one.txt.txt             
+22_04_2025_task_1.txt   three.txt.txt           
+               4 File(s)          2,587 bytes
+               3 Dir(s)  326,461,190,144 bytes free
+
+
+
+
+
+ Volume in drive C is Windows
+ Volume Serial Number is C677-40A3
+
+ Directory of C:\Users\sai.palleboina\cmds
+
+23-04-2025  16:51    <DIR>          .
+22-04-2025  20:29    <DIR>          ..
+23-04-2025  17:07             2,973 22_04_2025_task_1.txt
+22-04-2025  15:21    <DIR>          normal1
+22-04-2025  15:21                 0 one.txt.txt
+22-04-2025  15:21                 0 three.txt.txt
+22-04-2025  15:21                 0 two.txt.txt
+               4 File(s)          2,973 bytes
+               3 Dir(s)  326,460,727,296 bytes free
+
+
+
