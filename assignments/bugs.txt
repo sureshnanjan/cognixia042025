@@ -1,0 +1,153 @@
+Open :
+
+
+[BUG] case shift functions drop last character selected
+
+Summary:
+
+When using case shift functions (e.g., to convert text to uppercase, lowercase, or title case), the last character of the selected text is not included in the transformation, resulting in incomplete or incorrect case changes.
+
+Steps To Reproduce
+Select chars or space o control chars.
+Apply upper case function.
+
+
+[BUG] on update: can't cancel update when unsaved files are open: canceling save dialog in a loop
+
+
+Summary & Description:
+
+When attempting to update Notepad++ with unsaved files open, the user is forced into a loop: choosing "Cancel" in the save dialog does not abort the update. Instead, the save prompt reappears repeatedly, even if the update process dialog is canceled. This traps the user in a cycle with no way to exit cleanly without either saving or discarding the file.
+
+
+Steps to Reproduce:
+
+Open an unsaved file in Notepad++.
+
+Attempt to update via the ? > Update menu.
+
+When prompted to save the unsaved file, click "Cancel".
+
+Cancel the update dialog as well.
+
+The save prompt appears again, looping indefinitely.
+
+
+[BUG] Incorrect file position
+
+
+Summary & Description:
+
+When opening a file containing accented characters (e.g., é, è, ç, à), Notepad++ displays an incorrect byte offset in the status bar. The cursor position is offset by the number of accented characters preceding the cursor, even when using single-byte encodings like ISO 8859-1. This results in inaccurate byte positions, which can be problematic when working with binary or position-sensitive files such as PDFs.
+
+
+Steps to Reproduce:
+
+Open a file with accented characters (e.g., éèçà) in Notepad++.
+
+Use a single-byte encoding (e.g., ISO 8859-1).
+
+Move the cursor to the end of the accented line or after the accented characters.
+
+Observe that the position in the status bar is greater than expected (e.g., 9 instead of 5).
+
+[BUG] Crash during search in search results operation
+
+Description: Users have reported crashes during search operations, with error codes indicating stack buffer overflows.
+
+Status: Open
+
+Impact: Affects users on Windows 10 with Notepad++ v8.6.8.​
+GitHub
+
+[BUG] Notepad++ closes randomly
+
+Description: The application closes unexpectedly without user intervention.
+
+Status: Open
+
+Impact: Reported by multiple users, including those on Windows 10 Enterprise
+
+
+
+Closed
+
+[BUG] Crash after successful FTP connection
+
+Summary & Description:
+
+
+After initiating an FTP/SFTP connection in Notepad++, the application crashes. The user confirmed the crash occurs after saving profile information. An error message is shown stating that the dump could not be created.
+
+Steps to Reproduce:
+
+Create an FTP profile in Notepad++.
+
+Attempt to connect using the profile.
+
+Application crashes after attempting to save configuration.
+
+Current Behavior:
+Notepad++ crashes when attempting to make an FTP/SFTP connection.
+
+Expected Behavior:
+The application should connect successfully without crashing.
+
+Resolution:
+The issue was traced back to a misconfiguration in the FTP profile (specifically a “/” character in the profile). Once corrected, the issue was resolved. It was initially believed to be related to Notepad++, but further investigation pointed to a problem in the FTP plugin configuration.
+
+
+[BUG] Sort Lines Lexicographically Ascending
+
+Summary & Description:
+
+
+When using the "Sort Lines Lexicographically Ascending" and "Sort Lines Lexicographically Descending" options in Notepad++, sorting of Chinese characters does not follow the correct dictionary order. The sorting order appears reversed, resulting in incorrect ascending and descending orders for Chinese fonts.
+
+
+[BUG] Crash when using custom toolbar icons
+
+
+Summary & Description:
+
+
+Using custom toolbar icons in Notepad++ causes visual glitches and crashes. The issue stems from improper handling of HICON and HBITMAP types in the IconList::changeIcon function. These two types are being incorrectly cast to each other, which can lead to undefined behavior. Additionally, adding a mask when the icon already supports transparency causes issues.
+
+Steps to Reproduce:
+
+Set custom icons for the toolbar in Notepad++.
+
+Change the toolbar icon set multiple times through preferences.
+
+Switch between dark and light mode to speed up the issue.
+
+Observe visual glitches and eventual crash.
+
+
+[BUG] Introduced a network file modification detection bug
+
+Description: A bug introduced in version 8.7.1 caused erroneous network file modification detection.
+
+Status: Closed
+
+Resolution: Fixed in subsequent updates.​
+GitHub
++3
+GitHub
++3
+GitHub
++3
+GitHub
++6
+GitHub
++6
+GitHub
++6
+
+[BUG] Notepad++ 7.9.3 unusable on 4k screens
+
+Description: High DPI scaling issues rendered Notepad++ unusable on 4K screens.
+
+Status: Closed
+
+Resolution: Addressed in later versions with improved scaling support
