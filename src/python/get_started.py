@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 command_executor="http://localhost:8090"
 chrome_options = ChromeOptions()
-#driver1 = webdriver.Chrome()
+driver1 = webdriver.Chrome()
 #driver2 = webdriver.Firefox()
 #driver1.get('https://the-internet.herokuapp.com/')
 driver = webdriver.Remote(
