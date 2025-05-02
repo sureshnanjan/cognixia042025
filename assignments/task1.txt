@@ -1,0 +1,83 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422105534
+Username: ASCENDION\sachin.jha
+RunAs User: ASCENDION\sachin.jha
+Configuration Name: 
+Machine: ASCINLAP60717 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 24228
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is task1.txt
+PS C:\Users\sachin.jha> New-Item -Path C:\ -Name 'Assignments' -ItemType Directory
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        22-04-2025     10:57                Assignments
+
+
+PS C:\Users\sachin.jha> Set-Location C:\Assignments
+PS C:\Assignments> git clone https://github.com/sureshnanjan/cognixia042025.git
+Cloning into 'cognixia042025'...
+remote: Enumerating objects: 222, done.
+remote: Counting objects: 100% (145/145), done.
+remote: Compressing objects: 100% (114/114), done.
+remote: Total 222 (delta 61), reused 101 (delta 27), pack-reused 77 (from 1)
+Receiving objects: 100% (222/222), 804.31 KiB | 1.93 MiB/s, done.
+Resolving deltas: 100% (76/76), done.
+PS C:\Assignments> Set-Location cognixia042025
+PS C:\Assignments\cognixia042025> dir C:\Assignments\cognixia042025
+
+
+    Directory: C:\Assignments\cognixia042025
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        22-04-2025     11:05                assignments
+-a----        22-04-2025     11:05            177 Learning_Links.txt
+-a----        22-04-2025     11:05             66 README.md
+-a----        22-04-2025     11:05           2793 vaishnavi.txt
+
+
+PS C:\Assignments\cognixia042025> dir C:\Assignments\cognixia042025\assignments
+
+
+    Directory: C:\Assignments\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        22-04-2025     11:05            378 21-April.txt
+
+
+PS C:\Assignments\cognixia042025> cd C:\Assignments\cognixia042025\assignments
+PS C:\Assignments\cognixia042025\assignments> mkdir sample
+
+
+    Directory: C:\Assignments\cognixia042025\assignments
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        22-04-2025     11:11                sample
+
+
+PS C:\Assignments\cognixia042025\assignments> del sample
+PS C:\Assignments\cognixia042025\assignments> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20250422111143
+**********************
