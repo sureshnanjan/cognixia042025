@@ -1,5 +1,66 @@
-Task1: Refer to the link below 
-https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands 
 
-- Read the dir command syntax and come up with test cases to ensure the program works as per the documentation/ requirement
+TC001 
+
+Verify page title 
+
+Open the home page URL 
+
+The page title should be “The Internet” 
+-------------------------------------------------
+
+TC002 
+
+Verify main header text 
+
+Observe the heading at the top of the page 
+
+Heading should display “Welcome to the-internet” 
+--------------------------------------------------
+
+TC003 
+
+Verify presence of subtext 
+
+Check the paragraph text below the heading 
+
+Should say “This is where you can… lots of examples.” 
+------------------------------------------------------
+
+TC004 
+
+Verify list of feature links is displayed 
+
+Scroll through the page 
+
+A vertical list of hyperlinks should be displayed 
+--------------------------------------------------------
+
+TC005 
+
+Verify each link navigates to the correct feature page 
+
+Click any one link (e.g., "A/B Testing") 
+
+User should be redirected to the respective page (e.g., /abtest) 
+----------------------------------------------------------------
+
+TC006 
+
+Verify browser back functionality 
+
+Click a link → go to that page → press browser back 
+
+User should return to the home page 
+----------------------------------------------------------------
+
+TC007 
+
+Verify all links are visible and clickable 
+
+Scroll and try clicking random links from top, middle, bottom 
+
+Each link should be clickable and redirect correctly 
+
+
+
 
