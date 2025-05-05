@@ -1,6 +1,0 @@
-Task1: Refer to the link below 
-https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands and 
-learn how to use at least 5 commands related to file system and directory operations.
-
-Task 2: Please complete the self learning activity course on Powershell
-https://learn.microsoft.com/en-us/training/modules/introduction-to-powershell/ 
