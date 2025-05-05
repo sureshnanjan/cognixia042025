@@ -1,0 +1,385 @@
+[1746467181.187][INFO]: Starting ChromeDriver 135.0.7049.114 (63fd8a7d9d09e41ba37b84386c85d5f249f848f7-refs/branch-heads/7049@{#2175}) on port 8090
+[1746467181.187][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1746467181.252][INFO]: ChromeDriver was started successfully on port 8090
+[1746467202.787][INFO]: [35d98cdd6ca53f9b6f13a5f251005157] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1746467202.789][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chrome.exe
+[1746467202.789][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chrome.exe
+[1746467202.789][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chromium.exe
+[1746467202.806][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\AppData\Local\Google\Chrome\Application\chrome.exe
+[1746467202.806][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1746467202.807][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1746467202.814][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1746467202.851][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1746467202.910][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1746467202.910][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1746467202.924][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\SHRIYA~1.JOR\AppData\Local\Temp\scoped_dir38144_922290758" data:,
+[1746467204.972][WARNING]: This version of ChromeDriver has not been tested with Chrome version 136.
+[1746467205.064][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1746467205.309][INFO]: [35d98cdd6ca53f9b6f13a5f251005157] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "136.0.7103.49",
+      "chrome": {
+         "chromedriverVersion": "135.0.7049.114 (63fd8a7d9d09e41ba37b84386c85d5f249f848f7-refs/branch-heads/7049@{#2175})",
+         "userDataDir": "C:\\Users\\SHRIYA~1.JOR\\AppData\\Local\\Temp\\scoped_dir38144_922290758"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:17139"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "35d98cdd6ca53f9b6f13a5f251005157"
+}
+[1746467275.811][INFO]: [46c409fcc98eee7b47808a7721500620] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1746467275.811][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chrome.exe
+[1746467275.811][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chrome.exe
+[1746467275.811][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chromium.exe
+[1746467275.812][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\AppData\Local\Google\Chrome\Application\chrome.exe
+[1746467275.812][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1746467275.812][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1746467275.817][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1746467275.837][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1746467275.868][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1746467275.868][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1746467275.879][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\SHRIYA~1.JOR\AppData\Local\Temp\scoped_dir38144_1326606051" data:,
+[1746467278.200][WARNING]: This version of ChromeDriver has not been tested with Chrome version 136.
+[1746467278.205][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1746467278.645][INFO]: [46c409fcc98eee7b47808a7721500620] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "136.0.7103.49",
+      "chrome": {
+         "chromedriverVersion": "135.0.7049.114 (63fd8a7d9d09e41ba37b84386c85d5f249f848f7-refs/branch-heads/7049@{#2175})",
+         "userDataDir": "C:\\Users\\SHRIYA~1.JOR\\AppData\\Local\\Temp\\scoped_dir38144_1326606051"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:17310"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "46c409fcc98eee7b47808a7721500620"
+}
+[1746467278.649][INFO]: [46c409fcc98eee7b47808a7721500620] COMMAND Navigate {
+   "url": "https://the-internet.herokuapp.com/"
+}
+[1746467278.649][INFO]: Waiting for pending navigations...
+[1746467278.650][INFO]: Done waiting for pending navigations. Status: ok
+[1746467280.169][INFO]: Waiting for pending navigations...
+[1746467283.563][INFO]: Done waiting for pending navigations. Status: ok
+[1746467283.563][INFO]: [46c409fcc98eee7b47808a7721500620] RESPONSE Navigate
+[1746467315.519][INFO]: [c1f8412f12b2e681c37dd79a65e86f49] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1746467315.519][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chrome.exe
+[1746467315.519][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chrome.exe
+[1746467315.519][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\.cache\selenium\chromedriver\win64\chromium.exe
+[1746467315.520][INFO]: Browser search. Trying... C:\Users\shriya.jorrigala\AppData\Local\Google\Chrome\Application\chrome.exe
+[1746467315.520][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1746467315.520][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1746467315.524][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1746467315.547][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1746467315.569][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1746467315.569][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1746467315.577][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\SHRIYA~1.JOR\AppData\Local\Temp\scoped_dir38144_446196341" data:,
+[1746467317.307][WARNING]: This version of ChromeDriver has not been tested with Chrome version 136.
+[1746467317.318][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1746467317.741][INFO]: [c1f8412f12b2e681c37dd79a65e86f49] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "136.0.7103.49",
+      "chrome": {
+         "chromedriverVersion": "135.0.7049.114 (63fd8a7d9d09e41ba37b84386c85d5f249f848f7-refs/branch-heads/7049@{#2175})",
+         "userDataDir": "C:\\Users\\SHRIYA~1.JOR\\AppData\\Local\\Temp\\scoped_dir38144_446196341"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:17395"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "c1f8412f12b2e681c37dd79a65e86f49"
+}
+[1746467317.744][INFO]: [c1f8412f12b2e681c37dd79a65e86f49] COMMAND Navigate {
+   "url": "https://the-internet.herokuapp.com/"
+}
+[1746467317.744][INFO]: Waiting for pending navigations...
+[1746467317.745][INFO]: Done waiting for pending navigations. Status: ok
+[1746467318.487][INFO]: Waiting for pending navigations...
+[1746467321.065][INFO]: Done waiting for pending navigations. Status: ok
+[1746467321.065][INFO]: [c1f8412f12b2e681c37dd79a65e86f49] RESPONSE Navigate
