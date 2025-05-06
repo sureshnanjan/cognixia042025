@@ -1,12 +1,12 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20250422105544
-Username: ASCENDION\sreelakshmi.c
-RunAs User: ASCENDION\sreelakshmi.c
+Start time: 20250422110010
+Username: ASCENDION\sachin.jha
+RunAs User: ASCENDION\sachin.jha
 Configuration Name: 
-Machine: ASCINLAP61552 (Microsoft Windows NT 10.0.22631.0)
-Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-Process ID: 25824
+Machine: ASCINLAP60717 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 29672
 PSVersion: 5.1.22621.4391
 PSEdition: Desktop
 PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
@@ -16,13 +16,207 @@ WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
-Transcript started, output file is Task2.txt
-PS C:\Users\sreelakshmi.c> Set-Location QA-Training
-PS C:\Users\sreelakshmi.c\QA-Training>  Set-Location cognixia042025
-PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> Get-Command -Task2.txt
+Transcript started, output file is task2.txt
+PS C:\Users\sachin.jha> $PSVersionTable
+
+Name                           Value
+----                           -----
+PSVersion                      5.1.22621.4391
+PSEdition                      Desktop
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
+BuildVersion                   10.0.22621.4391
+CLRVersion                     4.0.30319.42000
+WSManStackVersion              3.0
+PSRemotingProtocolVersion      2.3
+SerializationVersion           1.1.0.1
+
+
+PS C:\Users\sachin.jha> $PSVersionTable.PSVersion
+
+Major  Minor  Build  Revision
+-----  -----  -----  --------
+5      1      22621  4391
+
+
+PS C:\Users\sachin.jha> Get-Verb
+
+Verb        Group
+----        -----
+Add         Common
+Clear       Common
+Close       Common
+Copy        Common
+Enter       Common
+Exit        Common
+Find        Common
+Format      Common
+Get         Common
+Hide        Common
+Join        Common
+Lock        Common
+Move        Common
+New         Common
+Open        Common
+Optimize    Common
+Pop         Common
+Push        Common
+Redo        Common
+Remove      Common
+Rename      Common
+Reset       Common
+Resize      Common
+Search      Common
+Select      Common
+Set         Common
+Show        Common
+Skip        Common
+Split       Common
+Step        Common
+Switch      Common
+Undo        Common
+Unlock      Common
+Watch       Common
+Backup      Data
+Checkpoint  Data
+Compare     Data
+Compress    Data
+Convert     Data
+ConvertFrom Data
+ConvertTo   Data
+Dismount    Data
+Edit        Data
+Expand      Data
+Export      Data
+Group       Data
+Import      Data
+Initialize  Data
+Limit       Data
+Merge       Data
+Mount       Data
+Out         Data
+Publish     Data
+Restore     Data
+Save        Data
+Sync        Data
+Unpublish   Data
+Update      Data
+Approve     Lifecycle
+Assert      Lifecycle
+Complete    Lifecycle
+Confirm     Lifecycle
+Deny        Lifecycle
+Disable     Lifecycle
+Enable      Lifecycle
+Install     Lifecycle
+Invoke      Lifecycle
+Register    Lifecycle
+Request     Lifecycle
+Restart     Lifecycle
+Resume      Lifecycle
+Start       Lifecycle
+Stop        Lifecycle
+Submit      Lifecycle
+Suspend     Lifecycle
+Uninstall   Lifecycle
+Unregister  Lifecycle
+Wait        Lifecycle
+Debug       Diagnostic
+Measure     Diagnostic
+Ping        Diagnostic
+Repair      Diagnostic
+Resolve     Diagnostic
+Test        Diagnostic
+Trace       Diagnostic
+Connect     Communications
+Disconnect  Communications
+Read        Communications
+Receive     Communications
+Send        Communications
+Write       Communications
+Block       Security
+Grant       Security
+Protect     Security
+Revoke      Security
+Unblock     Security
+Unprotect   Security
+Use         Other
+
+
+PS C:\Users\sachin.jha> Get-Command
 
 CommandType     Name                                               Version    Source
 -----------     ----                                               -------    ------
+Alias           Add-AppPackage                                     2.0.1.0    Appx
+Alias           Add-AppPackageVolume                               2.0.1.0    Appx
+Alias           Add-AppProvisionedPackage                          3.0        Dism
+Alias           Add-ProvisionedAppPackage                          3.0        Dism
+Alias           Add-ProvisionedAppSharedPackageContainer           3.0        Dism
+Alias           Add-ProvisionedAppxPackage                         3.0        Dism
+Alias           Add-ProvisioningPackage                            3.0        Provisioning
+Alias           Add-TrustedProvisioningCertificate                 3.0        Provisioning
+Alias           Apply-WindowsUnattend                              3.0        Dism
+Alias           Disable-PhysicalDiskIndication                     2.0.0.0    Storage
+Alias           Disable-PhysicalDiskIndication                     1.0.0.0    VMDirectStorage
+Alias           Disable-StorageDiagnosticLog                       2.0.0.0    Storage
+Alias           Disable-StorageDiagnosticLog                       1.0.0.0    VMDirectStorage
+Alias           Dismount-AppPackageVolume                          2.0.1.0    Appx
+Alias           Enable-PhysicalDiskIndication                      2.0.0.0    Storage
+Alias           Enable-PhysicalDiskIndication                      1.0.0.0    VMDirectStorage
+Alias           Enable-StorageDiagnosticLog                        2.0.0.0    Storage
+Alias           Enable-StorageDiagnosticLog                        1.0.0.0    VMDirectStorage
+Alias           Flush-Volume                                       2.0.0.0    Storage
+Alias           Flush-Volume                                       1.0.0.0    VMDirectStorage
+Alias           Get-AppPackage                                     2.0.1.0    Appx
+Alias           Get-AppPackageAutoUpdateSettings                   2.0.1.0    Appx
+Alias           Get-AppPackageDefaultVolume                        2.0.1.0    Appx
+Alias           Get-AppPackageLastError                            2.0.1.0    Appx
+Alias           Get-AppPackageLog                                  2.0.1.0    Appx
+Alias           Get-AppPackageManifest                             2.0.1.0    Appx
+Alias           Get-AppPackageVolume                               2.0.1.0    Appx
+Alias           Get-AppProvisionedPackage                          3.0        Dism
+Alias           Get-DiskSNV                                        2.0.0.0    Storage
+Alias           Get-DiskSNV                                        1.0.0.0    VMDirectStorage
+Alias           Get-Language                                       1.0        LanguagePackManagement
+Alias           Get-PhysicalDiskSNV                                2.0.0.0    Storage
+Alias           Get-PhysicalDiskSNV                                1.0.0.0    VMDirectStorage
+Alias           Get-PreferredLanguage                              1.0        LanguagePackManagement
+Alias           Get-ProvisionedAppPackage                          3.0        Dism
+Alias           Get-ProvisionedAppSharedPackageContainer           3.0        Dism
+Alias           Get-ProvisionedAppxPackage                         3.0        Dism
+Alias           Get-StorageEnclosureSNV                            2.0.0.0    Storage
+Alias           Get-StorageEnclosureSNV                            1.0.0.0    VMDirectStorage
+Alias           Get-SystemLanguage                                 1.0        LanguagePackManagement
+Alias           Initialize-Volume                                  2.0.0.0    Storage
+Alias           Initialize-Volume                                  1.0.0.0    VMDirectStorage
+Alias           Mount-AppPackageVolume                             2.0.1.0    Appx
+Alias           Move-AppPackage                                    2.0.1.0    Appx
+Alias           Move-SmbClient                                     2.0.0.0    SmbWitness
+Alias           Optimize-AppProvisionedPackages                    3.0        Dism
+Alias           Optimize-ProvisionedAppPackages                    3.0        Dism
+Alias           Optimize-ProvisionedAppxPackages                   3.0        Dism
+Alias           Remove-AppPackage                                  2.0.1.0    Appx
+Alias           Remove-AppPackageAutoUpdateSettings                2.0.1.0    Appx
+Alias           Remove-AppPackageVolume                            2.0.1.0    Appx
+Alias           Remove-AppProvisionedPackage                       3.0        Dism
+Alias           Remove-EtwTraceSession                             1.0.0.0    EventTracingManagement
+Alias           Remove-ProvisionedAppPackage                       3.0        Dism
+Alias           Remove-ProvisionedAppSharedPackageContainer        3.0        Dism
+Alias           Remove-ProvisionedAppxPackage                      3.0        Dism
+Alias           Remove-ProvisioningPackage                         3.0        Provisioning
+Alias           Remove-TrustedProvisioningCertificate              3.0        Provisioning
+Alias           Reset-AppPackage                                   2.0.1.0    Appx
+Alias           Set-AppPackageAutoUpdateSettings                   2.0.1.0    Appx
+Alias           Set-AppPackageDefaultVolume                        2.0.1.0    Appx
+Alias           Set-AppPackageProvisionedDataFile                  3.0        Dism
+Alias           Set-AutologgerConfig                               1.0.0.0    EventTracingManagement
+Alias           Set-EtwTraceSession                                1.0.0.0    EventTracingManagement
+Alias           Set-PreferredLanguage                              1.0        LanguagePackManagement
+Alias           Set-ProvisionedAppPackageDataFile                  3.0        Dism
+Alias           Set-ProvisionedAppXDataFile                        3.0        Dism
+Alias           Set-SystemLanguage                                 1.0        LanguagePackManagement
+Alias           Write-FileSystemCache                              2.0.0.0    Storage
+Alias           Write-FileSystemCache                              1.0.0.0    VMDirectStorage
+Function        A:
 Function        Add-BCDataCacheExtension                           1.0.0.0    BranchCache
 Function        Add-BitLockerKeyProtector                          1.0.0.0    BitLocker
 Function        Add-DnsClientDohServerAddress                      1.0.0.0    DnsClient
@@ -65,6 +259,7 @@ Function        AfterAll                                           3.4.0      Pe
 Function        AfterEach                                          3.4.0      Pester
 Function        Assert-MockCalled                                  3.4.0      Pester
 Function        Assert-VerifiableMocks                             3.4.0      Pester
+Function        B:
 Function        Backup-BitLockerKeyProtector                       1.0.0.0    BitLocker
 Function        BackupToAAD-BitLockerKeyProtector                  1.0.0.0    BitLocker
 Function        BeforeAll                                          3.4.0      Pester
@@ -72,12 +267,16 @@ Function        BeforeEach                                         3.4.0      Pe
 Function        Block-FileShareAccess                              2.0.0.0    Storage
 Function        Block-SmbClientAccessToServer                      2.0.0.0    SmbShare
 Function        Block-SmbShareAccess                               2.0.0.0    SmbShare
+Function        C:
+Function        cd..
+Function        cd\
 Function        Clear-AssignedAccess                               1.0.0.0    AssignedAccess
 Function        Clear-BCCache                                      1.0.0.0    BranchCache
 Function        Clear-BitLockerAutoUnlock                          1.0.0.0    BitLocker
 Function        Clear-Disk                                         2.0.0.0    Storage
 Function        Clear-DnsClientCache                               1.0.0.0    DnsClient
 Function        Clear-FileStorageTier                              2.0.0.0    Storage
+Function        Clear-Host
 Function        Clear-PcsvDeviceLog                                1.0.0.0    PcsvDevice
 Function        Clear-StorageBusDisk                               1.0.0.0    StorageBusCache
 Function        Clear-StorageDiagnosticInfo                        2.0.0.0    Storage
@@ -96,6 +295,7 @@ Function        Copy-NetIPsecPhase1AuthSet                         2.0.0.0    Ne
 Function        Copy-NetIPsecPhase2AuthSet                         2.0.0.0    NetSecurity
 Function        Copy-NetIPsecQuickModeCryptoSet                    2.0.0.0    NetSecurity
 Function        Copy-NetIPsecRule                                  2.0.0.0    NetSecurity
+Function        D:
 Function        Debug-FileShare                                    2.0.0.0    Storage
 Function        Debug-MMAppPrelaunch                               1.0        MMAgent
 Function        Debug-StorageSubSystem                             2.0.0.0    Storage
@@ -155,6 +355,7 @@ Function        Disable-WSManTrace                                 1.0.0.0    PS
 Function        Disconnect-IscsiTarget                             1.0.0.0    iSCSI
 Function        Disconnect-VirtualDisk                             2.0.0.0    Storage
 Function        Dismount-DiskImage                                 2.0.0.0    Storage
+Function        E:
 Function        Enable-BCDistributed                               1.0.0.0    BranchCache
 Function        Enable-BCDowngrading                               1.0.0.0    BranchCache
 Function        Enable-BCHostedClient                              1.0.0.0    BranchCache
@@ -214,6 +415,7 @@ Function        Export-BCSecretKey                                 1.0.0.0    Br
 Function        Export-ODataEndpointProxy                          1.0        Microsoft.PowerShell.ODataUtils
 Function        Export-ScheduledTask                               1.0.0.0    ScheduledTasks
 Function        Export-WinhttpProxy                                1.0.0.0    WinHttpProxy
+Function        F:
 Function        Find-Command                                       1.0.0.1    PowerShellGet
 Function        Find-DscResource                                   1.0.0.1    PowerShellGet
 Function        Find-Module                                        1.0.0.1    PowerShellGet
@@ -224,6 +426,7 @@ Function        Find-Script                                        1.0.0.1    Po
 Function        Flush-EtwTraceSession                              1.0.0.0    EventTracingManagement
 Function        Format-Hex                                         3.1.0.0    Microsoft.PowerShell.Utility
 Function        Format-Volume                                      2.0.0.0    Storage
+Function        G:
 Function        Get-AppBackgroundTask                              1.0.0.0    AppBackgroundTask
 Function        Get-AppvVirtualProcess                             1.0.0.0    AppvClient
 Function        Get-AppxLastError                                  2.0.1.0    Appx
@@ -504,6 +707,7 @@ Function        Get-SupportedFileSystems                           2.0.0.0    St
 Function        Get-TargetPort                                     2.0.0.0    Storage
 Function        Get-TargetPortal                                   2.0.0.0    Storage
 Function        Get-TestDriveItem                                  3.4.0      Pester
+Function        Get-Verb
 Function        Get-VirtualDisk                                    2.0.0.0    Storage
 Function        Get-VirtualDiskSupportedSize                       2.0.0.0    Storage
 Function        Get-VMDirectVirtualDisk                            1.0.0.0    VMDirectStorage
@@ -518,11 +722,15 @@ Function        Get-WinhttpProxy                                   1.0.0.0    Wi
 Function        Grant-FileShareAccess                              2.0.0.0    Storage
 Function        Grant-SmbClientAccessToServer                      2.0.0.0    SmbShare
 Function        Grant-SmbShareAccess                               2.0.0.0    SmbShare
+Function        H:
+Function        help
 Function        Hide-VirtualDisk                                   2.0.0.0    Storage
+Function        I:
 Function        Import-BCCachePackage                              1.0.0.0    BranchCache
 Function        Import-BCSecretKey                                 1.0.0.0    BranchCache
 Function        Import-IseSnippet                                  1.0.0.0    ISE
 Function        Import-PowerShellDataFile                          3.1.0.0    Microsoft.PowerShell.Utility
+Function        ImportSystemModules
 Function        Import-WinhttpProxy                                1.0.0.0    WinHttpProxy
 Function        In                                                 3.4.0      Pester
 Function        Initialize-Disk                                    2.0.0.0    Storage
@@ -535,10 +743,17 @@ Function        Invoke-Mock                                        3.4.0      Pe
 Function        Invoke-OperationValidation                         1.0.1      Microsoft.PowerShell.Operation.Validation
 Function        Invoke-Pester                                      3.4.0      Pester
 Function        It                                                 3.4.0      Pester
+Function        J:
+Function        K:
+Function        L:
 Function        Lock-BitLocker                                     1.0.0.0    BitLocker
+Function        M:
+Function        mkdir
 Function        Mock                                               3.4.0      Pester
+Function        more
 Function        Mount-DiskImage                                    2.0.0.0    Storage
 Function        Move-SmbWitnessClient                              2.0.0.0    SmbWitness
+Function        N:
 Function        New-AutologgerConfig                               1.0.0.0    EventTracingManagement
 Function        New-DAEntryPointTableItem                          1.0.0.0    DirectAccessClientComponents
 Function        New-DscChecksum                                    1.1        PSDesiredStateConfiguration
@@ -604,14 +819,21 @@ Function        New-VirtualDiskClone                               2.0.0.0    St
 Function        New-VirtualDiskSnapshot                            2.0.0.0    Storage
 Function        New-Volume                                         2.0.0.0    Storage
 Function        New-VpnServerAddress                               2.0.0.0    VpnClient
+Function        O:
 Function        Open-NetGPO                                        2.0.0.0    NetSecurity
 Function        Optimize-StoragePool                               2.0.0.0    Storage
 Function        Optimize-Volume                                    2.0.0.0    Storage
-Function        PSConsoleHostReadLine                              0.0        PSReadLine
+Function        oss
+Function        P:
+Function        Pause
+Function        prompt
+Function        PSConsoleHostReadLine                              2.0.0      PSReadLine
 Function        Publish-BCFileContent                              1.0.0.0    BranchCache
 Function        Publish-BCWebContent                               1.0.0.0    BranchCache
 Function        Publish-Module                                     1.0.0.1    PowerShellGet
 Function        Publish-Script                                     1.0.0.1    PowerShellGet
+Function        Q:
+Function        R:
 Function        Read-PrinterNfcTag                                 1.1        PrintManagement
 Function        Register-ClusteredScheduledTask                    1.0.0.0    ScheduledTasks
 Function        Register-DnsClient                                 1.0.0.0    DnsClient
@@ -764,6 +986,7 @@ Function        Resume-StorageBusDisk                              1.0.0.0    St
 Function        Revoke-FileShareAccess                             2.0.0.0    Storage
 Function        Revoke-SmbClientAccessToServer                     2.0.0.0    SmbShare
 Function        Revoke-SmbShareAccess                              2.0.0.0    SmbShare
+Function        S:
 Function        SafeGetCommand                                     3.4.0      Pester
 Function        Save-EtwTraceSession                               1.0.0.0    EventTracingManagement
 Function        Save-Module                                        1.0.0.1    PowerShellGet
@@ -961,9 +1184,12 @@ Function        Suspend-BitLocker                                  1.0.0.0    Bi
 Function        Suspend-PrintJob                                   1.1        PrintManagement
 Function        Suspend-StorageBusDisk                             1.0.0.0    StorageBusCache
 Function        Sync-NetIPsecRule                                  2.0.0.0    NetSecurity
+Function        T:
+Function        TabExpansion2
 Function        Test-Dtc                                           1.0.0.0    MsDtc
 Function        Test-NetConnection                                 1.0.0.0    NetTCPIP
 Function        Test-ScriptFileInfo                                1.0.0.1    PowerShellGet
+Function        U:
 Function        Unblock-FileShareAccess                            2.0.0.0    Storage
 Function        Unblock-SmbClientAccessToServer                    2.0.0.0    SmbShare
 Function        Unblock-SmbShareAccess                             2.0.0.0    SmbShare
@@ -997,9 +1223,14 @@ Function        Update-StorageBusCache                             1.0.0.0    St
 Function        Update-StorageFirmware                             2.0.0.0    Storage
 Function        Update-StoragePool                                 2.0.0.0    Storage
 Function        Update-StorageProviderCache                        2.0.0.0    Storage
+Function        V:
+Function        W:
 Function        Write-DtcTransactionsTraceSession                  1.0.0.0    MsDtc
 Function        Write-PrinterNfcTag                                1.1        PrintManagement
 Function        Write-VolumeCache                                  2.0.0.0    Storage
+Function        X:
+Function        Y:
+Function        Z:
 Cmdlet          Add-AppProvisionedSharedPackageContainer           3.0        Dism
 Cmdlet          Add-AppSharedPackageContainer                      2.0.1.0    Appx
 Cmdlet          Add-AppvClientConnectionGroup                      1.0.0.0    AppvClient
@@ -1012,23 +1243,29 @@ Cmdlet          Add-BitsFile                                       2.0.0.0    Bi
 Cmdlet          Add-CertificateEnrollmentPolicyServer              1.0.0.0    PKI
 Cmdlet          Add-Computer                                       3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Add-Content                                        3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Add-History                                        3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Add-JobTrigger                                     1.1.0.0    PSScheduledJob
 Cmdlet          Add-KdsRootKey                                     1.0.0.0    Kds
 Cmdlet          Add-LocalGroupMember                               1.0.0.0    Microsoft.PowerShell.LocalAccounts
 Cmdlet          Add-Member                                         3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Add-PSSnapin                                       3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Add-SignerRule                                     1.0        ConfigCI
+Cmdlet          Add-SqlAvailabilityDatabase                        16.0       SQLPS
+Cmdlet          Add-SqlAvailabilityGroupListenerStaticIp           16.0       SQLPS
 Cmdlet          Add-Type                                           3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Add-WindowsCapability                              3.0        Dism
 Cmdlet          Add-WindowsDriver                                  3.0        Dism
 Cmdlet          Add-WindowsImage                                   3.0        Dism
 Cmdlet          Add-WindowsPackage                                 3.0        Dism
+Cmdlet          Backup-SqlDatabase                                 16.0       SQLPS
 Cmdlet          Checkpoint-Computer                                3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Clear-Content                                      3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Clear-EventLog                                     3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Clear-History                                      3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Clear-Item                                         3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Clear-ItemProperty                                 3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Clear-KdsCache                                     1.0.0.0    Kds
-Cmdlet          Clear-RecycleBin                                   3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Clear-Recyclebin                                   3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Clear-Tpm                                          2.0.0.0    TrustedPlatformModule
 Cmdlet          Clear-UevAppxPackage                               2.1.639.0  UEV
 Cmdlet          Clear-UevConfiguration                             2.1.639.0  UEV
@@ -1039,9 +1276,11 @@ Cmdlet          Complete-BitsTransfer                              2.0.0.0    Bi
 Cmdlet          Complete-DtcDiagnosticTransaction                  1.0.0.0    MsDtc
 Cmdlet          Complete-Transaction                               3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Confirm-SecureBootUEFI                             2.0.0.0    SecureBoot
+Cmdlet          Connect-PSSession                                  3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Connect-WSMan                                      3.0.0.0    Microsoft.WSMan.Management
 Cmdlet          ConvertFrom-CIPolicy                               1.0        ConfigCI
 Cmdlet          ConvertFrom-Csv                                    3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          ConvertFrom-EncodedSqlName                         16.0       SQLPS
 Cmdlet          ConvertFrom-Json                                   3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          ConvertFrom-SecureString                           3.0.0.0    Microsoft.PowerShell.Security
 Cmdlet          ConvertFrom-String                                 3.1.0.0    Microsoft.PowerShell.Utility
@@ -1049,16 +1288,19 @@ Cmdlet          ConvertFrom-StringData                             3.1.0.0    Mi
 Cmdlet          Convert-Path                                       3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Convert-String                                     3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          ConvertTo-Csv                                      3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          ConvertTo-EncodedSqlName                           16.0       SQLPS
 Cmdlet          ConvertTo-Html                                     3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          ConvertTo-Json                                     3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          ConvertTo-ProcessMitigationPolicy                  1.0.12     ProcessMitigations
 Cmdlet          ConvertTo-SecureString                             3.0.0.0    Microsoft.PowerShell.Security
 Cmdlet          ConvertTo-TpmOwnerAuth                             2.0.0.0    TrustedPlatformModule
 Cmdlet          ConvertTo-Xml                                      3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Convert-UrnToPath                                  16.0       SQLPS
 Cmdlet          Copy-BcdEntry                                      1.0.0      Microsoft.Windows.Bcd.Cmdlets
 Cmdlet          Copy-Item                                          3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Copy-ItemProperty                                  3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Copy-UserInternationalSettingsToSystem             2.1.0.0    International
+Cmdlet          Debug-Job                                          3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Debug-Process                                      3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Debug-Runspace                                     3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Disable-AppBackgroundTaskDiagnosticLog             1.0.0.0    AppBackgroundTask
@@ -1074,8 +1316,11 @@ Cmdlet          Disable-ComputerRestore                            3.1.0.0    Mi
 Cmdlet          Disable-JobTrigger                                 1.1.0.0    PSScheduledJob
 Cmdlet          Disable-LocalUser                                  1.0.0.0    Microsoft.PowerShell.LocalAccounts
 Cmdlet          Disable-PSBreakpoint                               3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Disable-PSRemoting                                 3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Disable-PSSessionConfiguration                     3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Disable-RunspaceDebug                              3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Disable-ScheduledJob                               1.1.0.0    PSScheduledJob
+Cmdlet          Disable-SqlAlwaysOn                                16.0       SQLPS
 Cmdlet          Disable-TlsCipherSuite                             2.0.0.0    TLS
 Cmdlet          Disable-TlsEccCurve                                2.0.0.0    TLS
 Cmdlet          Disable-TlsSessionTicketKey                        2.0.0.0    TLS
@@ -1086,6 +1331,7 @@ Cmdlet          Disable-UevTemplate                                2.1.639.0  UE
 Cmdlet          Disable-WindowsErrorReporting                      1.0        WindowsErrorReporting
 Cmdlet          Disable-WindowsOptionalFeature                     3.0        Dism
 Cmdlet          Disable-WSManCredSSP                               3.0.0.0    Microsoft.WSMan.Management
+Cmdlet          Disconnect-PSSession                               3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Disconnect-WSMan                                   3.0.0.0    Microsoft.WSMan.Management
 Cmdlet          Dismount-AppxVolume                                2.0.1.0    Appx
 Cmdlet          Dismount-WindowsImage                              3.0        Dism
@@ -1103,8 +1349,11 @@ Cmdlet          Enable-ComputerRestore                             3.1.0.0    Mi
 Cmdlet          Enable-JobTrigger                                  1.1.0.0    PSScheduledJob
 Cmdlet          Enable-LocalUser                                   1.0.0.0    Microsoft.PowerShell.LocalAccounts
 Cmdlet          Enable-PSBreakpoint                                3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Enable-PSRemoting                                  3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Enable-PSSessionConfiguration                      3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Enable-RunspaceDebug                               3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Enable-ScheduledJob                                1.1.0.0    PSScheduledJob
+Cmdlet          Enable-SqlAlwaysOn                                 16.0       SQLPS
 Cmdlet          Enable-TlsCipherSuite                              2.0.0.0    TLS
 Cmdlet          Enable-TlsEccCurve                                 2.0.0.0    TLS
 Cmdlet          Enable-TlsSessionTicketKey                         2.0.0.0    TLS
@@ -1115,6 +1364,10 @@ Cmdlet          Enable-UevTemplate                                 2.1.639.0  UE
 Cmdlet          Enable-WindowsErrorReporting                       1.0        WindowsErrorReporting
 Cmdlet          Enable-WindowsOptionalFeature                      3.0        Dism
 Cmdlet          Enable-WSManCredSSP                                3.0.0.0    Microsoft.WSMan.Management
+Cmdlet          Enter-PSHostProcess                                3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Enter-PSSession                                    3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Exit-PSHostProcess                                 3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Exit-PSSession                                     3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Expand-WindowsCustomDataImage                      3.0        Dism
 Cmdlet          Expand-WindowsImage                                3.0        Dism
 Cmdlet          Export-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
@@ -1122,9 +1375,11 @@ Cmdlet          Export-BcdStore                                    1.0.0      Mi
 Cmdlet          Export-BinaryMiLog                                 1.0.0.0    CimCmdlets
 Cmdlet          Export-Certificate                                 1.0.0.0    PKI
 Cmdlet          Export-Clixml                                      3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Export-Console                                     3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Export-Counter                                     3.0.0.0    Microsoft.PowerShell.Diagnostics
 Cmdlet          Export-Csv                                         3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Export-FormatData                                  3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Export-ModuleMember                                3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Export-PfxCertificate                              1.0.0.0    PKI
 Cmdlet          Export-ProvisioningPackage                         3.0        Provisioning
 Cmdlet          Export-PSSession                                   3.1.0.0    Microsoft.PowerShell.Utility
@@ -1185,6 +1440,7 @@ Cmdlet          Get-CIPolicyIdInfo                                 1.0        Co
 Cmdlet          Get-CIPolicyInfo                                   1.0        ConfigCI
 Cmdlet          Get-Clipboard                                      3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Get-CmsMessage                                     3.0.0.0    Microsoft.PowerShell.Security
+Cmdlet          Get-Command                                        3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Get-ComputerInfo                                   3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Get-ComputerRestorePoint                           3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Get-Content                                        3.1.0.0    Microsoft.PowerShell.Management
@@ -1201,12 +1457,15 @@ Cmdlet          Get-EventLog                                       3.1.0.0    Mi
 Cmdlet          Get-EventSubscriber                                3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Get-ExecutionPolicy                                3.0.0.0    Microsoft.PowerShell.Security
 Cmdlet          Get-FormatData                                     3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Get-Help                                           3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Get-History                                        3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Get-Host                                           3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Get-HotFix                                         3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Get-InstalledLanguage                              1.0        LanguagePackManagement
 Cmdlet          Get-Item                                           3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Get-ItemProperty                                   3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Get-ItemPropertyValue                              3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Get-Job                                            3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Get-JobTrigger                                     1.1.0.0    PSScheduledJob
 Cmdlet          Get-KdsConfiguration                               1.0.0.0    Kds
 Cmdlet          Get-KdsRootKey                                     1.0.0.0    Kds
@@ -1216,6 +1475,7 @@ Cmdlet          Get-LocalGroupMember                               1.0.0.0    Mi
 Cmdlet          Get-LocalUser                                      1.0.0.0    Microsoft.PowerShell.LocalAccounts
 Cmdlet          Get-Location                                       3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Get-Member                                         3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Get-Module                                         3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Get-NonRemovableAppsPolicy                         3.0        Dism
 Cmdlet          Get-Package                                        1.0.0.1    PackageManagement
 Cmdlet          Get-PackageProvider                                1.0.0.1    PackageManagement
@@ -1232,9 +1492,14 @@ Cmdlet          Get-ProvisioningPackage                            3.0        Pr
 Cmdlet          Get-PSBreakpoint                                   3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Get-PSCallStack                                    3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Get-PSDrive                                        3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Get-PSHostProcessInfo                              3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Get-PSProvider                                     3.1.0.0    Microsoft.PowerShell.Management
-Cmdlet          Get-PSReadLineKeyHandler                           0.0        PSReadLine
-Cmdlet          Get-PSReadLineOption                               0.0        PSReadLine
+Cmdlet          Get-PSReadLineKeyHandler                           2.0.0      PSReadLine
+Cmdlet          Get-PSReadLineOption                               2.0.0      PSReadLine
+Cmdlet          Get-PSSession                                      3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Get-PSSessionCapability                            3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Get-PSSessionConfiguration                         3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Get-PSSnapin                                       3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Get-Random                                         3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Get-Runspace                                       3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Get-RunspaceDebug                                  3.1.0.0    Microsoft.PowerShell.Utility
@@ -1243,6 +1508,9 @@ Cmdlet          Get-ScheduledJobOption                             1.1.0.0    PS
 Cmdlet          Get-SecureBootPolicy                               2.0.0.0    SecureBoot
 Cmdlet          Get-SecureBootUEFI                                 2.0.0.0    SecureBoot
 Cmdlet          Get-Service                                        3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Get-SqlCredential                                  16.0       SQLPS
+Cmdlet          Get-SqlDatabase                                    16.0       SQLPS
+Cmdlet          Get-SqlSmartAdmin                                  16.0       SQLPS
 Cmdlet          Get-SystemDriver                                   1.0        ConfigCI
 Cmdlet          Get-SystemPreferredUILanguage                      1.0        LanguagePackManagement
 Cmdlet          Get-TimeZone                                       3.1.0.0    Microsoft.PowerShell.Management
@@ -1298,6 +1566,7 @@ Cmdlet          Import-Clixml                                      3.1.0.0    Mi
 Cmdlet          Import-Counter                                     3.0.0.0    Microsoft.PowerShell.Diagnostics
 Cmdlet          Import-Csv                                         3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Import-LocalizedData                               3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Import-Module                                      3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Import-PackageProvider                             1.0.0.1    PackageManagement
 Cmdlet          Import-PfxCertificate                              1.0.0.0    PKI
 Cmdlet          Import-PSSession                                   3.1.0.0    Microsoft.PowerShell.Utility
@@ -1312,18 +1581,23 @@ Cmdlet          Install-PackageProvider                            1.0.0.1    Pa
 Cmdlet          Install-ProvisioningPackage                        3.0        Provisioning
 Cmdlet          Install-TrustedProvisioningCertificate             3.0        Provisioning
 Cmdlet          Invoke-CimMethod                                   1.0.0.0    CimCmdlets
+Cmdlet          Invoke-Command                                     3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Invoke-CommandInDesktopPackage                     2.0.1.0    Appx
 Cmdlet          Invoke-DscResource                                 1.1        PSDesiredStateConfiguration
 Cmdlet          Invoke-Expression                                  3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Invoke-History                                     3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Invoke-Item                                        3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Invoke-LapsPolicyProcessing                        1.0.0.0    LAPS
+Cmdlet          Invoke-PolicyEvaluation                            16.0       SQLPS
 Cmdlet          Invoke-RestMethod                                  3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Invoke-Sqlcmd                                      16.0       SQLPS
 Cmdlet          Invoke-TroubleshootingPack                         1.0.0.0    TroubleshootingPack
 Cmdlet          Invoke-WebRequest                                  3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Invoke-WmiMethod                                   3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Invoke-WSManAction                                 3.0.0.0    Microsoft.WSMan.Management
 Cmdlet          Join-DtcDiagnosticResourceManager                  1.0.0.0    MsDtc
 Cmdlet          Join-Path                                          3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Join-SqlAvailabilityGroup                          16.0       SQLPS
 Cmdlet          Limit-EventLog                                     3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Measure-Command                                    3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Measure-Object                                     3.1.0.0    Microsoft.PowerShell.Utility
@@ -1354,6 +1628,8 @@ Cmdlet          New-ItemProperty                                   3.1.0.0    Mi
 Cmdlet          New-JobTrigger                                     1.1.0.0    PSScheduledJob
 Cmdlet          New-LocalGroup                                     1.0.0.0    Microsoft.PowerShell.LocalAccounts
 Cmdlet          New-LocalUser                                      1.0.0.0    Microsoft.PowerShell.LocalAccounts
+Cmdlet          New-Module                                         3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          New-ModuleManifest                                 3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          New-NetIPsecAuthProposal                           2.0.0.0    NetSecurity
 Cmdlet          New-NetIPsecMainModeCryptoProposal                 2.0.0.0    NetSecurity
 Cmdlet          New-NetIPsecQuickModeCryptoProposal                2.0.0.0    NetSecurity
@@ -1362,10 +1638,21 @@ Cmdlet          New-PmemDedicatedMemory                            1.0.0.0    Pe
 Cmdlet          New-PmemDisk                                       1.0.0.0    PersistentMemory
 Cmdlet          New-ProvisioningRepro                              3.0        Provisioning
 Cmdlet          New-PSDrive                                        3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          New-PSRoleCapabilityFile                           3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          New-PSSession                                      3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          New-PSSessionConfigurationFile                     3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          New-PSSessionOption                                3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          New-PSTransportOption                              3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          New-PSWorkflowExecutionOption                      2.0.0.0    PSWorkflow
 Cmdlet          New-ScheduledJobOption                             1.1.0.0    PSScheduledJob
 Cmdlet          New-SelfSignedCertificate                          1.0.0.0    PKI
 Cmdlet          New-Service                                        3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          New-SqlAvailabilityGroup                           16.0       SQLPS
+Cmdlet          New-SqlAvailabilityGroupListener                   16.0       SQLPS
+Cmdlet          New-SqlAvailabilityReplica                         16.0       SQLPS
+Cmdlet          New-SqlBackupEncryptionOption                      16.0       SQLPS
+Cmdlet          New-SqlCredential                                  16.0       SQLPS
+Cmdlet          New-SqlHADREndpoint                                16.0       SQLPS
 Cmdlet          New-TimeSpan                                       3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          New-TlsSessionTicketKey                            2.0.0.0    TLS
 Cmdlet          New-Variable                                       3.1.0.0    Microsoft.PowerShell.Utility
@@ -1378,8 +1665,11 @@ Cmdlet          New-WSManInstance                                  3.0.0.0    Mi
 Cmdlet          New-WSManSessionOption                             3.0.0.0    Microsoft.WSMan.Management
 Cmdlet          Optimize-AppxProvisionedPackages                   3.0        Dism
 Cmdlet          Optimize-WindowsImage                              3.0        Dism
+Cmdlet          Out-Default                                        3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Out-File                                           3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Out-GridView                                       3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Out-Host                                           3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Out-Null                                           3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Out-Printer                                        3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Out-String                                         3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Pop-Location                                       3.1.0.0    Microsoft.PowerShell.Management
@@ -1389,10 +1679,14 @@ Cmdlet          Publish-DscConfiguration                           1.1        PS
 Cmdlet          Push-Location                                      3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Read-Host                                          3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Receive-DtcDiagnosticTransaction                   1.0.0.0    MsDtc
+Cmdlet          Receive-Job                                        3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Receive-PSSession                                  3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Register-ArgumentCompleter                         3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Register-CimIndicationEvent                        1.0.0.0    CimCmdlets
 Cmdlet          Register-EngineEvent                               3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Register-ObjectEvent                               3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Register-PackageSource                             1.0.0.1    PackageManagement
+Cmdlet          Register-PSSessionConfiguration                    3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Register-ScheduledJob                              1.1.0.0    PSScheduledJob
 Cmdlet          Register-UevTemplate                               2.1.639.0  UEV
 Cmdlet          Register-WmiEvent                                  3.1.0.0    Microsoft.PowerShell.Management
@@ -1418,15 +1712,23 @@ Cmdlet          Remove-Event                                       3.1.0.0    Mi
 Cmdlet          Remove-EventLog                                    3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Remove-Item                                        3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Remove-ItemProperty                                3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Remove-Job                                         3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Remove-JobTrigger                                  1.1.0.0    PSScheduledJob
 Cmdlet          Remove-LocalGroup                                  1.0.0.0    Microsoft.PowerShell.LocalAccounts
 Cmdlet          Remove-LocalGroupMember                            1.0.0.0    Microsoft.PowerShell.LocalAccounts
 Cmdlet          Remove-LocalUser                                   1.0.0.0    Microsoft.PowerShell.LocalAccounts
+Cmdlet          Remove-Module                                      3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Remove-PmemDedicatedMemory                         1.0.0.0    PersistentMemory
 Cmdlet          Remove-PmemDisk                                    1.0.0.0    PersistentMemory
 Cmdlet          Remove-PSBreakpoint                                3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Remove-PSDrive                                     3.1.0.0    Microsoft.PowerShell.Management
-Cmdlet          Remove-PSReadLineKeyHandler                        0.0        PSReadLine
+Cmdlet          Remove-PSReadLineKeyHandler                        2.0.0      PSReadLine
+Cmdlet          Remove-PSSession                                   3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Remove-PSSnapin                                    3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Remove-SqlAvailabilityDatabase                     16.0       SQLPS
+Cmdlet          Remove-SqlAvailabilityGroup                        16.0       SQLPS
+Cmdlet          Remove-SqlAvailabilityReplica                      16.0       SQLPS
+Cmdlet          Remove-SqlCredential                               16.0       SQLPS
 Cmdlet          Remove-TypeData                                    3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Remove-Variable                                    3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Remove-WindowsCapability                           3.0        Dism
@@ -1453,11 +1755,15 @@ Cmdlet          Resolve-Path                                       3.1.0.0    Mi
 Cmdlet          Restart-Computer                                   3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Restart-Service                                    3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Restore-Computer                                   3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Restore-SqlDatabase                                16.0       SQLPS
 Cmdlet          Restore-UevBackup                                  2.1.639.0  UEV
 Cmdlet          Restore-UevUserSetting                             2.1.639.0  UEV
 Cmdlet          Resume-BitsTransfer                                2.0.0.0    BitsTransfer
+Cmdlet          Resume-Job                                         3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Resume-ProvisioningSession                         3.0        Provisioning
 Cmdlet          Resume-Service                                     3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Resume-SqlAvailabilityDatabase                     16.0       SQLPS
+Cmdlet          Save-Help                                          3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Save-Package                                       1.0.0.1    PackageManagement
 Cmdlet          Save-SoftwareInventory                             3.0        Dism
 Cmdlet          Save-WindowsImage                                  3.0        Dism
@@ -1516,13 +1822,22 @@ Cmdlet          Set-NonRemovableAppsPolicy                         3.0        Di
 Cmdlet          Set-PackageSource                                  1.0.0.1    PackageManagement
 Cmdlet          Set-ProcessMitigation                              1.0.12     ProcessMitigations
 Cmdlet          Set-PSBreakpoint                                   3.1.0.0    Microsoft.PowerShell.Utility
-Cmdlet          Set-PSReadLineKeyHandler                           0.0        PSReadLine
-Cmdlet          Set-PSReadLineOption                               0.0        PSReadLine
+Cmdlet          Set-PSDebug                                        3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Set-PSReadLineKeyHandler                           2.0.0      PSReadLine
+Cmdlet          Set-PSReadLineOption                               2.0.0      PSReadLine
+Cmdlet          Set-PSSessionConfiguration                         3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Set-RuleOption                                     1.0        ConfigCI
 Cmdlet          Set-ScheduledJob                                   1.1.0.0    PSScheduledJob
 Cmdlet          Set-ScheduledJobOption                             1.1.0.0    PSScheduledJob
 Cmdlet          Set-SecureBootUEFI                                 2.0.0.0    SecureBoot
 Cmdlet          Set-Service                                        3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Set-SqlAvailabilityGroup                           16.0       SQLPS
+Cmdlet          Set-SqlAvailabilityGroupListener                   16.0       SQLPS
+Cmdlet          Set-SqlAvailabilityReplica                         16.0       SQLPS
+Cmdlet          Set-SqlCredential                                  16.0       SQLPS
+Cmdlet          Set-SqlHADREndpoint                                16.0       SQLPS
+Cmdlet          Set-SqlSmartAdmin                                  16.0       SQLPS
+Cmdlet          Set-StrictMode                                     3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Set-SystemPreferredUILanguage                      1.0        LanguagePackManagement
 Cmdlet          Set-TimeZone                                       3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Set-TpmOwnerAuth                                   2.0.0.0    TrustedPlatformModule
@@ -1556,6 +1871,7 @@ Cmdlet          Split-WindowsImage                                 3.0        Di
 Cmdlet          Start-BitsTransfer                                 2.0.0.0    BitsTransfer
 Cmdlet          Start-DscConfiguration                             1.1        PSDesiredStateConfiguration
 Cmdlet          Start-DtcDiagnosticResourceManager                 1.0.0.0    MsDtc
+Cmdlet          Start-Job                                          3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Start-OSUninstall                                  3.0        Dism
 Cmdlet          Start-Process                                      3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Start-Service                                      3.1.0.0    Microsoft.PowerShell.Management
@@ -1566,12 +1882,16 @@ Cmdlet          Stop-AppvClientConnectionGroup                     1.0.0.0    Ap
 Cmdlet          Stop-AppvClientPackage                             1.0.0.0    AppvClient
 Cmdlet          Stop-Computer                                      3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Stop-DtcDiagnosticResourceManager                  1.0.0.0    MsDtc
+Cmdlet          Stop-Job                                           3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Stop-Process                                       3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Stop-Service                                       3.1.0.0    Microsoft.PowerShell.Management
 Cmdlet          Stop-Transcript                                    3.0.0.0    Microsoft.PowerShell.Host
 Cmdlet          Suspend-BitsTransfer                               2.0.0.0    BitsTransfer
+Cmdlet          Suspend-Job                                        3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Suspend-Service                                    3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Suspend-SqlAvailabilityDatabase                    16.0       SQLPS
 Cmdlet          Switch-Certificate                                 1.0.0.0    PKI
+Cmdlet          Switch-SqlAvailabilityGroup                        16.0       SQLPS
 Cmdlet          Sync-AppvPublishingServer                          1.0.0.0    AppvClient
 Cmdlet          Tee-Object                                         3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Test-AppLockerPolicy                               2.0.0.0    AppLocker
@@ -1581,7 +1901,13 @@ Cmdlet          Test-Connection                                    3.1.0.0    Mi
 Cmdlet          Test-DscConfiguration                              1.1        PSDesiredStateConfiguration
 Cmdlet          Test-FileCatalog                                   3.0.0.0    Microsoft.PowerShell.Security
 Cmdlet          Test-KdsRootKey                                    1.0.0.0    Kds
+Cmdlet          Test-ModuleManifest                                3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Test-Path                                          3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Test-PSSessionConfigurationFile                    3.0.0.0    Microsoft.PowerShell.Core
+Cmdlet          Test-SqlAvailabilityGroup                          16.0       SQLPS
+Cmdlet          Test-SqlAvailabilityReplica                        16.0       SQLPS
+Cmdlet          Test-SqlDatabaseReplicaState                       16.0       SQLPS
+Cmdlet          Test-SqlSmartAdmin                                 16.0       SQLPS
 Cmdlet          Test-UevTemplate                                   2.1.639.0  UEV
 Cmdlet          Test-WSMan                                         3.0.0.0    Microsoft.WSMan.Management
 Cmdlet          Trace-Command                                      3.1.0.0    Microsoft.PowerShell.Utility
@@ -1597,11 +1923,13 @@ Cmdlet          Unprotect-CmsMessage                               3.0.0.0    Mi
 Cmdlet          Unpublish-AppvClientPackage                        1.0.0.0    AppvClient
 Cmdlet          Unregister-Event                                   3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Unregister-PackageSource                           1.0.0.1    PackageManagement
+Cmdlet          Unregister-PSSessionConfiguration                  3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Unregister-ScheduledJob                            1.1.0.0    PSScheduledJob
 Cmdlet          Unregister-UevTemplate                             2.1.639.0  UEV
 Cmdlet          Unregister-WindowsDeveloperLicense                 1.0.0.0    WindowsDeveloperLicense
 Cmdlet          Update-DscConfiguration                            1.1        PSDesiredStateConfiguration
 Cmdlet          Update-FormatData                                  3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Update-Help                                        3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Update-LapsADSchema                                1.0.0.0    LAPS
 Cmdlet          Update-List                                        3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Update-TypeData                                    3.1.0.0    Microsoft.PowerShell.Utility
@@ -1611,7 +1939,9 @@ Cmdlet          Use-Transaction                                    3.1.0.0    Mi
 Cmdlet          Use-WindowsUnattend                                3.0        Dism
 Cmdlet          Wait-Debugger                                      3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Wait-Event                                         3.1.0.0    Microsoft.PowerShell.Utility
+Cmdlet          Wait-Job                                           3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Wait-Process                                       3.1.0.0    Microsoft.PowerShell.Management
+Cmdlet          Where-Object                                       3.0.0.0    Microsoft.PowerShell.Core
 Cmdlet          Write-Debug                                        3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Write-Error                                        3.1.0.0    Microsoft.PowerShell.Utility
 Cmdlet          Write-EventLog                                     3.1.0.0    Microsoft.PowerShell.Management
@@ -1623,47 +1953,8 @@ Cmdlet          Write-Verbose                                      3.1.0.0    Mi
 Cmdlet          Write-Warning                                      3.1.0.0    Microsoft.PowerShell.Utility
 
 
-PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> $PSVersionTable
-
-Name                           Value
-----                           -----
-PSVersion                      5.1.22621.4391
-PSEdition                      Desktop
-PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}
-BuildVersion                   10.0.22621.4391
-CLRVersion                     4.0.30319.42000
-WSManStackVersion              3.0
-PSRemotingProtocolVersion      2.3
-SerializationVersion           1.1.0.1
-
-
-PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> $PSVersionTable.PSVersion
-
-Major  Minor  Build  Revision
------  -----  -----  --------
-5      1      22621  4391
-
-
-PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> Get-Command -Noun alias*
-
-CommandType     Name                                               Version    Source
------------     ----                                               -------    ------
-Cmdlet          Export-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
-Cmdlet          Get-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
-Cmdlet          Import-Alias                                       3.1.0.0    Microsoft.PowerShell.Utility
-Cmdlet          New-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
-Cmdlet          Set-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
-
-
-PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> Get-Command -Verb Get -Noun alias*
-
-CommandType     Name                                               Version    Source
------------     ----                                               -------    ------
-Cmdlet          Get-Alias                                          3.1.0.0    Microsoft.PowerShell.Utility
-
-
-PS C:\Users\sreelakshmi.c\QA-Training\cognixia042025> Stop-Transcript
+PS C:\Users\sachin.jha> Stop-Transcript
 **********************
 Windows PowerShell transcript end
-End time: 20250422105723
+End time: 20250422110215
 **********************
