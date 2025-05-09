@@ -3,6 +3,8 @@ import examples.*;
 
 import java.util.Arrays;
 import java.util.function.BinaryOperator;
+import java.util.function.Function;
+import java.util.function.IntPredicate;
 
 import static java.lang.String.format;
 
@@ -13,6 +15,48 @@ public class Main {
     //float text;
     BinaryOperator<Integer> c = (param1, param2)  -> param1 + param2;
     public static void main(String[] args) {
+        //add("one", "two");
+        //anyMatchDemo();
+        //LangTranslator();
+        int[] numbers = {10,20,11,2,6,9,12,19,100};
+        System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
+
+
+
+    }
+
+    private static void anyMatchDemo() {
+        IntPredicate even_checker = new IntPredicate() {
+            @Override
+            public boolean test(int value) {
+                return value /2 == 0;
+            }
+        };
+        IntPredicate morethan100checker = new IntPredicate() {
+            @Override
+            public boolean test(int value) {
+                return value > 100;
+            }
+        };
+
+        class EvenChecker implements IntPredicate{
+            @Override
+            public boolean test(int value) {
+                return value /2 == 0;
+            }
+        }
+
+        int[] numbers = {1,10,8,9,4,3,2,0};
+        System.out.println(Arrays.stream(numbers).anyMatch(c-> c / 2 ==0));
+        // Any number greater than 100
+        System.out.println(Arrays.stream(numbers).anyMatch(c-> c > 100));
+        System.out.println(Arrays.stream(numbers).anyMatch(even_checker));
+        // Any number greater than 100
+        System.out.println(Arrays.stream(numbers).anyMatch(morethan100checker));
+        System.out.println(Arrays.stream(numbers).anyMatch(new EvenChecker()));
+    }
+
+    private static void LangTranslator() {
         // Methods
         //functInterface();
         Translate tamil = c -> {switch (c){
@@ -26,12 +70,32 @@ public class Main {
 
         Translate telugu = c -> {switch (c){
             case 1:
-                return "Okati";
+                return "ఒకటి";
             case 2:
-                return  "Telgu Rendu";
+                return  "రెండు";
             default:
                 return "Tamil Number";
         }};
+
+        // TO DO Implement a Hindi Translator
+
+        /*
+        * Interface Function<T,R>
+        Type Parameters:
+        * T - the type of the input to the function
+        * R - the type of the result of the function
+        * */
+
+        Function<Integer,String> ftamil = input -> {switch(input){
+            case 1:
+                return "ஒன்று";
+            case 2:
+                return "இரண்டு";
+            default:
+                return "வேறு ஏதாவது";
+        }};
+
+        ftamil.apply(1);
 
         System.out.println(telugu.translate(1));
         System.out.println(telugu.translate(2));
@@ -39,16 +103,14 @@ public class Main {
         System.out.println(tamil.translate(1));
         System.out.println(tamil.translate(2));
         System.out.println(tamil.translate(3));
-
-
-
-
     }
 
     private static void functInterface() {
         Calculate add2 = p-> p+2; // lambda expression
         Calculate double_this = d-> d * 2;
         Calculate triple_this = t -> t * 3;
+        //TODO: Implement a sqare/cube function
+
 
         System.out.println("Doubling ");
         System.out.println(double_this.calculate(40));
