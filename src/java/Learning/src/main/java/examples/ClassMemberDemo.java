@@ -2,6 +2,7 @@ package examples;
 
 public class ClassMemberDemo {
     static int number_of_instances = 0;
+    final float PI = 22/7f; //
     public ClassMemberDemo(int field_int) {
         this.field_int = field_int;
         number_of_instances ++;
