@@ -17,9 +17,10 @@ public class Main {
     public static void main(String[] args) {
         //add("one", "two");
         //anyMatchDemo();
-        //LangTranslator();
-        int[] numbers = {10,20,11,2,6,9,12,19,100};
-        System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
+//        LangTranslator();
+        functInterface();
+//        int[] numbers = {10,20,11,2,6,9,12,19,100};
+//        System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
 
 
 
@@ -59,20 +60,47 @@ public class Main {
     private static void LangTranslator() {
         // Methods
         //functInterface();
-        Translate tamil = c -> {switch (c){
+        Translate tamil = c -> {switch (c) {
             case 1:
                 return "Onnu";
             case 2:
-                return  "Rendu";
+                return "Rendu";
+            case 3:
+                return "Moondru";
+            case 4:
+                return "Naalu";
+            case 5:
+                return "Anju";
+            case 6:
+                return "Aaru";
+            case 7:
+                return "Ezhu";
+            case 8:
+                return "Ettu";
+            case 9:
+                return "Onbadhu";
             default:
-                return "Vera number";
-        }};
+                return "Vera number";}};
 
-        Translate telugu = c -> {switch (c){
+        Translate telugu = c -> {switch (c) {
             case 1:
-                return "ఒకటి";
+                return "ఒకటి"; // Okati
             case 2:
-                return  "రెండు";
+                return "రెండు"; // Rendu
+            case 3:
+                return "మూడు"; // Moodu
+            case 4:
+                return "నాలుగు"; // Naalugu
+            case 5:
+                return "ఐదు";   // Aidu
+            case 6:
+                return "ఆరు";   // Aaru
+            case 7:
+                return "ఏడు";   // Edu
+            case 8:
+                return "ఎనిమిది";
+            case 9:
+                return "తొమ్మిది";
             default:
                 return "Tamil Number";
         }};
@@ -97,10 +125,10 @@ public class Main {
 
         ftamil.apply(1);
 
-        System.out.println(telugu.translate(1));
+        System.out.println(telugu.translate(8));
         System.out.println(telugu.translate(2));
         System.out.println(telugu.translate(3));
-        System.out.println(tamil.translate(1));
+        System.out.println(tamil.translate(7));
         System.out.println(tamil.translate(2));
         System.out.println(tamil.translate(3));
     }
@@ -110,7 +138,7 @@ public class Main {
         Calculate double_this = d-> d * 2;
         Calculate triple_this = t -> t * 3;
         //TODO: Implement a sqare/cube function
-
+        Calculate square = a -> a*a;
 
         System.out.println("Doubling ");
         System.out.println(double_this.calculate(40));
@@ -124,6 +152,8 @@ public class Main {
         System.out.println(add2.calculate(40));
         System.out.println(add2.calculate(30));
         System.out.println(add2.calculate(20));
+        System.out.println(square.calculate(2));
+        System.out.println(square.calculate(6));
     }
 
 
@@ -168,9 +198,9 @@ public class Main {
                 String.valueOf( new StringBuilder("When")
                         .append(i)
                         .append("and")
-                .append(i+2)
-                .append("are added the result is ")
-                .append(10));
+                        .append(i+2)
+                        .append("are added the result is ")
+                        .append(10));
 
         for (int j = 0; i < 5; i++) {
             System.out.println(format("When %d and %d is added the resulyt will be %d",i,i+2,add(i,i+2)));
@@ -209,8 +239,10 @@ public class Main {
         ClassMemberDemo inst3 = new ClassMemberDemo(3);
         inst3.MethodOne();
         System.out.println("Number of Instances " + ClassMemberDemo.GetInstanceCount());
+
     }
 }
+
 
 
 
