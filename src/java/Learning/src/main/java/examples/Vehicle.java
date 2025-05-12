@@ -14,7 +14,6 @@ public abstract class Vehicle {
                 System.out.println("Turning Left");
         }
         SimpleClass cls = new SimpleClass(10,"simple");
-        cls.
 
     }
 

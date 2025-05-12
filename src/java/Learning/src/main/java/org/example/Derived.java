@@ -8,6 +8,6 @@ public class Derived extends SimpleClass {
     }
 
     public void Test(){
-        this.
+        //this.
     }
 }
