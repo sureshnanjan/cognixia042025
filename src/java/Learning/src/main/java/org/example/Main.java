@@ -17,11 +17,11 @@ public class Main {
     public static void main(String[] args) {
         //add("one", "two");
         //anyMatchDemo();
-        //LangTranslator();
+        LangTranslator();
         int[] numbers = {10,20,11,2,6,9,12,19,100};
         System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
 
-
+        functInterface();
 
     }
 
@@ -59,25 +59,55 @@ public class Main {
     private static void LangTranslator() {
         // Methods
         //functInterface();
-        Translate tamil = c -> {switch (c){
-            case 1:
-                return "Onnu";
-            case 2:
-                return  "Rendu";
-            default:
-                return "Vera number";
-        }};
+        Translate tamil = c -> {
+            switch (c) {
+                case 0: return "Zero";
+                case 1: return "Onnu";
+                case 2: return "Rendu";
+                case 3: return "Moonu";
+                case 4: return "Naalu";
+                case 5: return "Anju";
+                case 6: return "Aaru";
+                case 7: return "Ezhu";
+                case 8: return "Ettu";
+                case 9: return "Onpathu";
+                default: return "Vera number";
+            }
+        };
 
-        Translate telugu = c -> {switch (c){
-            case 1:
-                return "ఒకటి";
-            case 2:
-                return  "రెండు";
-            default:
-                return "Tamil Number";
-        }};
+        Translate telugu = c -> {
+            switch (c) {
+                case 0: return "సున్నా";
+                case 1: return "ఒకటి";
+                case 2: return "రెండు";
+                case 3: return "మూడు";
+                case 4: return "నాలుగు";
+                case 5: return "ఐదు";
+                case 6: return "ఆరు";
+                case 7: return "ఏడు";
+                case 8: return "ఎనిమిది";
+                case 9: return "తొమ్మిది";
+                default: return "Telugu number";
+            }
+        };
 
         // TO DO Implement a Hindi Translator
+
+        Translate hindi = c -> {
+            switch (c) {
+                case 0: return "शून्य";
+                case 1: return "एक";
+                case 2: return "दो";
+                case 3: return "तीन";
+                case 4: return "चार";
+                case 5: return "पांच";
+                case 6: return "छह";
+                case 7: return "सात";
+                case 8: return "आठ";
+                case 9: return "नौ";
+                default: return "कुछ और";
+            }
+        };
 
         /*
         * Interface Function<T,R>
@@ -97,12 +127,20 @@ public class Main {
 
         ftamil.apply(1);
 
-        System.out.println(telugu.translate(1));
-        System.out.println(telugu.translate(2));
-        System.out.println(telugu.translate(3));
-        System.out.println(tamil.translate(1));
-        System.out.println(tamil.translate(2));
-        System.out.println(tamil.translate(3));
+        System.out.println("Tamil Translations:");
+        for (int i = 0; i <= 9; i++) {
+            System.out.println(i + ": " + tamil.translate(i));
+        }
+
+        System.out.println("\nTelugu Translations:");
+        for (int i = 0; i <= 9; i++) {
+            System.out.println(i + ": " + telugu.translate(i));
+        }
+
+        System.out.println("\nHindi Translations:");
+        for (int i = 0; i <= 9; i++) {
+            System.out.println(i + ": " + hindi.translate(i));
+        }
     }
 
     private static void functInterface() {
@@ -110,6 +148,8 @@ public class Main {
         Calculate double_this = d-> d * 2;
         Calculate triple_this = t -> t * 3;
         //TODO: Implement a sqare/cube function
+        Calculate square = s -> s * s;
+        Calculate cube = c -> c * c * c;
 
 
         System.out.println("Doubling ");
@@ -124,6 +164,14 @@ public class Main {
         System.out.println(add2.calculate(40));
         System.out.println(add2.calculate(30));
         System.out.println(add2.calculate(20));
+        System.out.println("Square ");
+        System.out.println(square.calculate(4));
+        System.out.println(square.calculate(5));
+        System.out.println(square.calculate(6));
+        System.out.println("Cube ");
+        System.out.println(cube.calculate(2));
+        System.out.println(cube.calculate(3));
+        System.out.println(cube.calculate(4));
     }
 
 
