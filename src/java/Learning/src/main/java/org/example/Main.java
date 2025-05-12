@@ -21,7 +21,7 @@ public class Main {
         LangTranslator();
         int[] numbers = {10,20,11,2,6,9,12,19,100};
         System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
-        LangTranslator();
+        //LangTranslator();
         //int[] numbers = {10,20,11,2,6,9,12,19,100};
         //System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
         functInterface();
