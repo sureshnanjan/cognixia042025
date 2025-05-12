@@ -1,4 +1,4 @@
-package testpackage;
+package Learning.src.test.java.testpackage;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;

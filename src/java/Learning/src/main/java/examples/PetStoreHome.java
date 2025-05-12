@@ -1,4 +1,6 @@
-package examples;
+package Learning.src.main.java.examples;
+
+import Learning.src.main.java.examples.Searcher;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,14 +19,14 @@ public class PetStoreHome {
         //this.main.(new PetCategory(PetNames.reptile));
     }
 
-    PetStoreLogo mylogo; // abstraction
+    examples.PetStoreLogo mylogo; // abstraction
     Searcher search;
-    PetStoreAuthenticator sign_in;
-    ShoppingCart cart;
-    List<PetCategory>[] main;
+    examples.PetStoreAuthenticator sign_in;
+    examples.ShoppingCart cart;
+    List<examples.PetCategory>[] main;
 
-    List<PetCategory>[] leftSide;
-    Footer footer;
+    List<examples.PetCategory>[] leftSide;
+    examples.Footer footer;
 
 
 }

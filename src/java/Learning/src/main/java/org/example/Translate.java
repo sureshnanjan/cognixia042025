@@ -1,4 +1,4 @@
 package Learning.src.main.java.org.example;
 
-public class ChromeDriver {
+public interface Translate {
 }

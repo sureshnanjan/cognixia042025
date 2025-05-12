@@ -1,6 +1,8 @@
-package examples;
+package Learning.src.main.java.examples;
 
-public class SimpleClass implements Comparable<SimpleClass> , Eatable{
+import Learning.src.main.java.examples.Eatable;
+
+public class SimpleClass implements Comparable<SimpleClass> , Eatable {
     int number;
     String name;
 
@@ -54,7 +56,7 @@ public class SimpleClass implements Comparable<SimpleClass> , Eatable{
      *                              from being compared to this object.
      */
     @Override
-    public int compareTo(SimpleClass o) {
+    public int compareTo(@org.jetbrains.annotations.NotNull SimpleClass o) {
         return  this.name.compareTo(o.name);
         //return .compare(this.name,o.name);
     }

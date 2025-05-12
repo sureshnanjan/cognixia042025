@@ -1,4 +1,4 @@
-package examples;
+package Learning.src.main.java.examples;
 
 public class ClassMemberDemo {
     static int number_of_instances = 0;
@@ -12,7 +12,7 @@ public class ClassMemberDemo {
         // Static or Instance
         // Fields - Variables
         int field_int; // Primitive
-        Car mycar; // Custom
+        examples.Car mycar; // Custom
         // Methods - Behaviours
         static int class_var;
     public void MethodOne(){

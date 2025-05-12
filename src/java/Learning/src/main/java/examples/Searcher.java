@@ -1,4 +1,6 @@
-package examples;
+package Learning.src.main.java.examples;
+
+import Learning.src.main.java.examples.Eatable;
 
 public class Searcher implements Eatable {
     int value;
