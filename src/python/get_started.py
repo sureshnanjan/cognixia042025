@@ -17,3 +17,11 @@ assert 'The Internet' in driver.title
 #elem.click()
 #assert 'WebDriver' in driver.title
 #driver.quit()
+
+
+
+####### this is used to direct chrome browser and application to the same port number to append the data. 
+driver = webdriver.Remote(
+        command_executor=command_executor,
+        options=chrome_options
+   )
