@@ -17,7 +17,9 @@ public class Main {
     public static void main(String[] args) {
         //add("one", "two");
         //anyMatchDemo();
-        //LangTranslator();
+        LangTranslator();
+        functInterface();
+
         int[] numbers = {10,20,11,2,6,9,12,19,100};
         System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
 
@@ -59,24 +61,52 @@ public class Main {
     private static void LangTranslator() {
         // Methods
         //functInterface();
-        Translate tamil = c -> {switch (c){
-            case 1:
-                return "Onnu";
-            case 2:
-                return  "Rendu";
-            default:
-                return "Vera number";
-        }};
+        Translate tamil = c -> {
+            switch (c) {
+                case 0: return "poojyam";
+                case 1: return "Onnu";
+                case 2: return "Rendu";
+                case 3: return "Moondru";
+                case 4: return "Naalu";
+                case 5: return "Aindhu";
+                case 6: return "Aaru";
+                case 7: return "Yezhu";
+                case 8: return "Yettu";
+                case 9: return "Onbadhu";
+                default: return "Vera number";
+            }
+        };
 
-        Translate telugu = c -> {switch (c){
-            case 1:
-                return "ఒకటి";
-            case 2:
-                return  "రెండు";
-            default:
-                return "Tamil Number";
-        }};
+        Translate telugu = c -> {
+            switch (c) {
+                case 0: return "సున్నా";
+                case 1: return "ఒకటి";
+                case 2: return "రెండు";
+                case 3: return "మూడు";
+                case 4: return "నాలుగు";
+                case 5: return "ఐదు";
+                case 6: return "ఆరు";
+                case 7: return "ఏడు";
+                case 8: return "ఎనిమిది";
+                case 9: return "తొమ్మిది";
+                default: return "Telugu లో లేదు";
+            }
+        };
 
+        Translate hindi = c -> {
+            switch (c) {
+                case 0: return "शून्य";
+                case 1: return "एक";
+                case 2: return "दो";
+                case 3: return "तीन";
+                case 4: return "चार";
+                case 5: return "पांच";
+                case 6: return "छह";
+                case 7: return "सात";
+                case 8: return "आठ";
+                case 9: return "नौ";
+                default: return "Hindi में नहीं है";
+            }};
         // TO DO Implement a Hindi Translator
 
         /*
@@ -86,23 +116,42 @@ public class Main {
         * R - the type of the result of the function
         * */
 
-        Function<Integer,String> ftamil = input -> {switch(input){
-            case 1:
-                return "ஒன்று";
-            case 2:
-                return "இரண்டு";
-            default:
-                return "வேறு ஏதாவது";
-        }};
+        Function<Integer, String> ftamil = input -> {
+            switch (input) {
+                case 0:
+                    return "பூஜ்யம்";
+                case 1:
+                    return "ஒன்று";
+                case 2:
+                    return "இரண்டு";
+                case 3:
+                    return "மூன்று";
+                case 4:
+                    return "நான்கு";
+                case 5:
+                    return "ஐந்து";
+                case 6:
+                    return "ஆறு";
+                case 7:
+                    return "ஏழு";
+                case 8:
+                    return "எட்டு";
+                case 9:
+                    return "ஒன்பது";
+                default:
+                    return "வேறு ஏதாவது";
+            }
+        };
 
-        ftamil.apply(1);
+        for (int i = 0; i <= 9; i++) {
+            System.out.println(i + " -> " + ftamil.apply(i));
+        }
 
-        System.out.println(telugu.translate(1));
-        System.out.println(telugu.translate(2));
-        System.out.println(telugu.translate(3));
-        System.out.println(tamil.translate(1));
-        System.out.println(tamil.translate(2));
-        System.out.println(tamil.translate(3));
+        System.out.println(ftamil.apply(1));
+
+        for (int i = 0; i <= 9; i++) {
+            System.out.println(format("Number: %s, Tamil: %s, Telugu: %s, Hindi: %s", i,tamil.translate(i), telugu.translate(i), hindi.translate(i)));
+        }
     }
 
     private static void functInterface() {
@@ -110,6 +159,8 @@ public class Main {
         Calculate double_this = d-> d * 2;
         Calculate triple_this = t -> t * 3;
         //TODO: Implement a sqare/cube function
+        Calculate square_this = s -> s * s;
+        Calculate cube_this = c -> c * c * c;
 
 
         System.out.println("Doubling ");
@@ -124,6 +175,14 @@ public class Main {
         System.out.println(add2.calculate(40));
         System.out.println(add2.calculate(30));
         System.out.println(add2.calculate(20));
+        System.out.println("Squaring ");
+        System.out.println(square_this.calculate(4));
+        System.out.println(square_this.calculate(5));
+        System.out.println(square_this.calculate(6));
+        System.out.println("Cubing ");
+        System.out.println(cube_this.calculate(2));
+        System.out.println(cube_this.calculate(3));
+        System.out.println(cube_this.calculate(4));
     }
 
 
