@@ -1,5 +1,8 @@
-package org.example;
-import examples.*;
+package Learning.src.main.java.org.example;
+import Learning.src.main.java.examples.ClassMemberDemo;
+import Learning.src.main.java.examples.Days;
+import Learning.src.main.java.examples.Eatable;
+import Learning.src.main.java.examples.*;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -15,7 +18,7 @@ public class Main {
     int text;
     //float text;
     BinaryOperator<Integer> c = (param1, param2)  -> param1 + param2;
-    public static void main(String[] args) {
+    public static <eVehicle> void main(String[] args) {
         //add("one", "two");
         //anyMatchDemo();
         //LangTranslator();
@@ -23,11 +26,11 @@ public class Main {
         //System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
 
         //BinarySearcherHowtoCall();
-        PetItems dog = new PetItems();
+        examples.PetItems dog = new examples.PetItems();
         System.out.println(dog);
         Car ford = new Car();
        Bike bike = new Bike();
-       Vehicle[] myvehickles = {new Bike(), new Car(), new Bike(), new Car()};
+       eVehicle[] myvehickles = {new Bike(),new Car(),new Bike(),new Car()};
 
        // Driver - ChromeDriver , FirefoxDriver
         // Vehicle myveh = new Vehicle();
@@ -36,7 +39,7 @@ public class Main {
         SimpleClass cls = new SimpleClass(10,"");
 
         // Create Read Update Delete
-        Adder ad2and4 = new Adder(2,4); // Integer Adder
+        examples.Adder ad2and4 = new examples.Adder(2,4); // Integer Adder
         ad2and4.Add();
         GenericAdder<Integer> add2and4 = new GenericAdder<>(2,4);
         GenericAdder<Float> add2_4and2_4 = new GenericAdder<>(2.4f,2.4f);
@@ -51,7 +54,7 @@ public class Main {
     }
 
     private static void BinarySearcherHowtoCall() {
-        SimpleClass[] mymembers = {new SimpleClass(0,"suresh"), new SimpleClass(1,"adesh")};
+       SimpleClass[] mymembers = {new SimpleClass(0,"suresh"), new SimpleClass(1,"adesh")};
         SimpleClass myKey = new SimpleClass(10,"suresh");
         int result = Arrays.binarySearch(mymembers, myKey, new Comparator<SimpleClass>() {
             @Override
@@ -100,14 +103,13 @@ public class Main {
     private static void LangTranslator() {
         // Methods
         //functInterface();
-        Translate tamil = c -> {switch (c){
-            case 1:
-                return "Onnu";
-            case 2:
-                return  "Rendu";
-            default:
-                return "Vera number";
-        }};
+        Translate tamil = c -> {
+            return switch (c) {
+                case 1 -> "Onnu";
+                case 2 -> "Rendu";
+                default -> "Vera number";
+            };
+        };
 
         Translate telugu = c -> {switch (c){
             case 1:

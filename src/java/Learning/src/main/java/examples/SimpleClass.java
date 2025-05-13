@@ -1,4 +1,4 @@
-package examples;
+package Learning.src.main.java.examples;
 
 public class SimpleClass implements Comparable<SimpleClass> , Eatable{
     public int number;

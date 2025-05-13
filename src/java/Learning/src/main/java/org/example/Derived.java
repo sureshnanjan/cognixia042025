@@ -1,4 +1,4 @@
-package org.example;
+package Learning.src.main.java.org.example;
 
 import examples.SimpleClass;
 

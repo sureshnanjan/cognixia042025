@@ -1,4 +1,4 @@
-package examples;
+package Learning.src.main.java.examples;
 
 public abstract class Vehicle {
     int num_of_tyres;
