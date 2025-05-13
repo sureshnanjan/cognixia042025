@@ -1,8 +1,8 @@
-package Learning.src.main.java.org.example;
-import Learning.src.main.java.examples.Calculate;
-import Learning.src.main.java.examples.ClassMemberDemo;
+package org.example;
+import examples.*;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.IntPredicate;
@@ -17,15 +17,51 @@ public class Main {
     BinaryOperator<Integer> c = (param1, param2)  -> param1 + param2;
     public static void main(String[] args) {
         //add("one", "two");
-        anyMatchDemo();
-        LangTranslator();
-        literasl_demo();
-        extracted08();
-        int[] numbers = {10,20,11,2,6,9,12,19,100};
-//        System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
+        //anyMatchDemo();
+        //LangTranslator();
+        //int[] numbers = {10,20,11,2,6,9,12,19,100};
+        //System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
+
+        //BinarySearcherHowtoCall();
+        PetItems dog = new PetItems();
+        System.out.println(dog);
+        Car ford = new Car();
+       Bike bike = new Bike();
+       Vehicle[] myvehickles = {new Bike(), new Car(), new Bike(), new Car()};
+
+       // Driver - ChromeDriver , FirefoxDriver
+        // Vehicle myveh = new Vehicle();
+        // Animal -  Abstract concept
+        // Animal myanimal = new Animal()
+        SimpleClass cls = new SimpleClass(10,"");
+
+        // Create Read Update Delete
+        Adder ad2and4 = new Adder(2,4); // Integer Adder
+        ad2and4.Add();
+        GenericAdder<Integer> add2and4 = new GenericAdder<>(2,4);
+        GenericAdder<Float> add2_4and2_4 = new GenericAdder<>(2.4f,2.4f);
+        GenericAdder<String> addoneTwo = new GenericAdder<>("One", "Two");
+        GenericAdder<SimpleClass> sicl1and2 = new GenericAdder<>(
+                new SimpleClass(10,"Ten"),
+                new SimpleClass(20,"Twenty"));
 
 
 
+
+    }
+
+    private static void BinarySearcherHowtoCall() {
+        SimpleClass[] mymembers = {new SimpleClass(0,"suresh"), new SimpleClass(1,"adesh")};
+        SimpleClass myKey = new SimpleClass(10,"suresh");
+        int result = Arrays.binarySearch(mymembers, myKey, new Comparator<SimpleClass>() {
+            @Override
+            public int compare(SimpleClass o1, SimpleClass o2) {
+                return Integer.compare(o1.number,o2.number);
+            }
+        });
+        int resultlambda = Arrays.binarySearch(mymembers, myKey, (a,b)->a.name.compareTo(b.name));
+        System.out.println(result);
+        System.out.println(resultlambda);
     }
 
     private static void anyMatchDemo() {
@@ -35,7 +71,7 @@ public class Main {
                 return value /2 == 0;
             }
         };
-        IntPredicate morethan_100checker = new IntPredicate() {
+        IntPredicate morethan100checker = new IntPredicate() {
             @Override
             public boolean test(int value) {
                 return value > 100;
@@ -55,14 +91,16 @@ public class Main {
         System.out.println(Arrays.stream(numbers).anyMatch(c-> c > 100));
         System.out.println(Arrays.stream(numbers).anyMatch(even_checker));
         // Any number greater than 100
-        System.out.println(Arrays.stream(numbers).anyMatch(morethan_100checker));
+        System.out.println(Arrays.stream(numbers).anyMatch(morethan100checker));
         System.out.println(Arrays.stream(numbers).anyMatch(new EvenChecker()));
+
+
     }
 
     private static void LangTranslator() {
         // Methods
-        // functInterface();
-        examples.Translate tamil = c -> {switch (c){
+        //functInterface();
+        Translate tamil = c -> {switch (c){
             case 1:
                 return "Onnu";
             case 2:
@@ -71,7 +109,7 @@ public class Main {
                 return "Vera number";
         }};
 
-        examples.Translate telugu = c -> {switch (c){
+        Translate telugu = c -> {switch (c){
             case 1:
                 return "ఒకటి";
             case 2:
@@ -80,24 +118,8 @@ public class Main {
                 return "Tamil Number";
         }};
 
-        examples.Translate fHindi = c -> {switch (c){
-            case 1:
-                return "Ek";
-            case 2:
-                return  "do";
-            default:
-                return "alag Number";
-        }};
-
         // TO DO Implement a Hindi Translator
 
-        Function<Integer,String> Hindi = input -> {
-            return switch (input) {
-                case 1 -> "एक";
-                case 2 -> "दो";
-                default -> "अलग-अलग संख्या";
-            };
-        };
         /*
         * Interface Function<T,R>
         Type Parameters:
@@ -105,13 +127,14 @@ public class Main {
         * R - the type of the result of the function
         * */
 
-        Function<Integer,String> ftamil = input -> {
-            return switch (input) {
-                case 1 -> "ஒன்று";
-                case 2 -> "இரண்டு";
-                default -> "வேறு ஏதாவது";
-            };
-        };
+        Function<Integer,String> ftamil = input -> {switch(input){
+            case 1:
+                return "ஒன்று";
+            case 2:
+                return "இரண்டு";
+            default:
+                return "வேறு ஏதாவது";
+        }};
 
         ftamil.apply(1);
 
@@ -121,14 +144,12 @@ public class Main {
         System.out.println(tamil.translate(1));
         System.out.println(tamil.translate(2));
         System.out.println(tamil.translate(3));
-        System.out.println(fHindi.translate(3));
     }
 
     private static void functInterface() {
         Calculate add2 = p-> p+2; // lambda expression
         Calculate double_this = d-> d * 2;
         Calculate triple_this = t -> t * 3;
-        Calculate square_this = t -> t * t;
         //TODO: Implement a sqare/cube function
 
 
@@ -144,10 +165,6 @@ public class Main {
         System.out.println(add2.calculate(40));
         System.out.println(add2.calculate(30));
         System.out.println(add2.calculate(20));
-        System.out.println("square  ");
-        System.out.println(square_this.calculate(40));
-        System.out.println(square_this.calculate(30));
-        System.out.println(square_this.calculate(20));
     }
 
 
@@ -210,10 +227,10 @@ public class Main {
 
         }
 
-//   Class , Interface , Enum
-//        examples.SimpleClass cls = new examples.SimpleClass(0,"");
-//        examples.Eatable einst = cls;
-//        examples.Days day = examples.Days.monday;
+        // Class , Interface , Enum
+        SimpleClass cls = new SimpleClass(0,"");
+        Eatable einst = cls;
+        Days day = Days.monday;
     }
 
     private static int add(int a , int b){

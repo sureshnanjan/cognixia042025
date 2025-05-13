@@ -1,10 +1,14 @@
-package Learning.src.main.java.examples;
+package examples;
 
-import Learning.src.main.java.examples.Eatable;
+public class SimpleClass implements Comparable<SimpleClass> , Eatable{
+    public int number;
+    public String name;
 
-public class SimpleClass implements Comparable<SimpleClass> , Eatable {
-    int number;
-    String name;
+    int package_int;
+
+    protected int protected_int;
+
+    private int only_inside_sc;
 
     public SimpleClass(int number, String name) {
         this.number = number;
@@ -56,10 +60,11 @@ public class SimpleClass implements Comparable<SimpleClass> , Eatable {
      *                              from being compared to this object.
      */
     @Override
-    public int compareTo(@org.jetbrains.annotations.NotNull SimpleClass o) {
+    public int compareTo(SimpleClass o) {
         return  this.name.compareTo(o.name);
         //return .compare(this.name,o.name);
     }
+
 
     @Override
     public void Eat() {
@@ -68,6 +73,6 @@ public class SimpleClass implements Comparable<SimpleClass> , Eatable {
 
     @Override
     public void eat() {
-        System.out.println("I am eating just simply");
+
     }
 }
