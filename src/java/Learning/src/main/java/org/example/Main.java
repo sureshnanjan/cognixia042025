@@ -18,11 +18,11 @@ public class Main {
     public static void main(String[] args) {
         //add("one", "two");
         //anyMatchDemo();
-        //LangTranslator();
+        LangTranslator();
         //int[] numbers = {10,20,11,2,6,9,12,19,100};
         //System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
 
-        //BinarySearcherHowtoCall();
+        BinarySearcherHowtoCall();
         PetItems dog = new PetItems();
         System.out.println(dog);
         Car ford = new Car();
@@ -99,12 +99,28 @@ public class Main {
 
     private static void LangTranslator() {
         // Methods
-        //functInterface();
+        functInterface();
         Translate tamil = c -> {switch (c){
             case 1:
                 return "Onnu";
             case 2:
                 return  "Rendu";
+            case 3:
+                return "Moonu";
+            case 4:
+                return "Naalu";
+            case 5:
+                return "Anju";
+            case 6:
+                return "Aaru";
+            case 7:
+                return "Yezhu";
+            case 8:
+                return "Yettu";
+            case 9:
+                return "Onbadhu";
+            case 10:
+                return "Pathu";
             default:
                 return "Vera number";
         }};
@@ -114,6 +130,22 @@ public class Main {
                 return "ఒకటి";
             case 2:
                 return  "రెండు";
+            case 3:
+                return "మూడు";
+            case 4:
+                return "నాలుగు";
+            case 5:
+                return "ఐదు";
+            case 6:
+                return "ఆరు";
+            case 7:
+                return "ఏడు";
+            case 8:
+                return "ఎనిమిది";
+            case 9:
+                return "తొమ్మిది";
+            case 10:
+                return "పది";
             default:
                 return "Tamil Number";
         }};
@@ -126,12 +158,41 @@ public class Main {
         * T - the type of the input to the function
         * R - the type of the result of the function
         * */
+        Translate hindi = c -> {switch (c){
+            case 1:  return "एक";
+            case 2:  return "दो";
+            case 3:  return "तीन";
+            case 4:  return "चार";
+            case 5:  return "पांच";
+            case 6:  return "छह";
+            case 7:  return "सात";
+            case 8:  return "आठ";
+            case 9:  return "नौ";
+            case 10: return "दस";
+            default: return "Other Number";
+        }};
 
         Function<Integer,String> ftamil = input -> {switch(input){
             case 1:
                 return "ஒன்று";
             case 2:
                 return "இரண்டு";
+            case 3:
+                return "மூன்று";
+            case 4:
+                return "நான்கு";
+            case 5:
+                return "ஐந்து";
+            case 6:
+                return "ஆறு";
+            case 7:
+                return "ஏழு";
+            case 8:
+                return "எட்டு";
+            case 9:
+                return "ஒன்பது";
+            case 10:
+                return "பத்து";
             default:
                 return "வேறு ஏதாவது";
         }};
@@ -141,9 +202,39 @@ public class Main {
         System.out.println(telugu.translate(1));
         System.out.println(telugu.translate(2));
         System.out.println(telugu.translate(3));
+        System.out.println(telugu.translate(4));
+        System.out.println(telugu.translate(5));
+        System.out.println(telugu.translate(6));
+        System.out.println(telugu.translate(7));
+        System.out.println(telugu.translate(8));
+        System.out.println(telugu.translate(9));
+        System.out.println(telugu.translate(10));
+        System.out.println(telugu.translate(11));
+
         System.out.println(tamil.translate(1));
         System.out.println(tamil.translate(2));
         System.out.println(tamil.translate(3));
+        System.out.println(tamil.translate(4));
+        System.out.println(tamil.translate(5));
+        System.out.println(tamil.translate(6));
+        System.out.println(tamil.translate(7));
+        System.out.println(tamil.translate(8));
+        System.out.println(tamil.translate(9));
+        System.out.println(tamil.translate(10));
+        System.out.println(tamil.translate(11));
+
+        System.out.println(hindi.translate(1));
+        System.out.println(hindi.translate(2));
+        System.out.println(hindi.translate(3));
+        System.out.println(hindi.translate(4));
+        System.out.println(hindi.translate(5));
+        System.out.println(hindi.translate(6));
+        System.out.println(hindi.translate(7));
+        System.out.println(hindi.translate(8));
+        System.out.println(hindi.translate(9));
+        System.out.println(hindi.translate(10));
+        System.out.println(hindi.translate(11));
+
     }
 
     private static void functInterface() {
@@ -151,6 +242,10 @@ public class Main {
         Calculate double_this = d-> d * 2;
         Calculate triple_this = t -> t * 3;
         //TODO: Implement a sqare/cube function
+        // Square function - multiplies the number by itself
+        Calculate square = s -> s * s;
+        // Cube function - multiplies the number by itself twice
+        Calculate cube = c -> c * c * c;
 
 
         System.out.println("Doubling ");
@@ -165,6 +260,14 @@ public class Main {
         System.out.println(add2.calculate(40));
         System.out.println(add2.calculate(30));
         System.out.println(add2.calculate(20));
+        System.out.println("Squaring ");
+        System.out.println(square.calculate(4));  // 4^2 = 16
+        System.out.println(square.calculate(5));  // 5^2 = 25
+        System.out.println(square.calculate(6));  // 6^2 = 36
+        System.out.println("Cubing ");
+        System.out.println(cube.calculate(2));  // 2^3 = 8
+        System.out.println(cube.calculate(3));  // 3^3 = 27
+        System.out.println(cube.calculate(4));  // 4^3 = 64
     }
 
 
