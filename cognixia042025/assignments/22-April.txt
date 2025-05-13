@@ -1,5 +1,0 @@
-Task1: Refer to the link below 
-https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands 
-
-- Read the dir command syntax and come up with test cases to ensure the program works as per the documentation/ requirement
-
