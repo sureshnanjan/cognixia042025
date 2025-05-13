@@ -2,7 +2,25 @@ package examples;
 
 public class BinarySearcher {
     public int doSearch(int[] inputs, Object key) {
-        return 0;
+        int target = (Integer) key;
+        int left = 0;
+        int right = inputs.length - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if (inputs[mid] == target)
+            {
+                return mid;
+            }
+            else if (inputs[mid] < target)
+            {
+                left = mid + 1;
+            }
+            else
+            {
+                right = mid - 1;
+            }
+        }// Not foundreturn -1;
+        return -1;
     }
     /*
     * Parameters:
@@ -21,4 +39,5 @@ ClassCastException - if the range contains elements that are not mutually compar
 IllegalArgumentException - if fromIndex > toIndex
 ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
     * */
+
 }

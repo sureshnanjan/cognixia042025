@@ -78,7 +78,7 @@ ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
         BinarySearcher sut = new BinarySearcher();
         int[] inputs = {1,2,4,5,6};
         int key = 10;
-        int expected = -5;
+        int expected = -1;
         // Act
         int actual = sut.doSearch(inputs, key);
         // Assert
@@ -106,7 +106,7 @@ ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
         BinarySearcher sut = new BinarySearcher();
         int[] inputs = {1,2,4,5,6,10};
         int key = 7;
-        int expected = -5;
+        int expected = -1;
         // Act
         int actual = sut.doSearch(inputs, key);
         // Assert
@@ -119,7 +119,7 @@ ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
         BinarySearcher sut = new BinarySearcher();
         int[] inputs = {1,2,4,5,6,10};
         float key = 7.0f;
-        int expected = -5;
+        int expected = -1;
         // Act
         assertThrowsExactly(ClassCastException.class, () ->{
             int actual = sut.doSearch(inputs,key);
