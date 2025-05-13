@@ -49,7 +49,81 @@ public class Main {
                 new SimpleClass(10,"Ten"),
                 new SimpleClass(20,"Twenty"));
 
+        ArrayListEx arraylistex = new ArrayListEx();
+        arraylistex.create("Apple");
+        arraylistex.create("Banana");
+        arraylistex.read();
+        arraylistex.update(1, "Mango");
+        arraylistex.read();
+        arraylistex.delete("Apple");
+        arraylistex.read();
 
+        System.out.println("----------------------");
+
+        SetEx setex = new SetEx();
+        setex.create("Cat");
+        setex.create("Dog");
+        setex.read();
+        setex.update("Cat", "Lion");
+        setex.read();
+        setex.delete("Dog");
+        setex.read();
+
+        System.out.println("----------------------");
+
+        MapEx mapex = new MapEx();
+        mapex.create(1, "Java");
+        mapex.create(2, "Python");
+        mapex.read();
+        mapex.update(2, "C++");
+        mapex.read();
+        mapex.delete(1);
+        mapex.read();
+
+        System.out.println("----------------------");
+
+        QueueEx queueex = new QueueEx();
+        queueex.create("Task1");
+        queueex.create("Task2");
+        queueex.read();
+        queueex.update("Task1", "Task3");
+        queueex.read();
+        queueex.delete();
+        queueex.read();
+
+        System.out.println("----------------------");
+
+        LinkedListEx linkedlistex = new LinkedListEx();
+        linkedlistex.create("Apple");
+        linkedlistex.create("Banana");
+        linkedlistex.read();
+        linkedlistex.update(1, "Mango");
+        linkedlistex.read();
+        linkedlistex.delete("Apple");
+        linkedlistex.read();
+
+        System.out.println("----------------------");
+
+        StackEx stackex = new StackEx();
+        stackex.create("Book1");
+        stackex.create("Book2");
+        stackex.read();
+        stackex.update("Book1", "Notebook");
+        stackex.read();
+        stackex.delete();
+        stackex.read();
+
+        System.out.println("----------------------");
+
+        TreeSetEx treesetex = new TreeSetEx();
+        treesetex.create("Orange");
+        treesetex.create("Apple");
+        treesetex.create("Banana");
+        treesetex.read();
+        treesetex.update("Banana", "Cherry");
+        treesetex.read();
+        treesetex.delete("Apple");
+        treesetex.read();
 
 
     }
