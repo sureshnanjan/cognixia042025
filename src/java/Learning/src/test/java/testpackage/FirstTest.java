@@ -1,7 +1,9 @@
 package testpackage;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+
 
 class FirstTest {
 
@@ -15,4 +17,7 @@ class FirstTest {
     void fail_this() {
         assertEquals(2, 1+1);
     }
+
+    @Test
+    void OtherThanTest(){}
 }

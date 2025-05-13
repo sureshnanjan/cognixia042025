@@ -18,70 +18,11 @@ public class Main {
         //add("one", "two");
         //anyMatchDemo();
         //LangTranslator();
-//        int[] numbers = {10,20,11,2,6,9,12,19,100};
-//        System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
+        int[] numbers = {10,20,11,2,6,9,12,19,100};
+        System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
 
-        ArrayListDS arrayListDS = new ArrayListDS();
-        arrayListDS.create(10);
-        arrayListDS.create(20);
-        arrayListDS.read();
-        arrayListDS.update(1, 25);
-        arrayListDS.delete(0);
-        arrayListDS.read();
 
-        // LinkedList
-        LinkedListDS linkedList = new LinkedListDS();
-        linkedList.create("A");
-        linkedList.create("B");
-        linkedList.read();
-        linkedList.update(0, "Z");
-        linkedList.delete(1);
-        linkedList.read();
 
-        // Stack
-        StackDS stack = new StackDS();
-        stack.create(5);
-        stack.create(15);
-        stack.read();
-        stack.update(100);
-        stack.delete();
-        stack.read();
-
-        // Queue
-        QueueDS queue = new QueueDS();
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.read();
-        queue.update(9);
-        queue.delete();
-        queue.read();
-
-// HashMap
-        HashMapDS hashMap = new HashMapDS();
-        hashMap.create(1, "Apple");
-        hashMap.create(2, "Banana");
-        hashMap.read();
-        hashMap.update(1, "Avocado");
-        hashMap.delete(2);
-        hashMap.read();
-
-        // TreeMap
-        TreeMapDS treeMap = new TreeMapDS();
-        treeMap.create(3, "Cat");
-        treeMap.create(1, "Ant");
-        treeMap.read();
-        treeMap.update(1, "Dog");
-        treeMap.delete(3);
-        treeMap.read();
-
-        // HashSet
-        HashSetDS set = new HashSetDS();
-        set.create("One");
-        set.create("Two");
-        set.read();
-        set.update("Two", "TwoUpdated");
-        set.delete("One");
-        set.read();
     }
 
     private static void anyMatchDemo() {
