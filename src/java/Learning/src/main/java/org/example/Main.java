@@ -33,6 +33,9 @@ public class Main {
        Vehicle[] myvehickles = {new Bike(), new Car(), new Bike(), new Car()};
 
 
+
+       SimpleClass.InnerClass my
+
        // Driver - ChromeDriver , FirefoxDriver
         // Vehicle myveh = new Vehicle();
         // Animal -  Abstract concept
