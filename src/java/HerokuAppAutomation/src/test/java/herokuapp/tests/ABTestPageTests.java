@@ -3,6 +3,7 @@ package herokuapp.tests;
 import org.jspecify.annotations.Nullable;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Objects;
@@ -38,10 +39,20 @@ public class ABTestPageTests {
         //assertNotEquals(title,actual);
 
     }
+
     @Test
     void ABTestPageGivesNOABTestwhenCookieIsThere(){
-
-
-    }
-
+        ChromeDriver mybrowser = new ChromeDriver();
+        Cookie newCookie = new Cookie("optimizelyOptOut", "true");
+        mybrowser.get("https://the-internet.herokuapp.com");
+        try {
+            mybrowser.manage().addCookie(newCookie);
+        }catch(Exception ex){
+            System.out.println("Continue");
+        }
+        mybrowser.findElement(By.linkText("A/B Testing")).click();
+        // Go To AB Test Page
+        String title = "No A/B Test";
+        String actual = mybrowser.findElement(By.tagName("h3")).getText();
+        assertEquals(title, actual);}
 }
