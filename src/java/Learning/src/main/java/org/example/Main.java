@@ -39,6 +39,8 @@ public class Main {
        Bike bike = new Bike();
        Vehicle[] myvehickles = {new Bike(), new Car(), new Bike(), new Car()};
 
+       GenericPet<SimpleClass> mygen = new GenericPet<>();
+
        // Driver - ChromeDriver , FirefoxDriver
         // Vehicle myveh = new Vehicle();
         // Animal -  Abstract concept
