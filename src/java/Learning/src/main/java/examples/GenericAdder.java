@@ -9,6 +9,9 @@ public class GenericAdder<T1> {
 
     }
     public void Add(){
+        Integer i = new Integer(10);
+        //i + i;
+        //eturn this.first + this.second;
         System.out.println(String.format("%s : %s", this.first.getClass(), this.second.getClass()));;
     }
 
