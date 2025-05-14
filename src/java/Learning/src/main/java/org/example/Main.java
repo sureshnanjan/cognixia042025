@@ -3,7 +3,12 @@ import examples.Translate;
 
 import examples.*;
 
+<<<<<<< HEAD
 import java.util.*;
+=======
+import java.util.Arrays;
+import java.util.Comparator;
+>>>>>>> ba4749570f31e40884c5081c4be310425ff150ab
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.IntPredicate;
@@ -20,6 +25,7 @@ public class Main {
         //add("one", "two");
         //anyMatchDemo();
         //LangTranslator();
+<<<<<<< HEAD
 //        int[] numbers = {10,20,11,2,6,9,12,19,100};
 //        System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
 //        //anyMatchDemo();
@@ -72,8 +78,53 @@ public class Main {
         set.update("Two", "TwoUpdated");
         set.delete("One");
         set.read();
+=======
+        //int[] numbers = {10,20,11,2,6,9,12,19,100};
+        //System.out.println(Arrays.stream(numbers).collect(()-> 100,(a,b)-> System.out.println("a +b"),(a,b)-> System.out.println("a * b")));
+
+        //BinarySearcherHowtoCall();
+        PetItems dog = new PetItems();
+        System.out.println(dog);
+        Car ford = new Car();
+       Bike bike = new Bike();
+       Vehicle[] myvehickles = {new Bike(), new Car(), new Bike(), new Car()};
+
+       GenericPet<SimpleClass> mygen = new GenericPet<>();
+
+       // Driver - ChromeDriver , FirefoxDriver
+        // Vehicle myveh = new Vehicle();
+        // Animal -  Abstract concept
+        // Animal myanimal = new Animal()
+        SimpleClass cls = new SimpleClass(10,"");
+
+        // Create Read Update Delete
+        Adder ad2and4 = new Adder(2,4); // Integer Adder
+        ad2and4.Add();
+        GenericAdder<Integer> add2and4 = new GenericAdder<>(2,4);
+        GenericAdder<Float> add2_4and2_4 = new GenericAdder<>(2.4f,2.4f);
+        GenericAdder<String> addoneTwo = new GenericAdder<>("One", "Two");
+        GenericAdder<SimpleClass> sicl1and2 = new GenericAdder<>(
+                new SimpleClass(10,"Ten"),
+                new SimpleClass(20,"Twenty"));
+
+>>>>>>> ba4749570f31e40884c5081c4be310425ff150ab
 
 
+
+    }
+
+    private static void BinarySearcherHowtoCall() {
+        SimpleClass[] mymembers = {new SimpleClass(0,"suresh"), new SimpleClass(1,"adesh")};
+        SimpleClass myKey = new SimpleClass(10,"suresh");
+        int result = Arrays.binarySearch(mymembers, myKey, new Comparator<SimpleClass>() {
+            @Override
+            public int compare(SimpleClass o1, SimpleClass o2) {
+                return Integer.compare(o1.number,o2.number);
+            }
+        });
+        int resultlambda = Arrays.binarySearch(mymembers, myKey, (a,b)->a.name.compareTo(b.name));
+        System.out.println(result);
+        System.out.println(resultlambda);
     }
 
     private static void anyMatchDemo() {
@@ -105,6 +156,8 @@ public class Main {
         // Any number greater than 100
         System.out.println(Arrays.stream(numbers).anyMatch(morethan100checker));
         System.out.println(Arrays.stream(numbers).anyMatch(new EvenChecker()));
+
+
     }
 
     private static void LangTranslator() {
