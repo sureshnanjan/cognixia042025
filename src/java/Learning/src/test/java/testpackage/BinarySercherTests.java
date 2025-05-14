@@ -36,7 +36,7 @@ ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
     void testforElementExistsinBeginning(){
         BinarySearcher sut = new BinarySearcher();
         int[] inputs = {1,2,3,4,5}; // BVC
-        int key = 4;
+        float key = 4.6f;
         int expected = 3;
         // Act
         int actual = sut.doSearch(inputs, key);
@@ -49,8 +49,8 @@ ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
     void testforElementExistsinMiddle(){
         BinarySearcher sut = new BinarySearcher();
         int[] inputs = {1,2,3,4,5}; // BVC
-        int key = 4;
-        int expected = 3;
+        int key = 3;
+        int expected = 2;
         // Act
         int actual = sut.doSearch(inputs, key);
         // Assert
@@ -127,4 +127,25 @@ ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
 
     }
 
+    @Test()
+    void testIllegalArgumentExceptionThrownCorrectly(){
+        BinarySearcher sut = new BinarySearcher();
+        int[] inputs = {1,2,4,5,6,10};
+        int key = 7;
+        int expected = -5;
+        assertThrowsExactly(IllegalArgumentException.class, () ->{
+            int actual = sut.doSearch(inputs,key, 8, 0);
+        });
+    }
+
+    @Test()
+    void testArrayIndexOutOfBoundsExceptionThrownCorrectly(){
+        BinarySearcher sut = new BinarySearcher();
+        int[] inputs = {1,2,4,5,6,10};
+        int key = 11;
+        int expected = -6;
+        assertThrowsExactly(ArrayIndexOutOfBoundsException.class, () ->{
+            int actual = sut.doSearch(inputs, key);
+        });
+    }
 }
