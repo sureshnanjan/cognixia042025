@@ -30,7 +30,7 @@ public class Main {
         System.out.println(dog);
         Car ford = new Car();
        Bike bike = new Bike();
-       eVehicle[] myvehickles = {new Bike(),new Car(),new Bike(),new Car()};
+//       eVehicle[] myvehickles = {new Bike(),new Car(),new Bike(),new Car()};
 
        GenericPet<SimpleClass> mygen = new GenericPet<>();
 
@@ -105,22 +105,22 @@ public class Main {
     private static void LangTranslator() {
         // Methods
         //functInterface();
-        Translate tamil = c -> {
-            return switch (c) {
-                case 1 -> "Onnu";
-                case 2 -> "Rendu";
-                default -> "Vera number";
-            };
-        };
-
-        Translate telugu = c -> {switch (c){
-            case 1:
-                return "ఒకటి";
-            case 2:
-                return  "రెండు";
-            default:
-                return "Tamil Number";
-        }};
+//        Translate tamil = c -> {
+//            return switch (c) {
+//                case 1 -> "Onnu";
+//                case 2 -> "Rendu";
+//                default -> "Vera number";
+//            };
+//        };
+//
+//        Translate telugu = c -> {switch (c){
+//            case 1:
+//                return "ఒకటి";
+//            case 2:
+//                return  "రెండు";
+//            default:
+//                return "Tamil Number";
+//        }};
 
         // TO DO Implement a Hindi Translator
 
@@ -142,12 +142,12 @@ public class Main {
 
         ftamil.apply(1);
 
-        System.out.println(telugu.translate(1));
-        System.out.println(telugu.translate(2));
-        System.out.println(telugu.translate(3));
-        System.out.println(tamil.translate(1));
-        System.out.println(tamil.translate(2));
-        System.out.println(tamil.translate(3));
+//        System.out.println(telugu.translate(1));
+//        System.out.println(telugu.translate(2));
+//        System.out.println(telugu.translate(3));
+//        System.out.println(tamil.translate(1));
+//        System.out.println(tamil.translate(2));
+//        System.out.println(tamil.translate(3));
     }
 
     private static void functInterface() {

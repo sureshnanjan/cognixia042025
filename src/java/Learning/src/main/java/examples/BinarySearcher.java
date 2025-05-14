@@ -2,7 +2,25 @@ package examples;
 
 public class BinarySearcher {
     public int doSearch(int[] inputs, Object key) {
-        return 0;
+
+        int target = (Integer) key;
+        int left = 0;
+        int right = inputs.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (inputs[mid] == target) {
+                return mid;
+            } else if (inputs[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        // Not found
+        return -1;
     }
     /*
     * Parameters:

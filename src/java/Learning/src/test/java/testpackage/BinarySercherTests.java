@@ -1,4 +1,4 @@
-package testpackage;
+package Learning.src.test.java.testpackage;
 
 import examples.BinarySearcher;
 import org.junit.jupiter.api.Test;
@@ -36,8 +36,8 @@ ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
     void testforElementExistsinBeginning(){
         BinarySearcher sut = new BinarySearcher();
         int[] inputs = {1,2,3,4,5}; // BVC
-        int key = 4;
-        int expected = 3;
+        int key = 1;
+        int expected = 0;
         // Act
         int actual = sut.doSearch(inputs, key);
         // Assert
@@ -78,7 +78,7 @@ ArrayIndexOutOfBoundsException - if fromIndex < 0 or toIndex > a.length
         BinarySearcher sut = new BinarySearcher();
         int[] inputs = {1,2,4,5,6};
         int key = 10;
-        int expected = -5;
+        int expected = -1;
         // Act
         int actual = sut.doSearch(inputs, key);
         // Assert

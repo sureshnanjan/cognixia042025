@@ -12,7 +12,7 @@ public class ClassMemberDemo {
         // Static or Instance
         // Fields - Variables
         int field_int; // Primitive
-        examples.Car mycar; // Custom
+        Car mycar; // Custom
         // Methods - Behaviours
         static int class_var;
     public void MethodOne(){

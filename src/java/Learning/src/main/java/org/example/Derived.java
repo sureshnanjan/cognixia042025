@@ -1,6 +1,6 @@
 package Learning.src.main.java.org.example;
 
-import examples.SimpleClass;
+import Learning.src.main.java.examples.SimpleClass;
 
 public class Derived extends SimpleClass {
     public Derived(int number, String name) {

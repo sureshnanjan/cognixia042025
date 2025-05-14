@@ -2,7 +2,7 @@ package Learning.src.main.java.examples;
 
 
 public class Car extends  Vehicle{
-    @MySpecialMethod
+    @examples.MySpecialMethod
     int myvalue;
     public Car() {
         super();

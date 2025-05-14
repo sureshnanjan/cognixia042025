@@ -1,4 +1,4 @@
-package examples;
+package Learning.src.main.java.examples;
 
 import java.util.Arrays;
 
