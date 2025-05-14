@@ -335,5 +335,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Intellij
+.idea/
+*.iml
+*.iws
+
 
 # End of https://www.gitignore.io/api/git,java,maven,eclipse,windows
