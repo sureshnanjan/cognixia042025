@@ -3,6 +3,7 @@ package herokuapp.tests;
 import org.jspecify.annotations.Nullable;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.Objects;
@@ -12,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class ABTestPageTests {
     @Test
-    void ABTestPageGivesOtherOptionsNoCookie(){
+    void ABTestPageGivesOtherOptionsNoCookie() {
         // Arrange
         // Navigate to home Page
         // Check if cookie is not there or is set to false
@@ -22,7 +23,7 @@ public class ABTestPageTests {
             if (mybrowser.manage().getCookieNamed("optimizelyOptOut").getValue().compareToIgnoreCase("true") == 0) {
                 mybrowser.manage().deleteCookieNamed("optimizelyOptOut");
             }
-        }catch(NullPointerException ex){
+        } catch (NullPointerException ex) {
             System.out.println("Continue");
         }
 
@@ -35,13 +36,30 @@ public class ABTestPageTests {
         // Get The actual Title
         String actual = mybrowser.findElement(By.tagName("h3")).getText();
         // Assert
-        //assertNotEquals(title,actual);
+        assertNotEquals(title, actual);
 
     }
+
     @Test
-    void ABTestPageGivesNOABTestwhenCookieIsThere(){
+    public void ABTestPageGivesNoABTestWhenCookieIsThere() {
+        ChromeDriver myBrowser = new ChromeDriver();
 
+        Cookie newCookie = new Cookie("optimizelyOptOut", "true");
+        myBrowser.get("https://the-internet.herokuapp.com");
 
+        try {
+            myBrowser.manage().addCookie(newCookie);
+        } catch (Exception ex) {
+            System.out.println("Continue");
+        }
+
+        myBrowser.findElement(By.linkText("A/B Testing")).click();
+
+        String expectedTitle = "No A/B Test";
+        String actualTitle = myBrowser.findElement(By.tagName("h3")).getText();
+        assertEquals(expectedTitle, actualTitle);
+
+        myBrowser.quit();
     }
-
 }
+
