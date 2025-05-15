@@ -1,6 +1,7 @@
 package herokuapp.tests;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -29,6 +30,7 @@ public class HomePageTests {
     void HomepageSubTitleisOK(){
         String expected = "Available Examples";
         ChromeDriver driver = new ChromeDriver();
+     
         driver.get("https://the-internet.herokuapp.com/");
 
         WebElement subTitle = driver.findElement(By.tagName("h2"));
