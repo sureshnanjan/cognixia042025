@@ -1,6 +1,8 @@
 package Learning.src.main.java.examples;
 
 public class SimpleClass implements Comparable<SimpleClass> , Eatable{
+
+    public static class InnerClass{}
     public int number;
     public String name;
 

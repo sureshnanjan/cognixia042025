@@ -34,6 +34,9 @@ public class Main {
 
        GenericPet<SimpleClass> mygen = new GenericPet<>();
 
+
+       SimpleClass.InnerClass my
+
        // Driver - ChromeDriver , FirefoxDriver
         // Vehicle myveh = new Vehicle();
         // Animal -  Abstract concept
