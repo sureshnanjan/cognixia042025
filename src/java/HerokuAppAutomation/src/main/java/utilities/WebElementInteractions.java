@@ -26,5 +26,19 @@ public class WebElementInteractions {
             System.out.println("Element Click not happened");
         }
     }
+    public static Point getLocationUtil(WebElement element) {
+        try {
+            Point location = element.getLocation();
+            System.out.println("Element location: " + location);
+            return location;
+        } catch (StaleElementReferenceException ex) {
+            System.out.println("Element is stale. Cannot get location.");
+            return null;
+        } catch (Exception e) {
+            System.out.println("Error getting element location: " + e.getMessage());
+            return null;
+        }
+    }
+
 
 }
