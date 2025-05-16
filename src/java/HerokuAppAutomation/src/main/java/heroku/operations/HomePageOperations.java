@@ -18,6 +18,8 @@
 */
 package heroku.operations;
 
+import org.openqa.selenium.WebElement;
+
 import java.util.List;
 
 /**
@@ -29,7 +31,7 @@ public interface HomePageOperations {
      * */
     String getTitle();
     String getSubTitle();
-    List<String> getAllExamples();
+    List<WebElement> getAllExamples();
 
     String getExampleName(int position);
 

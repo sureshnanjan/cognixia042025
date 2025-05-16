@@ -3,6 +3,7 @@ package heroku.selenium.pages;
 import heroku.operations.HomePageOperations;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
@@ -29,17 +30,17 @@ public class HomePage implements HomePageOperations {
 
     @Override
     public String getSubTitle() {
-        return null;
+        return browser.findElement(subtitleLocator).getText();
     }
 
     @Override
-    public List<String> getAllExamples() {
-        return null;
+    public List<WebElement> getAllExamples() {
+        return browser.findElements(exampleLocator);
     }
 
     @Override
     public String getExampleName(int position) {
-        return null;
+        return getAllExamples().get(position).getText();
     }
 
     @Override
