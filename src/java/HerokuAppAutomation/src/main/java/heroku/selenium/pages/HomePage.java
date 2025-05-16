@@ -40,11 +40,18 @@ public class HomePage implements HomePageOperations {
 
     @Override
     public String getExampleName(int position) {
-        return null;
+        List<WebElement> elements = this.browser.findElements(this.exampleLocator);
+        if (position >= 0 && position < elements.size()) {
+            String text = elements.get(position).getText();
+            return text;
+        } else {
+            throw new IndexOutOfBoundsException("Invalid position: " + position);
+        }
     }
 
     @Override
     public void goToExample(String exampleName) {
+        this.browser.findElement(this.exampleLocator).click();
+    }
 
     }
-}

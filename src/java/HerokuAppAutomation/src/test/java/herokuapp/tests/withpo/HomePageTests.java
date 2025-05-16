@@ -40,7 +40,7 @@ public class HomePageTests {
         ///AAA
         String  expected = "A/B Testing";
         HomePageOperations hpo = new HomePage();
-        String actual = hpo.getExampleName(1);
+        String actual = hpo.getExampleName(0);
         assertEquals(expected, actual, "First Example should be A/B Testing");
     }
 }
