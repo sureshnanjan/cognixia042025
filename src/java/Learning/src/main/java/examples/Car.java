@@ -1,5 +1,6 @@
 package examples;
 
+<<<<<<< HEAD
 public class Car {
     // Attributes  WHAT is a car
     private int engine_power;
@@ -13,4 +14,24 @@ public class Car {
     void Stop(){}
 
 
+=======
+
+public class Car extends  Vehicle{
+    @MySpecialMethod
+    int myvalue;
+    public Car() {
+        super();
+    }
+
+
+    @Override
+    public void Start() {
+        System.out.println("Turn Ignition , start the car");
+    }
+
+    @Override
+    public void Park() {
+
+    }
+>>>>>>> d25743bf309d5049166cac980ff42460cdbc23ad
 }

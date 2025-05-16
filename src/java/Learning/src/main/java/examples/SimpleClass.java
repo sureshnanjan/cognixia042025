@@ -1,8 +1,21 @@
 package examples;
 
 public class SimpleClass implements Comparable<SimpleClass> , Eatable{
+<<<<<<< HEAD
     int number;
     String name;
+=======
+
+    public static class InnerClass{}
+    public int number;
+    public String name;
+
+    int package_int;
+
+    protected int protected_int;
+
+    private int only_inside_sc;
+>>>>>>> d25743bf309d5049166cac980ff42460cdbc23ad
 
     public SimpleClass(int number, String name) {
         this.number = number;
@@ -59,6 +72,10 @@ public class SimpleClass implements Comparable<SimpleClass> , Eatable{
         //return .compare(this.name,o.name);
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d25743bf309d5049166cac980ff42460cdbc23ad
     @Override
     public void Eat() {
 
@@ -66,6 +83,10 @@ public class SimpleClass implements Comparable<SimpleClass> , Eatable{
 
     @Override
     public void eat() {
+<<<<<<< HEAD
         System.out.println("I am eating just simply");
+=======
+
+>>>>>>> d25743bf309d5049166cac980ff42460cdbc23ad
     }
 }
