@@ -1,11 +1,14 @@
 package heroku.selenium.pages;
 
+import heroku.operations.ContextClickOperations;
 import heroku.operations.HomePageOperations;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 
 import static utilities.WebElementInteractions.*;
 
@@ -16,6 +19,9 @@ public class HomePage implements HomePageOperations {
     private By titleLocator;
     private By subtitleLocator;
     private By exampleLocator;
+
+    @FindBys({@FindBy(id = "foo"), @FindBy(className = "bar")})
+    private By demoSupport;
 
     private WebDriver browser;
 
@@ -54,7 +60,17 @@ public class HomePage implements HomePageOperations {
     }
 
     @Override
-    public void goToExample(String exampleName) {
+    public Object goToExample(String exampleName) {
+        navigateToLinkUtil(exampleName,this.browser);
+        switch (exampleName){
+            case "Context Menu":
+                return  new ContextClick(this.browser);
+            default:
+                return null;
+
+        }
+
+
 
     }
 }
