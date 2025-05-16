@@ -29,7 +29,7 @@ public class HomePage implements HomePageOperations {
     @Override
     public String getTitle() {
 
-        getTextUtil(findElementUtil(this.titleLocator,this.browser));
+        return getTextUtil(findElementUtil(this.titleLocator,this.browser));
 
     }
 
