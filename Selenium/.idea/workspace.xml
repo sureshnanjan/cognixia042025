@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e7c2c7eb-14bc-4626-b3da-ef1c037771e0" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2x4fhhqajTCRXKUixNTCBtFd9hd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.HomePageTests.HomepageHasCorrectNumberOfExamples.executor": "Run",
+    "JUnit.HomePageTests.HomepageSubTitleisOK.executor": "Run",
+    "JUnit.HomePageTests.HomepageTitleisOK.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Subalakshmi-branch",
+    "last_opened_file_path": "C:/Users/subalakshmi.t/OneDrive - ascendion/Desktop/QA-Training/cognixia042025/Selenium",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.HomePageTests.HomepageSubTitleisOK">
+    <configuration name="HomePageTests.HomepageHasCorrectNumberOfExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HerokuAppAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="herokuapp.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="herokuapp.tests" />
+      <option name="MAIN_CLASS_NAME" value="herokuapp.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="HomepageHasCorrectNumberOfExamples" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTests.HomepageSubTitleisOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HerokuAppAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="herokuapp.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="herokuapp.tests" />
+      <option name="MAIN_CLASS_NAME" value="herokuapp.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="HomepageSubTitleisOK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTests.HomepageTitleisOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HerokuAppAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="herokuapp.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="herokuapp.tests" />
+      <option name="MAIN_CLASS_NAME" value="herokuapp.tests.HomePageTests" />
+      <option name="METHOD_NAME" value="HomepageTitleisOK" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HomePageTests.HomepageSubTitleisOK" />
+        <item itemvalue="JUnit.HomePageTests.HomepageHasCorrectNumberOfExamples" />
+        <item itemvalue="JUnit.HomePageTests.HomepageTitleisOK" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e7c2c7eb-14bc-4626-b3da-ef1c037771e0" name="Changes" comment="" />
+      <created>1747202387843</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747202387843</updated>
+      <workItem from="1747202389035" duration="4077000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../../.." />
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+  </component>
+</project>
