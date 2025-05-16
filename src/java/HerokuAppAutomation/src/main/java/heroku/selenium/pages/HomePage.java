@@ -35,7 +35,7 @@ public class HomePage implements HomePageOperations {
 
     @Override
     public String getSubTitle() {
-        getTextUtil(findElementUtil(this.subtitleLocator,this.browser));
+        return getTextUtil(findElementUtil(this.subtitleLocator,this.browser));
     }
 
     @Override
