@@ -1,12 +1,12 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20250422105534
-Username: ASCENDION\sachin.jha
-RunAs User: ASCENDION\sachin.jha
+Start time: 20250422002520
+Username: ASCENDION\aranya.kawale
+RunAs User: ASCENDION\aranya.kawale
 Configuration Name: 
-Machine: ASCINLAP60717 (Microsoft Windows NT 10.0.22631.0)
+Machine: ASCINLAP60832 (Microsoft Windows NT 10.0.22631.0)
 Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-Process ID: 24228
+Process ID: 15236
 PSVersion: 5.1.22621.4391
 PSEdition: Desktop
 PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
@@ -16,8 +16,62 @@ WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
-Transcript started, output file is task1.txt
-PS C:\Users\sachin.jha> New-Item -Path C:\ -Name 'Assignments' -ItemType Directory
+Transcript started, output file is C:\Users\aranya.kawale\Desktop\assigment1.txt
+PS C:\WINDOWS\system32> cd C:\
+PS C:\> chkdsk
+The type of the file system is NTFS.
+Volume label is Windows.
+
+WARNING!  /F parameter not specified.
+Running CHKDSK in read-only mode.
+
+Stage 1: Examining basic file system structure ...
+  935936 file records processed.
+File verification completed.
+ Phase duration (File record verification): 34.85 seconds.
+  42453 large file records processed.
+ Phase duration (Orphan file record recovery): 28.99 milliseconds.
+  0 bad file records processed.
+ Phase duration (Bad file record checking): 0.55 milliseconds.
+
+Stage 2: Examining file name linkage ...
+  8948 reparse records processed.
+  1251766 index entries processed.
+Index verification completed.
+ Phase duration (Index verification): 1.20 minutes.
+  0 unindexed files scanned.
+ Phase duration (Orphan reconnection): 16.65 seconds.
+  0 unindexed files recovered to lost and found.
+ Phase duration (Orphan recovery to lost and found): 1.75 milliseconds.
+  8948 reparse records processed.
+ Phase duration (Reparse point and Object ID verification): 42.52 milliseconds.
+
+Stage 3: Examining security descriptors ...
+Security descriptor verification completed.
+ Phase duration (Security descriptor verification): 113.89 milliseconds.
+  157916 data files processed.
+ Phase duration (Data attribute verification): 2.68 milliseconds.
+CHKDSK is verifying Usn Journal...
+  40202328 USN bytes processed.
+Usn Journal verification completed.
+ Phase duration (USN journal verification): 420.10 milliseconds.
+
+Windows has scanned the file system and found no problems.
+No further action is required.
+
+ 497775615 KB total disk space.
+ 149156956 KB in 638807 files.
+    371528 KB in 157917 indexes.
+         0 KB in bad sectors.
+   1082119 KB in use by the system.
+     65536 KB occupied by the log file.
+ 347165012 KB available on disk.
+
+      4096 bytes in each allocation unit.
+ 124443903 total allocation units on disk.
+  86791253 allocation units available on disk.
+Total duration: 2.07 minutes (124708 ms).
+PS C:\> Get-ChildItem
 
 
     Directory: C:\
@@ -25,59 +79,475 @@ PS C:\Users\sachin.jha> New-Item -Path C:\ -Name 'Assignments' -ItemType Directo
 
 Mode                 LastWriteTime         Length Name
 ----                 -------------         ------ ----
-d-----        22-04-2025     10:57                Assignments
+d-----        22-10-2024     10:07                Assignment2-Aranya
+d-----        15-01-2025     11:47                AU_Data
+d-----        11-11-2024     10:47                cucumber
+d-----        08-11-2024     15:18                cy
+d-----        04-11-2024     12:18                cypress
+d-----        04-12-2024     14:55                DRIVERS
+d-----        21-04-2025     18:05                gitp1
+d-----        17-04-2025     12:04                inetpub
+d-----        11-10-2024     11:59                Javascript
+d-----        11-11-2024     10:55                jenkins
+d-----        22-11-2024     10:14                nodejsapi
+d-----        06-12-2024     12:47                pilotProject
+d-----        08-11-2024     12:55                playwright
+d-r---        14-03-2025     14:08                Program Files
+d-r---        26-12-2024     15:57                Program Files (x86)
+d-----        21-04-2025     12:20                QA-Training
+d-----        22-11-2024     15:46                robotframework
+d-----        25-11-2024     14:21                Temp
+d-----        26-12-2024     15:59                Tosca_Projects
+d-----        11-10-2024     12:36                typescript
+d-r---        10-01-2025     12:20                Users
+da----        17-04-2025     12:05                Windows
+-a----        05-11-2024     10:02      199746995 cypress (1).zip
+-a----        04-11-2024     11:16      199746995 cypress.zip
+-a----        16-10-2024     15:39          12288 DumpStack.log
+-a----        12-03-2025     11:04         171754 SDK_INSTALL.log.ASCINLAP60832_0.log
+-a----        26-09-2024     16:08          85036 SDK_INSTALL.log.LAPTOP-7J7NU6QJ_0.log
 
 
-PS C:\Users\sachin.jha> Set-Location C:\Assignments
-PS C:\Assignments> git clone https://github.com/sureshnanjan/cognixia042025.git
-Cloning into 'cognixia042025'...
-remote: Enumerating objects: 222, done.
-remote: Counting objects: 100% (145/145), done.
-remote: Compressing objects: 100% (114/114), done.
-remote: Total 222 (delta 61), reused 101 (delta 27), pack-reused 77 (from 1)
-Receiving objects: 100% (222/222), 804.31 KiB | 1.93 MiB/s, done.
-Resolving deltas: 100% (76/76), done.
-PS C:\Assignments> Set-Location cognixia042025
-PS C:\Assignments\cognixia042025> dir C:\Assignments\cognixia042025
+PS C:\> Get-Process
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+    159      10     5408      12848      13.86  10228   0 AggregatorHost
+    728      38    38804      52276     188.00  20956   0 AOTAgent
+    430      28    19568      43216       0.33   1536   3 ApplicationFrameHost
+    513      57    41108      34944      26.70  20240   0 AppProvisioningPlugin
+    145      10     1760       7244       0.03  18720   0 armsvc
+    257      13     9340      17488       0.83  12260   0 audiodg
+     48       5     1092       4248       0.03  19072   0 BioIso
+   1176      66   106404     128112     769.20   5568   0 CloudEndpointService
+     95      10     8568       9768       0.20  19536   3 cmd
+    179      12     3140       8092       0.34  13224   0 CNTAoSMgr
+    119       8     5316       5416       0.00   4584   0 conhost
+    162      10     5788       8720       2.56   6444   0 conhost
+    162      10     5804       8464       2.06   6812   0 conhost
+    153      10     5728       7468       2.86   7140   0 conhost
+    119       8     5328       5784       0.00   8488   0 conhost
+    119       8     5316       5836       0.03   8580   0 conhost
+    162      10     5780       8512       2.73   8812   0 conhost
+    163      11     5820       8720       5.39   8924   0 conhost
+    119       8     5328       5800       0.02   9168   0 conhost
+    119       8     5320       5756       0.20   9384   0 conhost
+    119       8     5324       5840       0.38   9780   0 conhost
+    119       8     5332       5836       0.03  10048   0 conhost
+    119       8     5320       5808       0.02  13168   0 conhost
+    166      11     5864      13772       0.00  14872   0 conhost
+    145      10     5928      12912       0.00  16028   3 conhost
+    162      10     5804       8592       2.63  17324   0 conhost
+    162      10     5788       8584       2.70  20060   0 conhost
+    287      15    12692      27420       0.17  20692   3 conhost
+    211      11     2860       9412       0.64   6428   0 CptService
+    812      90    30904      93468       9.20   1392   3 CrossDeviceService
+   1075      40     2476       6028       5.70   1148   0 csrss
+    727      26     3016       7768       1.22   2336   3 csrss
+    591      26    13116      34752       1.63  18104   3 ctfmon
+    650     196    58832      63660       9.30   6688   0 DashboardService
+    432      18     8792      17840       2.53   5840   0 DAX3API
+    276      17     8428      18156       0.16  22208   3 DAX3API
+    199      16     7896       4880       0.17  27436   3 DeviceEnroller
+    199      16     7888       5128       0.28  27712   3 DeviceEnroller
+    142       8     1744       8168       0.06  13568   3 dllhost
+    337      37     9136      20352       0.63  24612   3 dllhost
+    527      19     8832      18668      82.80  11132   0 dsagent
+   1722      75   172972     203480      10.89  18140   3 dwm
+    448      23    12860      23016       7.27   6168   0 EndpointBasecamp
+    243      14     8832      14364       1.48   8448   0 EndpointBasecamp
+    243      14     8416      15060      12.06   9128   0 EndpointBasecamp
+    716      43    38844      43604      70.45   9764   0 EndpointBasecamp
+    243      14     8900      14336       0.42   9928   0 EndpointBasecamp
+    297      18    11780      19836       0.23  24948   3 EPDCtrl
+    155       9     3192       7144       1.34   3828   0 EPDService
+   4875     139   279140     398028      21.31   4664   3 explorer
+    284      21    11240      26596       0.63  23636   3 FileCoAuth
+    445      17     5740      21624       0.67   7572   0 FileSyncHelper
+     42       7     1796       2912       0.00   1524   0 fontdrvhost
+     42       8     2236       6196       0.11  16284   3 fontdrvhost
+    177       9     2292       7900       0.88   5548   0 FusionAPI
+     88       7     1088       4436       0.02   6400   0 GoodixSessionService
+    145      11     1944       6292       3.66   5824   0 ibmpmsvc
+    439      21    15716      22908     146.64   9072   0 IDBWM
+    270      16    11560      18928       3.09   6076   0 IDBWMService
+      0       0       60          8                 0   0 Idle
+    272      26    93912      64920      12.91   6268   0 influxd
+    476      54    33652      50784      14.22  18260   0 intel_cst_service_standalone
+    205      12     8780      12428       8.78   5576   0 IntelAnalyticsService
+    439      54    39164      32640       4.61   5776   0 IntelAudioService
+    518      24    24660      26360      48.23   8968   0 IntelConnect
+    649      27   118100      82552     193.14   6024   0 IntelConnectivityNetworkService
+    270      16    11588      18888       0.52   7580   0 IntelConnectService
+    153       8     1480       5792       0.00   2288   0 IntelCpHDCPSvc
+    616      46    38320      39720       6.83   5648   0 InventoryService
+    161      14     7212      12200       1.05  16364   3 ipf_helper
+    183      11     2764       8892       0.23   5728   0 ipf_uf
+    139      13     1676       6124       0.09   5560   0 ipfsvc
+    347      86     5340      18508       5.56  23184   0 iVPAgent
+    148       9     1352       6588       0.02   5784   0 jhi_service
+    969      56    33708      57516      11.45   5592   0 Lenovo.Modern.ImController
+    843      53    45372      10012       1.38  24904   3 LenovoVantage-(GenericMessagingAddin)
+    678      42    29944      13616       1.78   8396   0 LenovoVantage-(LenovoSystemUpdateAddin)
+    675      58    42056      11160      12.91  21860   0 LenovoVantage-(VantageCoreAddin)
+   2508      58    51680      74444      21.86   5736   0 LenovoVantageService
+    617      21     8664      21740      20.45   5852   0 LenovoVisionService
+  13071    1624     2536       8824       0.97   3716   0 LITSSvc
+    405      31     9176      18396       2.06   5884   0 LMS
+    247      17     7460       5992       0.28  27840   3 LocationNotificationWindows
+    319      25    13140      13728      62.09   9340   0 LogServer
+     70      12     1512       4164       0.36   1332   0 LsaIso
+   2358      36    15976      37940      51.14   1348   0 lsass
+    275      31    10328      11396       0.30  20348   3 magentproc
+      0       0     2088     527760     153.05   4000   0 Memory Compression
+   1273      79    68940      92276      52.97  21864   0 Microsoft.Management.Services.IntuneWindowsAgent
+    655      39    55444      75468      31.13  28860   3 Microsoft.SharePoint
+    258      19     9560       3384       0.36  11008   0 MicrosoftEdgeUpdate
+    308      24    14260      33552       0.66  28792   0 MoUsoCoreWorker
+    551      56   312908     380068      11.89   1508   3 msedge
+    370      30    44260      86732       1.44   4164   3 msedge
+    220      18    18460      33072       0.33   4676   3 msedge
+    283      16     8024      14312       0.23   6472   3 msedge
+    243      22    21700      41100       0.05   6704   3 msedge
+    369      32    73072     123052       0.73  16072   3 msedge
+    321      28    47360      81944       1.98  21996   3 msedge
+    267      26    31868      55480       0.30  22016   3 msedge
+    203      18    13332      27168       0.08  22044   3 msedge
+   1796      46   180244     192128      31.81  22428   3 msedge
+    629      39   135612     196552      21.47  22448   3 msedge
+    301      26    35976      77060       0.67  25076   3 msedge
+    290      21    15412      35812       0.19  25656   3 msedge
+    520      38   107376     171424       6.83  25868   3 msedge
+    282      27    31576      55480       0.73  27940   3 msedge
+    460      30    61420     119956       1.63  28160   3 msedge
+    838     122    31764      63244       3.86  28208   3 msedge
+   2168      94   117520     256108      20.84  29472   3 msedge
+    386      26    18776      43256       1.44   1092   3 msedgewebview2
+    199      16    15180      26572       0.31  11972   3 msedgewebview2
+    195      16    15104       3028       0.22  15136   3 msedgewebview2
+    204      15     7868      13796       0.28  15672   3 msedgewebview2
+    197      15     7884      14128       0.27  17788   3 msedgewebview2
+    479      61   481768      12356      38.17  20908   3 msedgewebview2
+    426      32   108484       7468       3.81  21632   3 msedgewebview2
+    366      25    18192       5864       1.14  25788   3 msedgewebview2
+   1135      43   147468     159920       2.95  25864   3 msedgewebview2
+   1235      54    41596      16960       3.69  28460   3 msedgewebview2
+   1371      58    64328     148552      15.23  28576   3 msedgewebview2
+    259      20    14072      27584       0.52  28604   3 msedgewebview2
+    875      31    85568       8032       0.42  29428   3 msedgewebview2
+   1179      65    70680      14960       7.13  23792   3 ms-teams
+   1435      71    82480       5672       4.19  24184   3 ms-teams
+    142      13    33600       9468       0.02   5804   0 mysqld
+    557     308   606052      64184      58.50   7032   0 mysqld
+     49       7     1548       4636       0.34   4792   0 NgcIso
+   1002      42   101124     137884       1.63   8920   3 Notepad
+    131       8     1796       6044       0.03   5744   0 nssm
+    131       8     1800       6044       0.02   5768   0 nssm
+   1539      65   132440      13736     683.44   5868   0 Ntrtscan
+    805      28    37224      50872       4.56   5612   0 OfficeClickToRun
+   6048      36    45760      37488      58.78  17044   0 omadmclient
+    160      13     6884      12940       0.30  10144   0 omadmprc
+    399      32    23684      38276       3.88   5684   0 OneApp.IGCC.WinService
+   1439      69   119296     177496      12.94   8928   3 OneDrive
+    507      26     8648       4156       0.58  16780   3 PccNTMon
+    456      28     9992       8892       1.02  20864   3 PowerMgr
+    763      45    61704      82232       1.50  15236   3 powershell
+      0      17    14344      31396       1.42    168   0 Registry
+    360      20     6992      28212       0.63   2432   3 RuntimeBroker
+    309      18     8724      25064       0.33   6700   3 RuntimeBroker
+    168      11     4304      12088       0.17  13492   3 RuntimeBroker
+    867      38    19152      57600       3.69  15304   3 RuntimeBroker
+    190      13     4772      14012       0.30  22000   3 RuntimeBroker
+    160      10     3956       9980       0.14  26496   3 RuntimeBroker
+    191      11     2364       9700       0.06  20620   0 SearchFilterHost
+   1794     154   221004     133396      10.97  13564   3 SearchHost
+    941      22    29904      43020      48.08  18736   0 SearchIndexer
+    285      10     1880       9288       0.05   8892   3 SearchProtocolHost
+   2119      14     3820      15792       2.31  27992   0 SearchProtocolHost
+      0       0      184      49136       0.00    140   0 Secure System
+    587      24     8576      24552       3.86  21300   0 SecurityHealthService
+    233      15     7588      16316       0.33  25392   3 SecurityHealthSystray
+    587      35    74768      78784       1.33   8356   3 SenaryAudioApp
+    541      18    20248      26736       1.20   5876   0 SenaryAudioApp.Svc
+   1031      15     8084      12276      45.91   1312   0 services
+    229      16     4628      10880       0.20   5944   0 sgLauncher
+    634      32    46488      21088       0.20  18212   3 ShellExperienceHost
+    239      13     2792      13732       0.58  19624   3 ShowMsg
+    380      19     8656      18872       0.61  24340   3 shtctky
+    756      26    12736      41776       7.67  25624   3 sihost
+    211      15     8172      16804       0.27  28864   3 smartscreen
+    196      12     1968       7916       0.06   6060   0 SmartStandby
+     58       4     1164       1176       0.30    948   0 smss
+    429      21     5596      14836       0.23   4356   0 spoolsv
+    985      47    83164     140796       2.22  20112   3 StartMenuExperienceHost
+    293      11     2748      10968       0.02  26108   0 SupportConnector
+    523      21    12372      21856      58.09    996   0 svchost
+    339      16     3900      13112       2.34   1360   0 svchost
+    186      38     7620      11284      14.97   1416   0 svchost
+    112      11     1172       5012       0.34   1452   0 svchost
+   1492      31    17508      37784      80.59   1480   0 svchost
+   1751      22    11392      18652      99.66   1616   0 svchost
+    407      15     3636      11472      14.06   1672   0 svchost
+    175      11     4320      13300       1.33   1708   0 svchost
+    470      14     2904      10992       1.00   2084   0 svchost
+    260      13     3068      10732       0.66   2128   0 svchost
+    303      10     2244       9568       0.53   2136   0 svchost
+    200      11     2104       7816       0.17   2220   0 svchost
+    260      12     3252       8700      19.84   2272   0 svchost
+    342      13     2948       9188       0.20   2308   0 svchost
+   1124      23     8492      18768      23.72   2380   0 svchost
+    216      11     2476      11088       0.33   2444   0 svchost
+    167      11     1956       8268       1.34   2468   0 svchost
+    211      11     2364       7660       4.30   2588   0 svchost
+    221      11     2244      10704       0.08   2840   0 svchost
+    293      14     4204      15100      32.86   2892   0 svchost
+    489      23     8064      17644       8.38   2908   0 svchost
+    389      22     5072      10684     211.13   2956   0 svchost
+    193       8     2316       6688       0.73   3008   0 svchost
+    309      13     3760      14300      28.48   3176   0 svchost
+    306      13     3556      10640       0.58   3236   0 svchost
+    272      16     3692      21092       0.16   3376   3 svchost
+    168      11     2096       9544       0.73   3380   0 svchost
+    127       8     1448       6552       0.03   3408   0 svchost
+    161      42     1716       7040       0.02   3520   0 svchost
+    480      16     4704      17048      26.03   3560   0 svchost
+    322      11    15668      22924      41.39   3696   0 svchost
+    588      18    27316      25680      34.98   3780   0 svchost
+    239       8     1332       5708       0.50   3836   0 svchost
+    252      19     3608      12764     154.67   3840   0 svchost
+    192      13     1944       8596       0.38   3852   0 svchost
+    231      12     2476       9212       3.06   3968   0 svchost
+    169       9     1516       7012       0.19   3976   0 svchost
+    182      16     1900       6992       2.58   3980   0 svchost
+    224      12     2276      10432       0.92   4156   0 svchost
+    575      35     7220      20704      18.05   4208   0 svchost
+    348      15     3492      14580       0.66   4232   0 svchost
+    480      36    14984      24040      14.48   4432   0 svchost
+    165      11     2032       9732       0.09   4532   0 svchost
+    195      12     2064       8168       0.48   4636   0 svchost
+    214      14     2760      12864       0.23   4724   0 svchost
+    139       9     1516       7276       0.00   5212   0 svchost
+    262      12     2596       8876       0.17   5220   0 svchost
+    144       9     1396       6712       0.03   5364   0 svchost
+    155       9     1720       7924       0.08   5628   0 svchost
+    379      21     2960      11612       0.80   5632   0 svchost
+    415      28     5348      17100       6.83   5656   0 svchost
+    776      34    32972      48540      39.42   5704   0 svchost
+    416      27    17568      26608      55.39   5756   0 svchost
+    138       8     1380       6032       0.03   6196   0 svchost
+    473      22     5520      23340       2.39   6328   0 svchost
+    214      13     2472       9460       0.27   6340   0 svchost
+    152       9     1728      10028       0.00   6768   3 svchost
+    351      15     4096      12684       2.00   6932   0 svchost
+    443      25     3808      13440       2.06   7016   0 svchost
+    648      21     6584      23864       0.91   7252   0 svchost
+    177      10     1784       8048       0.25   7364   0 svchost
+    264      13     2840      11968       0.59   7608   0 svchost
+    202      10     2056       9336       0.30   7672   0 svchost
+    226      16     2016       7792       0.67   8096   0 svchost
+    574      37    12672      24832       2.72   8100   0 svchost
+    350      16     3780      17152       0.03   8564   0 svchost
+    321      18     6988      23228     141.14   8600   0 svchost
+    292      16     3348      14620       0.11  10468   3 svchost
+    165      11     1728       7672       1.27  10796   0 svchost
+    317      16    11020      14704       0.56  12016   0 svchost
+    327      18     5096      14640       1.00  12084   0 svchost
+    495      26     6564      24032       4.66  13760   0 svchost
+    232      13     3072      12632       0.50  14072   0 svchost
+    486      29    28576      36036      40.09  14264   0 svchost
+    206      13     2956      14100       0.31  14424   0 svchost
+    295      13     2336      12332       2.14  15112   0 svchost
+    490      20     4900      20536       4.58  15784   0 svchost
+    199      11     2220       9736       0.41  15996   0 svchost
+    205      16     7084      10000       0.06  16624   0 svchost
+    237      13     3328      14116       0.42  16868   0 svchost
+    185      11     1968       7900       0.05  16912   0 svchost
+    211      12     2276      11028       0.34  17012   0 svchost
+    335      17     4368      20444       1.34  17160   0 svchost
+    125       9     1480       6308       0.00  17456   0 svchost
+    580      24     9436      38600       3.80  17684   3 svchost
+    372      21     5884      18116      11.63  19512   0 svchost
+    155      11     1948       8236       0.03  20300   0 svchost
+    370      20     6712      24584       2.30  20360   0 svchost
+    218      13     2496      11228       0.09  20932   0 svchost
+    408      20     5500      20384       1.33  21688   0 svchost
+    113       8     1200       6040       0.03  23192   0 svchost
+    147       9     1604       6980       0.06  24428   0 svchost
+    189      11     2048      11944       0.06  24604   3 svchost
+    142      10     1800       7056       0.14  24972   0 svchost
+    512      20     7152      29892       1.27  27604   3 svchost
+    748      63    20376      44364       2.42  27948   0 svchost
+    113       8     1324       6800       0.02  27980   3 svchost
+    233      12     3024      16212       0.05  28828   3 svchost
+   6102       0       76       2748   2,057.03      4   0 System
+   1249      64    78960      27892       1.08  28380   3 SystemSettings
+    346      42    13924      25532       1.03  25196   3 taskhostw
+    333      21     9436      21700       0.03  27300   0 taskhostw
+   1780      93   127556     194620       2.41  19064   3 TextInputHost
+   1154      44   151148     144144   1,256.77  11420   0 TMBMSRV
+   2333      72   185080       9040     328.23  18368   0 TmCCSF
+   1583      90   163604      18452     278.09   6796   0 TmListen
+    356      23     6272      16412      74.22  18984   0 TmPfw
+    148      11    34716      11468       0.50  19180   0 TmsaInstance64
+    289      15    11776      17992      21.52   8384   0 TmSSClient
+    201      12     3552      11872       0.77   6136   0 TmWSCSvc
+    536      68    36368      48912      40.48   6500   0 ToscaRdpServer
+    399      17     4520      14440       7.23   7204   0 tphkload
+    227      21     7808      15596       0.25  26600   3 tposd
+    399      44    20648      51208       0.84  15080   3 TricentisHtmlEngineExtensionHelper
+    954      88    63472      43728     343.92   6240   0 UDClientService
+    369      16     4632      19036       1.55   6368   0 uhssvc
+    195      12     2124      10296       0.02  17652   0 VSSVC
+    915      43    17736      61924       3.66  24192   3 Widgets
+    370      24    10844      31184       0.77  14680   3 WidgetService
+    176      13     1792       7508       0.08   1236   0 wininit
+    278      13     2776      11856       0.06  18956   3 winlogon
+    151      11     4596       8396       0.14   4556   0 wlanext
+    345      22     8312      21256       0.63   6008   0 WmiPrvSE
+    194      13     5780      11168       7.17  15888   0 WmiPrvSE
+    544      21    13212      26016       6.95  18220   0 WmiPrvSE
+    203      13     5700      13564       0.22  26480   0 WmiPrvSE
+    284      14     2968      14640       0.14   6276   0 WMIRegistrationService
+    371      21     7044      18064       3.41   6148   0 WSCommunicator
+    546      30    13980      21004     143.84   1540   0 WUDFHost
+    283      16     6056      16020     351.69   1724   0 WUDFHost
+    369      18     5504      11864       2.95   1776   0 WUDFHost
+    226       8     1528       5900       0.02   1840   0 WUDFHost
+    235       9     1588       6132       0.00   1892   0 WUDFHost
+    424      16     6896      15716       3.88   6492   0 ZSAService
+    897      57   145316     163148       6.70  28608   3 ZSATray
+    587      20     8080      27564       2.00  14532   0 ZSATrayManager
+   2479     312    60144      65940      21.13  24280   0 ZSATunnel
 
 
-    Directory: C:\Assignments\cognixia042025
+PS C:\> systeminfo
+
+Host Name:                 ASCINLAP60832
+OS Name:                   Microsoft Windows 11 Pro
+OS Version:                10.0.22631 N/A Build 22631
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          N/A
+Registered Organization:   N/A
+Product ID:                00355-61115-56685-AAOEM
+Original Install Date:     25-09-2024, 03:52:39
+System Boot Time:          21-04-2025, 09:24:13
+System Manufacturer:       LENOVO
+System Model:              21H2S3EW00
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 186 Stepping 3 GenuineIntel ~1600 Mhz
+BIOS Version:              LENOVO R24ET47W (1.30 ), 23-01-2025
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              00004009
+Time Zone:                 (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+Total Physical Memory:     16,041 MB
+Available Physical Memory: 8,047 MB
+Virtual Memory: Max Size:  18,473 MB
+Virtual Memory: Available: 7,772 MB
+Virtual Memory: In Use:    10,701 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\ASCINLAP60832
+Hotfix(s):                 8 Hotfix(s) Installed.
+                           [01]: KB5054980
+                           [02]: KB5012170
+                           [03]: KB5026039
+                           [04]: KB5027397
+                           [05]: KB5031274
+                           [06]: KB5041655
+                           [07]: KB5055528
+                           [08]: KB5053665
+Network Card(s):           2 NIC(s) Installed.
+                           [01]: Intel(R) Wi-Fi 6E AX211 160MHz
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.183.153
+                                 IP address(es)
+                                 [01]: 192.168.183.86
+                                 [02]: fe80::5732:d283:cb53:d9f
+                                 [03]: 2409:4081:e4c:e14b:adb0:990a:b6b7:43e5
+                                 [04]: 2409:4081:e4c:e14b:3501:2566:cb2a:d099
+                           [02]: Intel(R) Ethernet Connection (16) I219-LM
+                                 Connection Name: Ethernet
+                                 Status:          Media disconnected
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+PS C:\> help
+
+TOPIC
+    Windows PowerShell Help System
+
+SHORT DESCRIPTION
+    Displays help about Windows PowerShell cmdlets and concepts.
+
+LONG DESCRIPTION
+    Windows PowerShell Help describes Windows PowerShell cmdlets,
+    functions, scripts, and modules, and explains concepts, including
+    the elements of the Windows PowerShell language.
+
+    Windows PowerShell does not include help files, but you can read the
+    help topics online, or use the Update-Help cmdlet to download help files
+    to your computer and then use the Get-Help cmdlet to display the help
+    topics at the command line.
+
+    You can also use the Update-Help cmdlet to download updated help files
+    as they are released so that your local help content is never obsolete.
+
+    Without help files, Get-Help displays auto-generated help for cmdlets,
+    functions, and scripts.
 
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        22-04-2025     11:05                assignments
--a----        22-04-2025     11:05            177 Learning_Links.txt
--a----        22-04-2025     11:05             66 README.md
--a----        22-04-2025     11:05           2793 vaishnavi.txt
+  ONLINE HELP
+    You can find help for Windows PowerShell online in the TechNet Library
+    beginning at http://go.microsoft.com/fwlink/?LinkID=108518.
+
+    To open online help for any cmdlet or function, type:
+
+        Get-Help <cmdlet-name> -Online
+
+  UPDATE-HELP
+    To download and install help files on your computer:
+
+       1. Start Windows PowerShell with the "Run as administrator" option.
+       2. Type:
+
+          Update-Help
+PS C:\> ipconfig
+
+Windows IP Configuration
 
 
-PS C:\Assignments\cognixia042025> dir C:\Assignments\cognixia042025\assignments
+Ethernet adapter Ethernet:
 
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
 
-    Directory: C:\Assignments\cognixia042025\assignments
+Wireless LAN adapter Local Area Connection* 1:
 
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----        22-04-2025     11:05            378 21-April.txt
+Wireless LAN adapter Local Area Connection* 2:
 
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
 
-PS C:\Assignments\cognixia042025> cd C:\Assignments\cognixia042025\assignments
-PS C:\Assignments\cognixia042025\assignments> mkdir sample
+Wireless LAN adapter Wi-Fi:
 
-
-    Directory: C:\Assignments\cognixia042025\assignments
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        22-04-2025     11:11                sample
-
-
-PS C:\Assignments\cognixia042025\assignments> del sample
-PS C:\Assignments\cognixia042025\assignments> Stop-Transcript
+   Connection-specific DNS Suffix  . :
+   IPv6 Address. . . . . . . . . . . : 2409:4081:e4c:e14b:3501:2566:cb2a:d099
+   Temporary IPv6 Address. . . . . . : 2409:4081:e4c:e14b:adb0:990a:b6b7:43e5
+   Link-local IPv6 Address . . . . . : fe80::5732:d283:cb53:d9f%13
+   IPv4 Address. . . . . . . . . . . : 192.168.183.86
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : fe80::a452:7aff:fe99:b64%13
+                                       192.168.183.153
+PS C:\> Stop-Transcript
 **********************
 Windows PowerShell transcript end
-End time: 20250422111143
+End time: 20250422005555
 **********************
