@@ -18,20 +18,30 @@ public class HomePageTests {
 
     @Test
     void  checkSubTitleOK(){
-        ///AAA
-        String expected = "Welcome to the Internet";
-        HomePageOperations hpo;
-        //String actual = hpo.getSubTitle();
-        //assertEquals(expected, actual, "Title on Home Page is incorrect");
+        // AAA - Arrange, Act, Assert
+
+        // Arrange
+        String expected = "Available Examples";
+        HomePageOperations hpo = new HomePage();
+
+        // Act
+        String actual = hpo.getSubTitle();
+
+        // Assert
+        assertEquals(expected, actual, "Title on Home Page is incorrect");
 
     }
     @Test
-    void  availableExampleCountis44(){
-        ///AAA
+    public void  availableExampleCountis44(){
+        // Arrange
         int expected = 44;
-        HomePageOperations hpo;
-        //int actual = hpo.getAllExamples().size();
-        //assertEquals(expected, actual, "Not all examples are available");
+        HomePageOperations hpo = new HomePage();
+
+        // Act
+        int actual = hpo.getAllExamples().size();
+
+        // Assert
+        assertEquals(expected, actual, "Not all examples are available");
 
     }
 

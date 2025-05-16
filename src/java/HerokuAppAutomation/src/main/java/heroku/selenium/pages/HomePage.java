@@ -3,11 +3,13 @@ package heroku.selenium.pages;
 import heroku.operations.HomePageOperations;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static utilities.WebElementInteractions.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -22,7 +24,7 @@ public class HomePage implements HomePageOperations {
         this.exampleLocator = By.tagName("li");
         this.subtitleLocator = By.tagName("h2");
         this.titleLocator = By.tagName("h1");
-        this.browser = new FirefoxDriver();
+        this.browser = new ChromeDriver();
         this.browser.get("https://the-internet.herokuapp.com/");
     }
 
@@ -40,7 +42,12 @@ public class HomePage implements HomePageOperations {
 
     @Override
     public List<String> getAllExamples() {
-        return null;
+        List<WebElement> elements = this.browser.findElements(this.exampleLocator);
+        List<String> examples = new ArrayList<>();
+        for (WebElement element : elements) {
+            examples.add(getTextUtil(element));
+        }
+        return examples;
     }
 
     @Override
