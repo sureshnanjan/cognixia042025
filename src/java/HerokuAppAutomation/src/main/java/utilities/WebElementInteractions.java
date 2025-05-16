@@ -26,5 +26,14 @@ public class WebElementInteractions {
             System.out.println("Element Click not happened");
         }
     }
+    public static String getAttributeUtil(WebElement element, String attributeName) {
+        System.out.println("Getting attribute '" + attributeName + "' from the element");
+        try {
+            return element.getAttribute(attributeName);
+        } catch (Exception ex) {
+            System.out.println("Failed to get attribute: " + ex.getMessage());
+            return null;
+        }
+    }
 
 }

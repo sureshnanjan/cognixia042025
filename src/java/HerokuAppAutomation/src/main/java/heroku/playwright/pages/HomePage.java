@@ -1,6 +1,7 @@
 package heroku.playwright.pages;
 
 import heroku.operations.HomePageOperations;
+import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class HomePage implements HomePageOperations {
     }
 
     @Override
-    public List<String> getAllExamples() {
+    public List<WebElement> getAllExamples() {
         return null;
     }
 
