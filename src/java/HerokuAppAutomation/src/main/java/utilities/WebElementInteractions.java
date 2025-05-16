@@ -26,5 +26,16 @@ public class WebElementInteractions {
             System.out.println("Element Click not happened");
         }
     }
+    // method to check if the element is selected
+    public static boolean isSelectedUtil(WebElement element) {
+        try {
+            return element.isSelected();
+        } catch (Exception ex) {
+            System.out.println("Element is selected");
+            return false;
+        }
+    }
+
+
 
 }
