@@ -22,11 +22,9 @@ public class WebElementInteractions {
     public static void clickElementUtil(WebElement element){
         try {
             element.click();
-        }catch (StaleElementReferenceException ex) {
+        }catch (StaleElementReferenceException ex){
             System.out.println("Element Click not happened");
         }
     }
-
-    public static void getOptions()
 
 }
