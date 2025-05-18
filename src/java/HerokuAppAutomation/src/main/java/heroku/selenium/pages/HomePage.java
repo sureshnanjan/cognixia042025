@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import static utilities.WebElementInteractions.*;
 
 import java.util.List;
 
@@ -25,12 +26,14 @@ public class HomePage implements HomePageOperations {
 
     @Override
     public String getTitle() {
-        return  this.browser.findElement(this.titleLocator).getText();
+
+        return getTextUtil(findElementUtil(this.titleLocator,this.browser));
+
     }
 
     @Override
     public String getSubTitle() {
-        return this.browser.findElement(this.subtitleLocator).getText();
+        return getTextUtil(findElementUtil(this.subtitleLocator,this.browser));
     }
 
     @Override
