@@ -52,18 +52,41 @@ public class WebElementInteractions {
         alt.accept();
         return  result;
     }
+
+    /**
+     * Sends the specified keys to the given WebElement.
+     * <p>
+     * This utility method ensures that:
+     * <ul>
+     *   <li>The input keys are not null</li>
+     *   <li>Exceptions like StaleElementReferenceException are handled gracefully</li>
+     *   <li>Unexpected runtime exceptions are caught and logged</li>
+     * </ul>
+     *
+     * @param element     the WebElement to which keys should be sent
+     * @param keysToSend  one or more characters to be sent to the element
+     */
     public static void sendKeysUtil(WebElement element, CharSequence... keysToSend) {
         try {
+            // Validate that the input keys are not null
             if (keysToSend == null) {
                 throw new IllegalArgumentException("Keys to send cannot be null");
             }
+
+            // Send keys to the provided element
             element.sendKeys(keysToSend);
             System.out.println("Keys sent to the element successfully");
+
         } catch (IllegalArgumentException ex) {
+            // Handles the case when null or invalid input is provided
             System.out.println("Invalid input: " + ex.getMessage());
+
         } catch (StaleElementReferenceException ex) {
+            // Handles the case when the DOM element is no longer attached
             System.out.println("Element not available to send keys: Stale element");
+
         } catch (Exception ex) {
+            // Catches any other unexpected exceptions
             System.out.println("Unexpected error while sending keys: " + ex.getMessage());
         }
     }
