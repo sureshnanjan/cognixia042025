@@ -31,7 +31,7 @@ public class WebElementInteractions {
         try {
             return element.isSelected();
         } catch (Exception ex) {
-            System.out.println("Element is selected");
+            System.out.println("Element is not selected");
             return false;
         }
     }
