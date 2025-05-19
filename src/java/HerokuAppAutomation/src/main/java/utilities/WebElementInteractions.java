@@ -55,7 +55,13 @@ public class WebElementInteractions {
 
     public static void navigateToLinkUtil(String linkname, WebDriver driver){
         clickElementUtil(findElementUtil(By.linkText(linkname),driver));
+    }
 
+    public static String getTagNameUtil(WebDriver driver, String id){
+        driver.get("https://the-internet.herokuapp.com/");
+        WebElement inputElement = driver.findElement(By.id(id));
+        String tagName = inputElement.getTagName();
+       return tagName;
     }
 
 } // End Of Class

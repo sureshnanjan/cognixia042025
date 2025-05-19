@@ -28,7 +28,7 @@ public class HomePage implements HomePageOperations {
         this.exampleLocator = By.tagName("li");
         this.subtitleLocator = By.tagName("h2");
         this.titleLocator = By.tagName("h1");
-        this.browser = new FirefoxDriver();
+        this.browser = new ChromeDriver();
         this.browser.get("https://the-internet.herokuapp.com/");
     }
 
@@ -62,10 +62,11 @@ public class HomePage implements HomePageOperations {
                 return  new ContextClick(this.browser);
             default:
                 return null;
-
         }
+    }
 
-
-
+    @Override
+    public String getTagName(String id) {
+        return getTagNameUtil(this.browser,id);
     }
 }

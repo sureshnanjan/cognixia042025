@@ -31,4 +31,9 @@ public class HomePage implements HomePageOperations {
         return  null;
 
     }
+
+    @Override
+    public String getTagName(String id) {
+        return "";
+    }
 }

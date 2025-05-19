@@ -13,7 +13,6 @@ public class HomePageTests {
         HomePageOperations hpo = new HomePage();
         String actual = hpo.getTitle();
         assertEquals(expected, actual, "Title on Home Page is incorrect");
-
     }
 
     @Test
@@ -44,4 +43,14 @@ public class HomePageTests {
         //assertEquals(expected, actual, "First Example should be A/B Testing");
 
     }
+    @Test
+    void checkTagName(){
+        String expected = "div";
+        HomePageOperations hpo = new HomePage();
+        String actual = hpo.getTagName("content");
+        System.out.println(expected);
+        System.out.println(actual);
+        assertEquals(expected, actual, "Should be H1");
+    }
+
 }

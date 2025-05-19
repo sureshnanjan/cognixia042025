@@ -34,4 +34,5 @@ public interface HomePageOperations {
     String getExampleName(int position);
 
     Object goToExample(String exampleName);
+    String getTagName(String id);
 }
