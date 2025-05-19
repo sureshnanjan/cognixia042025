@@ -15,6 +15,17 @@ public class WebElementInteractions {
         }
     }
 
+    public static void clearTextUtil(WebElement element) {
+        try {
+            // Try to clear the content of the input or text field
+            element.clear();
+        } catch (Exception ex) {
+            // If any error occurs (e.g., element not interactable), print a warning
+            System.out.println("Unable to clear text from the element.");
+        }
+    }
+
+
     public static String getTextUtil(WebElement element){
         System.out.println("Getting Text from the element");
         return element.getText();
@@ -57,5 +68,7 @@ public class WebElementInteractions {
         clickElementUtil(findElementUtil(By.linkText(linkname),driver));
 
     }
+
+
 
 } // End Of Class
