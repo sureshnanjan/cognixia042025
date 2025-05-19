@@ -1,3 +1,12 @@
+/*
+ * Copyright (c) 2025. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ * Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+ * Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+ * Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+ * Vestibulum commodo. Ut rhoncus gravida arcu.
+ */
+
+
 package utilities;
 
 import org.openqa.selenium.*;
@@ -27,6 +36,11 @@ public class WebElementInteractions {
         }
     }
 
+    /*Utility - isDisplayed()
+    To check whether the particular element is displayed or not.
+    If not, NoSuchElementException occurs.
+    To handle the exception, We added catch statements to catch the exception.
+     */
     public static void isDisplayedUtil(WebElement element){
         try{
             element.isDisplayed();
