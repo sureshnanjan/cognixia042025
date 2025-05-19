@@ -27,10 +27,7 @@ public class WebElementInteractions {
             System.out.println("Element Click not happened");
         }
     }
-    public static Dimension getSizeUtil(WebElement element) {
-        System.out.println("Getting size of the element");
-        return element.getSize();
-    }
+
 
 
 
@@ -62,6 +59,10 @@ public class WebElementInteractions {
     public static void navigateToLinkUtil(String linkname, WebDriver driver){
         clickElementUtil(findElementUtil(By.linkText(linkname),driver));
 
+    }
+    public static Dimension getSizeUtil(WebElement element) {
+        System.out.println("Getting size of the element");
+        return element.getSize();
     }
 
 } // End Of Class
