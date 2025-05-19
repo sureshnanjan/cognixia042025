@@ -1,5 +1,6 @@
 package heroku.playwright.pages;
 
+import heroku.operations.ContextClickOperations;
 import heroku.operations.HomePageOperations;
 
 import java.util.List;
@@ -26,7 +27,8 @@ public class HomePage implements HomePageOperations {
     }
 
     @Override
-    public void goToExample(String exampleName) {
+    public Object goToExample(String exampleName) {
+        return  null;
 
     }
 }
