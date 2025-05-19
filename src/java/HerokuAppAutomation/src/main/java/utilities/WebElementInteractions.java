@@ -36,17 +36,26 @@ public class WebElementInteractions {
         }
     }
 
-    /*Utility - isDisplayed()
-    To check whether the particular element is displayed or not.
-    If not, NoSuchElementException occurs.
-    To handle the exception, We added catch statements to catch the exception.
+    /**
+     * Utility method to check whether a particular web element is displayed on the page.
+     * This method attempts to call {@code isDisplayed()} on the given {@link WebElement}.
+     * If the element is present and visible, it returns {@code true}. If the element is not found
+     * in the DOM, a {@link NoSuchElementException} is caught and {@code false} is returned.
+     * </p>
+     *
+     * @param element The {@link WebElement} to be checked for visibility.
+     * @return {@code true} if the element is displayed, {@code false} if it is not present or not displayed.
      */
-    public static void isDisplayedUtil(WebElement element){
-        try{
-            element.isDisplayed();
-        }catch(NoSuchElementException ex){
-            System.out.println("Element is not displayed");
+    public static boolean isDisplayedUtil(WebElement element) {
+        try {
+            // Attempt to check if the element is displayed
+            return element.isDisplayed();
+        } catch (NoSuchElementException ex) {
+            // Log message when the element is not found in the DOM
+            System.out.println("Element is not displayed: " + ex.getMessage());
+            return false;
         }
     }
+
 
 }
