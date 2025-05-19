@@ -28,10 +28,6 @@ public class WebElementInteractions {
         }
     }
     public static Dimension getSizeUtil(WebElement element) {
-        if (element == null) {
-            System.out.println("Element is null");
-            return new Dimension(0, 0);
-        }
         System.out.println("Getting size of the element");
         return element.getSize();
     }
