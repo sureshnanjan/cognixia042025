@@ -33,5 +33,5 @@ public interface HomePageOperations {
 
     String getExampleName(int position);
 
-    void goToExample(String exampleName);
+    Object goToExample(String exampleName);
 }
