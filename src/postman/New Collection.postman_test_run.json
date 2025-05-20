@@ -1,0 +1,48 @@
+{
+	"id": "e80bb200-2de4-42e2-a833-7c40759b0768",
+	"name": "New Collection",
+	"timestamp": "2025-05-20T06:02:31.720Z",
+	"collection_id": "39843560-92da168c-706b-4ccb-8115-be2fa952f14e",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "error",
+	"startedAt": "2025-05-20T06:02:28.965Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ebeb55ea-1fe1-48ca-ac38-0721f3cf5675",
+			"name": "auth",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 1432,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1432
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1432,
+	"collection": {
+		"requests": [
+			{
+				"id": "ebeb55ea-1fe1-48ca-ac38-0721f3cf5675",
+				"method": "POST"
+			},
+			{
+				"id": "f22d9a21-9158-4105-9b06-768944b54b06",
+				"method": "GET"
+			}
+		]
+	}
+}
