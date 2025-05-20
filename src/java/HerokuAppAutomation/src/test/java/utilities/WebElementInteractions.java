@@ -56,13 +56,18 @@ public class WebElementInteractions {
         return  result;
     }
 
-    public static void navigateToLinkUtil(String linkname, WebDriver driver){
-        clickElementUtil(findElementUtil(By.linkText(linkname),driver));
 
-    }
-    public static Dimension getSizeUtil(WebElement element) {
-        System.out.println("Getting size of the element");
-        return element.getSize();
+    // getSize() Retrieves the size (width and height) of a web element located by the given locator.
+    public static Dimension getSize(WebDriver driver, By locator) {
+        try {
+            WebElement element = driver.findElement(locator); // Locate the web element
+            return element.getSize(); // Return its size (Dimension: width and height)
+        } catch (NoSuchElementException e) {
+            System.out.println("Element not found: " + locator.toString());
+        } catch (Exception e) {
+            System.out.println("An error occurred while retrieving element size: " + e.getMessage());
+        }
+        return null; // Return null if any exception occurs
     }
 
 } // End Of Class
