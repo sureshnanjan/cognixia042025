@@ -2,6 +2,11 @@ package utilities;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.UnexpectedTagNameException;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class WebElementInteractions {
     public static void navigatetoUrlUtil(String url){}
@@ -56,6 +61,27 @@ public class WebElementInteractions {
     public static void navigateToLinkUtil(String linkname, WebDriver driver){
         clickElementUtil(findElementUtil(By.linkText(linkname),driver));
 
+    }
+
+
+
+    // This is my utility that is getOptions()
+    public static List<String> getOptionsUtil(WebElement dropdownElement) {
+        List<String> optionsText = new ArrayList<>();
+        try {
+            Select select = new Select(dropdownElement);
+            List<WebElement> options = select.getOptions();
+
+            for (WebElement option : options) {
+                optionsText.add(option.getText());
+            }
+        } catch (UnexpectedTagNameException e) {
+            System.out.println("Provided element is not a <select> element.");
+        } catch (Exception e) {
+            System.out.println("Error while fetching options: " + e.getMessage());
+        }
+
+        return optionsText;
     }
 
 } // End Of Class
