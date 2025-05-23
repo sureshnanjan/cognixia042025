@@ -24,8 +24,12 @@ public class HomePageTests {
     }
 
     @Test
-    void HomepageSubTitleisOK(){}
+    void HomepageSubTitleisOK(){
+
+    }
 
     @Test
-    void HomepageHasCorrectNumberOfExamples(){}
+    void HomepageHasCorrectNumberOfExamples() {
+
+    }
 }
