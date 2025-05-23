@@ -4,7 +4,11 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
 public class WebElementInteractions {
-    public static void navigatetoUrlUtil(String url){}
+    public static void navigatetoUrlUtil(String url, WebDriver driver){
+        System.out.println("Starting Navigating");
+        driver.get(url);
+
+    }
     public static WebElement findElementUtil(By locator, WebDriver driver){
         try{
             return driver.findElement(locator);

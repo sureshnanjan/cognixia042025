@@ -1,0 +1,5 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1747824030494,613,HTTP Request with @ Symbol,200,OK,Sample Thread Group 1-1,text,true,,6942,140,1,1,http://35.193.6.1:5106/Identity/Account/Login,606,0,324
+1747825104781,664,HTTP Request with @ Symbol,200,OK,Sample Thread Group 1-1,text,true,,6942,140,1,1,http://35.193.6.1:5106/Identity/Account/Login,651,0,360
+1747826010175,598,HTTP Request with @ Symbol,200,OK,Sample Thread Group 1-1,text,true,,6942,140,1,1,http://35.193.6.1:5106/Identity/Account/Login,594,0,315
+1747826010787,273,Do Login with Credentials,400,Bad Request,Sample Thread Group 1-1,,false,,101,316,1,1,http://35.193.6.1:5106/Identity/Account/Login,273,0,0

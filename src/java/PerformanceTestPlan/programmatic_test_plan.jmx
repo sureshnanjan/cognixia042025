@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <org.apache.jorphan.collections.HashTree>
+    <TestPlan guiclass="TestPlan" testclass="TestPlan" testname="ESHOP with Java Code">
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="app_user" elementType="Argument">
+            <stringProp name="Argument.name">app_user</stringProp>
+            <stringProp name="Argument.value">demouser@microsoft.com</stringProp>
+          </elementProp>
+          <elementProp name="app_pwd" elementType="Argument">
+            <stringProp name="Argument.name">app_pwd</stringProp>
+            <stringProp name="Argument.value">Pass@word1</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+    </TestPlan>
+    <org.apache.jorphan.collections.HashTree>
+      <ThreadGroup guiclass="ThreadGroup" testclass="ThreadGroup" testname="Sample Thread Group">
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopController" testclass="LoopController">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">1</intProp>
+        </elementProp>
+      </ThreadGroup>
+      <org.apache.jorphan.collections.HashTree>
+        <HTTPSamplerProxy guiclass="HTTPSamplerProxy" testclass="HTTPSamplerProxy" testname="HTTP Request with @ Symbol">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">35.193.6.1</stringProp>
+          <intProp name="HTTPSampler.port">5106</intProp>
+          <stringProp name="HTTPSampler.path">/Identity/Account/Login</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        </HTTPSamplerProxy>
+        <org.apache.jorphan.collections.HashTree>
+          <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="Extract Validation Token">
+            <stringProp name="BoundaryExtractor.refname">validationToken</stringProp>
+            <stringProp name="BoundaryExtractor.lboundary">input name=&quot;__RequestVerificationToken&quot; type=&quot;hidden&quot; value=</stringProp>
+            <stringProp name="BoundaryExtractor.rboundary">/&gt;</stringProp>
+            <intProp name="BoundaryExtractor.match_number">1</intProp>
+            <stringProp name="BoundaryExtractor.default"></stringProp>
+            <stringProp name="BoundaryExtractor.useHeaders">response_data</stringProp>
+          </BoundaryExtractor>
+          <org.apache.jorphan.collections.HashTree/>
+        </org.apache.jorphan.collections.HashTree>
+        <HTTPSamplerProxy guiclass="HTTPSamplerProxy" testclass="HTTPSamplerProxy" testname="Do Login with Credentials">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="Input.Email" elementType="HTTPArgument">
+                <stringProp name="Argument.name">Input.Email</stringProp>
+                <stringProp name="Argument.value">demouser@microsoft.com</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="Input.Password" elementType="HTTPArgument">
+                <stringProp name="Argument.name">Input.Password</stringProp>
+                <stringProp name="Argument.value">Pass@word1</stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="__RequestVerificationToken" elementType="HTTPArgument">
+                <stringProp name="Argument.name">__RequestVerificationToken</stringProp>
+                <stringProp name="Argument.value"></stringProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">35.193.6.1</stringProp>
+          <intProp name="HTTPSampler.port">5106</intProp>
+          <stringProp name="HTTPSampler.path">/Identity/Account/Login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+        </HTTPSamplerProxy>
+        <org.apache.jorphan.collections.HashTree>
+          <HeaderManager guiclass="HeaderManager" testclass="HeaderManager" testname="HTTP Header Manager">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <org.apache.jorphan.collections.HashTree/>
+        </org.apache.jorphan.collections.HashTree>
+      </org.apache.jorphan.collections.HashTree>
+    </org.apache.jorphan.collections.HashTree>
+  </org.apache.jorphan.collections.HashTree>
+</jmeterTestPlan>
