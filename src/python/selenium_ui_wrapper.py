@@ -898,7 +898,7 @@ class SeleniumUIWrapper:
 if __name__ == "__main__":
     from selenium import webdriver
     from selenium.webdriver.chrome.service import Service
-    from webdriver_manager.chrome import ChromeDriverManager
+    #from webdriver_manager.chrome import ChromeDriverManager
     
     # Set up logging
     logging.basicConfig(level=logging.INFO)
@@ -908,11 +908,7 @@ if __name__ == "__main__":
     chrome_options.add_argument("--start-maximized")  # Start maximized
     
     # Initialize the Chrome WebDriver
-    driver = webdriver.Chrome(
-        service=Service(ChromeDriverManager().install()),
-        options=chrome_options
-    )
-    
+    driver = webdriver.Chrome(options=chrome_options);
     # Initialize our UI wrapper
     ui = SeleniumUIWrapper(driver, timeout=10)
     
@@ -945,9 +941,8 @@ if __name__ == "__main__":
     finally:
         # Clean up
         driver.quit()
-Failed to take screenshot: {str(e)}")
-            return ""
-    
+        print(f"Failed to take screenshot: {str(e)}")
+
     def _find_element(self, locator: Tuple[By, str], 
                       timeout: int = None, 
                       visible: bool = True, 
@@ -1672,4 +1667,4 @@ Failed to take screenshot: {str(e)}")
             time.sleep(0.5)  # Allow time for scroll to complete
                 
         except Exception as e:
-            self.logger.error(f"
+            self.logger.error(f"")
