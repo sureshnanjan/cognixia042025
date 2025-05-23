@@ -1,0 +1,84 @@
+>>> 5 + 3
+8
+>>> 10 / 3
+3.3333333333333335
+>>> 2 ** 10  # Exponentiation
+1024
+
+# Variables and Data Types
+>>> x = 10
+>>> y = 3.5
+>>> name = "Suresh"
+>>> is_active = True
+>>> x + y
+13.5
+>>> type(name)
+<class 'str'>
+
+# String Manipulation
+>>> "Hello " + "Python!"
+'Hello Python!'
+>>> "Suresh".upper()
+'SURESH'
+>>> "Coonoor".replace("oo", "ee")
+'Ceenoor'
+
+# Lists and Looping
+>>> numbers = [1, 2, 3, 4, 5]
+>>> for num in numbers:
+...     print(num * 2)
+...
+# Functions
+>>> def greet(name):
+...     return f"Hello, {name}!"
+...
+>>> greet("Suresh")
+'Hello, Suresh!'
+
+# User Interaction
+>>> name = input("What’s your name? ")
+>>> print(f"Welcome to Python, {name}!")
+
+# Dictionary Operations
+>>> person = {"name": "Suresh", "age": 30, "city": "Coonoor"}
+>>> person["name"]
+'Suresh'
+>>> person["city"] = "Chennai"  # Updating a value
+>>> person
+{'name': 'Suresh', 'age': 30, 'city': 'Chennai'}
+
+# List Comprehension
+>>> squares = [x**2 for x in range(1, 6)]
+>>> squares
+[1, 4, 9, 16, 25]
+>>> even_numbers = [n for n in range(10) if n % 2 == 0]
+>>> even_numbers
+[0, 2, 4, 6, 8]
+
+# Lambda Functions
+>>> add = lambda x, y: x + y
+>>> add(5, 3)
+8
+>>> square = lambda x: x ** 2
+>>> square(4)
+16
+
+# Exception Handling
+>>> try:
+...     result = 10 / 0
+... except ZeroDivisionError:
+...     print("Oops! You can't divide by zero.")
+...
+Oops! You can't divide by zero.
+
+# Working with Modules
+>>> import math
+>>> math.sqrt(16)
+4.0
+>>> import random
+>>> random.randint(1, 10)
+7  # Output varies
+>>> import time
+>>> print("Wait for it...")
+>>> time.sleep(2)
+>>> print("Boom!")
