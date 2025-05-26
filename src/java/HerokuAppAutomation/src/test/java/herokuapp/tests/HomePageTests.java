@@ -1,4 +1,4 @@
-package herokuapp.tests;
+package heroku.selenium.pages;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ public class HomePageTests {
     void HomepageTitleisOK(){
         // Arrange
         // Launch HerokuApp
-        String expected = "Welcome to the-internet1";
+        String expected = "Welcome to the-internet";
         ChromeDriver mybrowser = new ChromeDriver();
         mybrowser.get("https://the-internet.herokuapp.com/");
         // Act

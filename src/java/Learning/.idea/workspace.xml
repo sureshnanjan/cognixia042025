@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9e8f768-e901-4fa4-8e8d-fd4f59219e60" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/task1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../assignments/task1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../assignments/task2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../assignments/task2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +16,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2wzdW5OvCILdzVvQ27DkVPTbn39" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,7 +29,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "suresh-trainer",
+    "git-widget-placeholder": "shriyajorrigala__repository-branch",
     "last_opened_file_path": "C:/Users/shriya.jorrigala/QA-Training/cognixia042025/src/java/Learning"
   }
 }]]></component>
@@ -41,5 +42,16 @@
       <updated>1747048366501</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
