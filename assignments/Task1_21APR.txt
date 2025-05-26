@@ -1,0 +1,52 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250422063821
+Username: ASCENDION\subalakshmi.t
+RunAs User: ASCENDION\subalakshmi.t
+Configuration Name: 
+Machine: ASCINLAP60948 (Microsoft Windows NT 10.0.22631.0)
+Host Application: C:\Windows\system32\WindowsPowerShell\v1.0\PowerShell.exe
+Process ID: 23368
+PSVersion: 5.1.22621.4391
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
+BuildVersion: 10.0.22621.4391
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\QA-Training\cognixia042025\assignments\Task1_21APR.txt
+PS C:\Users\subalakshmi.t> Remove-Item -Path ""C:\Users\subalakshmi.t\OneDrive - ascendion\Desktop\global_tshirts_db.sql"" -Recurse -Force
+PS C:\Users\subalakshmi.t> TerminatingError(Remove-Item): "Cannot bind argument to parameter 'Path' because it is an empty string."
+Remove-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1 char:19
++ Remove-Item -Path ""C:\Users\subalakshmi.t\OneDrive - ascendion\Deskt ...
++                   ~~
+    + CategoryInfo          : InvalidData: (:) [Remove-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : 
+ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : Cannot bind argument to parameter 'Path' because it is an empty string.
+At line:1 char:19
++ Remove-Item -Path ""C:\Users\subalakshmi.t\OneDrive - ascendion\Deskt ...
++                   ~~
+    + CategoryInfo          : InvalidData: (:) [Remove-Item], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorEmptyStringNotAllowed,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\subalakshmi.t> Get-History -Count 1 | Remove-History
+Remove-History : The term 'Remove-History' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:24
++ Get-History -Count 1 | Remove-History
++                        ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Remove-History:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Remove-History : The term 'Remove-History' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:24
++ Get-History -Count 1 | Remove-History
++                        ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Remove-History:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
