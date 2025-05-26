@@ -1,0 +1,44 @@
+{
+  "Myshuttle": [
+    {
+      "title": "MyShuttle Login",
+      "favicon": "favicon.ico",
+      "stylesheets": [
+        "App/Themes/Lumen/css/bootstrap.css",
+        "App/Modules/Core/Css/core.css",
+        "Content/login.css"
+      ],
+      "body": {
+        "container": {
+          "login_container": {
+            "header_image": "Content/Images/logologin.png",
+            "form": {
+              "action": "login",
+              "method": "post",
+              "fields": [
+                {
+                  "label": "Employee email",
+                  "type": "text",
+                  "id": "email",
+                  "name": "email"
+                },
+                {
+                  "label": "Employee password",
+                  "type": "password",
+                  "id": "password",
+                  "name": "password"
+                }
+              ],
+              "submit_button": {
+                "type": "submit",
+                "value": "Log in",
+                "class": "btn btn-primary"
+              }
+            }
+          }
+        }
+      },
+      "id": "cdc8"
+    }
+  ]
+}

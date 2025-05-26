@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "b929c5b3-0882-4a0b-9fd3-42e93edf6339",
+		"name": "MyShuttle",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38588663",
+		"_collection_link": "https://api-testing-2630.postman.co/workspace/dc161269-b990-43f4-ad53-c16601373bf6/collection/38588663-b929c5b3-0882-4a0b-9fd3-42e93edf6339?action=share&source=collection_link&creator=38588663"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", ()=>{\r",
+							"pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Successful GET request\",()=>{\r",
+							"pm.expect(pm.response.code).to.be.oneOf([200,201]);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code name has string\", ()=>{\r",
+							"pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Content-type header is present\", ()=>{\r",
+							"pm.response.to.have.header(\"Content-Type\")\r",
+							"});\r",
+							"\r",
+							"pm.test(\"content-type header is application/json\",()=>{\r",
+							"pm.expect(pm.response.headers.get('Content-Type')).to.eql('text/html;charset=ISO-8859-1');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"cookie is present\", ()=>{\r",
+							"pm.expect(pm.cookies.has('JSESSIONID')).to.be.true;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"JSESSIONID value\", () => {\r",
+							"    pm.expect(pm.cookies.get('JSESSIONID')).to.eql('0FA48E51A658085B72E5AE46219F2A52');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://34.93.0.171:8080/myshuttledev/",
+					"protocol": "http",
+					"host": [
+						"34",
+						"93",
+						"0",
+						"171"
+					],
+					"port": "8080",
+					"path": [
+						"myshuttledev",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Myshuttle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Myshuttle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n  \"title\": \"MyShuttle Login\",\r\n  \"favicon\": \"favicon.ico\",\r\n  \"stylesheets\": [\r\n    \"App/Themes/Lumen/css/bootstrap.css\",\r\n    \"App/Modules/Core/Css/core.css\",\r\n    \"Content/login.css\"\r\n  ],\r\n  \"body\": {\r\n    \"container\": {\r\n      \"login_container\": {\r\n        \"header_image\": \"Content/Images/logologin.png\",\r\n        \"form\": {\r\n          \"action\": \"login\",\r\n          \"method\": \"post\",\r\n          \"fields\": [\r\n            {\r\n              \"label\": \"Employee email\",\r\n              \"type\": \"text\",\r\n              \"id\": \"email\",\r\n              \"name\": \"email\"\r\n            },\r\n            {\r\n              \"label\": \"Employee password\",\r\n              \"type\": \"password\",\r\n              \"id\": \"password\",\r\n              \"name\": \"password\"\r\n            }\r\n          ],\r\n          \"submit_button\": {\r\n            \"type\": \"submit\",\r\n            \"value\": \"Log in\",\r\n            \"class\": \"btn btn-primary\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Myshuttle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Myshuttle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"MyShuttle Login (Updated)\",\r\n  \"favicon\": \"favicon.ico\",\r\n  \"stylesheets\": [\r\n    \"App/Themes/Lumen/css/bootstrap.css\",\r\n    \"App/Modules/Core/Css/core.css\",\r\n    \"Content/login.css\"\r\n  ],\r\n  \"body\": {\r\n    \"container\": {\r\n      \"login_container\": {\r\n        \"header_image\": \"Content/Images/logologin.png\",\r\n        \"form\": {\r\n          \"action\": \"login\",\r\n          \"method\": \"post\",\r\n          \"fields\": [\r\n            {\r\n              \"label\": \"Employee email\",\r\n              \"type\": \"text\",\r\n              \"id\": \"email\",\r\n              \"name\": \"email\"\r\n            },\r\n            {\r\n              \"label\": \"Employee password\",\r\n              \"type\": \"password\",\r\n              \"id\": \"password\",\r\n              \"name\": \"password\"\r\n            }\r\n          ],\r\n          \"submit_button\": {\r\n            \"type\": \"submit\",\r\n            \"value\": \"Log in\",\r\n            \"class\": \"btn btn-primary\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/Myshuttle/6bed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Myshuttle",
+						"6bed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const schema = {\r",
+							"  \"$schema\": \"http://json-schema.org/draft-04/schema#\",\r",
+							"  \"type\": \"object\",\r",
+							"  \"properties\": {\r",
+							"    \"Myshuttle\": {\r",
+							"      \"type\": \"array\",\r",
+							"      \"uniqueItems\": true,\r",
+							"      \"minItems\": 1,\r",
+							"      \"items\": {\r",
+							"        \"type\": \"object\",\r",
+							"        \"required\": [\"title\", \"favicon\"],\r",
+							"        \"properties\": {\r",
+							"          \"title\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"          \"favicon\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"          \"stylesheets\": {\r",
+							"            \"type\": \"array\",\r",
+							"            \"items\": { \"type\": \"string\" }\r",
+							"          },\r",
+							"          \"body\": {\r",
+							"            \"type\": \"object\",\r",
+							"            \"properties\": {\r",
+							"              \"container\": {\r",
+							"                \"type\": \"object\",\r",
+							"                \"properties\": {\r",
+							"                  \"login_container\": {\r",
+							"                    \"type\": \"object\",\r",
+							"                    \"properties\": {\r",
+							"                      \"header_image\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"                      \"form\": {\r",
+							"                        \"type\": \"object\",\r",
+							"                        \"properties\": {\r",
+							"                          \"action\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"                          \"method\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"                          \"fields\": {\r",
+							"                            \"type\": \"array\",\r",
+							"                            \"uniqueItems\": true,\r",
+							"                            \"minItems\": 1,\r",
+							"                            \"items\": {\r",
+							"                              \"type\": \"object\",\r",
+							"                              \"required\": [\"label\", \"type\", \"id\", \"name\"],\r",
+							"                              \"properties\": {\r",
+							"                                \"label\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"                                \"type\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"                                \"id\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"                                \"name\": { \"type\": \"string\", \"minLength\": 1 }\r",
+							"                              }\r",
+							"                            }\r",
+							"                          },\r",
+							"                          \"submit_button\": {\r",
+							"                            \"type\": \"object\",\r",
+							"                            \"required\": [\"type\", \"value\", \"class\"],\r",
+							"                            \"properties\": {\r",
+							"                              \"type\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"                              \"value\": { \"type\": \"string\", \"minLength\": 1 },\r",
+							"                              \"class\": { \"type\": \"string\", \"minLength\": 1 }\r",
+							"                            }\r",
+							"                          }\r",
+							"                        }\r",
+							"                      }\r",
+							"                    }\r",
+							"                  }\r",
+							"                }\r",
+							"              }\r",
+							"            }\r",
+							"          }\r",
+							"        }\r",
+							"      }\r",
+							"    }\r",
+							"  },\r",
+							"  \"required\": [\"Myshuttle\"]\r",
+							"};\r",
+							"\r",
+							"pm.test(\"Schema is valid\", function () {\r",
+							"  const jsonData = pm.response.json();\r",
+							"  pm.expect(tv4.validate(jsonData, schema)).to.be.false;\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/Myshuttle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"Myshuttle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
