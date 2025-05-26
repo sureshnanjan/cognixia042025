@@ -1,0 +1,428 @@
+{
+	"id": "1cdb22b9-d290-4f45-a8a6-a3b496b926c3",
+	"name": "FlightBooking",
+	"timestamp": "2025-05-26T05:01:09.152Z",
+	"collection_id": "39843560-ab2d7a9c-c4d6-45ae-abf5-0a367d989f78",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 75,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-05-26T05:01:02.757Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e37c21b7-f694-454c-943f-cef63014ee08",
+			"name": "Post destination",
+			"url": "https://5d4a1dac-297f-47ed-b430-42a1bb6b310c.mock.pstmn.io/destination",
+			"time": 1440,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"check for name": true,
+				"check for tag": true
+			},
+			"testPassFailCounts": {
+				"check for name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for tag": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1440
+			],
+			"allTests": [
+				{
+					"check for name": true,
+					"check for tag": true
+				}
+			]
+		},
+		{
+			"id": "860f731b-defa-48b7-b198-a592bd7b2451",
+			"name": "Create flight",
+			"url": "https://5d4a1dac-297f-47ed-b430-42a1bb6b310c.mock.pstmn.io/flight?date=01-01-2020",
+			"time": 1323,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"check for flight_number": true,
+				"check for price ": true,
+				"check for from ": true,
+				"check for to ": true,
+				"check for vip_available ": true,
+				"check for seats ": true
+			},
+			"testPassFailCounts": {
+				"check for flight_number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for price ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for from ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for to ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for vip_available ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for seats ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1323
+			],
+			"allTests": [
+				{
+					"check for flight_number": true,
+					"check for price ": true,
+					"check for from ": true,
+					"check for to ": true,
+					"check for vip_available ": true,
+					"check for seats ": true
+				}
+			]
+		},
+		{
+			"id": "e9045519-68fe-416b-b753-838fcadbb74e",
+			"name": "Get all destinations",
+			"url": "https://5d4a1dac-297f-47ed-b430-42a1bb6b310c.mock.pstmn.io/destination",
+			"time": 373,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"check for id": true,
+				"check for name": true,
+				"check for tag": true,
+				"check for v": true
+			},
+			"testPassFailCounts": {
+				"check for id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for tag": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for v": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				373
+			],
+			"allTests": [
+				{
+					"check for id": true,
+					"check for name": true,
+					"check for tag": true,
+					"check for v": true
+				}
+			]
+		},
+		{
+			"id": "56f327b4-d4e6-4f3d-951b-f69f8ff4c2b0",
+			"name": "Get all flights",
+			"url": "https://5d4a1dac-297f-47ed-b430-42a1bb6b310c.mock.pstmn.io/flight?provider=all&date=01-01-2021",
+			"time": 387,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"check for id": true,
+				"check for flight_number": true,
+				"check for from ": true,
+				"check for to": true,
+				"check for price": true,
+				"check for seats": true,
+				"check for vip_available": true,
+				"check for seats_available": true,
+				"check for provider": true,
+				"check for id ": true,
+				"check for flight_number ": true,
+				"check for to ": true,
+				"check for price ": true,
+				"check for seats ": true,
+				"check for vip_available ": true,
+				"check for seats_available ": true,
+				"check for provider ": true,
+				"check for to - index 5": true
+			},
+			"testPassFailCounts": {
+				"check for id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for flight_number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for from ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for to": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for price": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for seats": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for vip_available": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for seats_available": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for provider": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for id ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for flight_number ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for to ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for price ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for seats ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for vip_available ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for seats_available ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for provider ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check for to - index 5": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				387
+			],
+			"allTests": [
+				{
+					"check for id": true,
+					"check for flight_number": true,
+					"check for from ": true,
+					"check for to": true,
+					"check for price": true,
+					"check for seats": true,
+					"check for vip_available": true,
+					"check for seats_available": true,
+					"check for provider": true,
+					"check for id ": true,
+					"check for flight_number ": true,
+					"check for to ": true,
+					"check for price ": true,
+					"check for seats ": true,
+					"check for vip_available ": true,
+					"check for seats_available ": true,
+					"check for provider ": true,
+					"check for to - index 5": true
+				}
+			]
+		},
+		{
+			"id": "01fb7288-a86f-41a6-8e71-10cd577ce271",
+			"name": "Get currencies from other api",
+			"url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+			"time": 1005,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1005
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c791c12c-5377-4d77-83a2-37c624b33268",
+			"name": "CreateTicket",
+			"url": "https://5d4a1dac-297f-47ed-b430-42a1bb6b310c.mock.pstmn.io/ticket",
+			"time": 436,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Check flight value": true,
+				"Check first name": true,
+				"Check last name": true,
+				"Check VIP status": true,
+				"Check currency": true,
+				"Check date": true,
+				"Check provider": true
+			},
+			"testPassFailCounts": {
+				"Check flight value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check first name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check last name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check VIP status": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check currency": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check date": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check provider": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				436
+			],
+			"allTests": [
+				{
+					"Check flight value": true,
+					"Check first name": true,
+					"Check last name": true,
+					"Check VIP status": true,
+					"Check currency": true,
+					"Check date": true,
+					"Check provider": true
+				}
+			]
+		},
+		{
+			"id": "d80f1351-0423-4cba-81a2-c57d9590c3dc",
+			"name": "Convert money from euro",
+			"url": "https://5d4a1dac-297f-47ed-b430-42a1bb6b310c.mock.pstmn.io/currency/convert?to=USD&amount=100",
+			"time": 427,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response has 'converted' key with value 100": true,
+				"Response has 'currency' key with value 'USD'": true
+			},
+			"testPassFailCounts": {
+				"Response has 'converted' key with value 100": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'currency' key with value 'USD'": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				427
+			],
+			"allTests": [
+				{
+					"Response has 'converted' key with value 100": true,
+					"Response has 'currency' key with value 'USD'": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5391,
+	"collection": {
+		"requests": [
+			{
+				"id": "e37c21b7-f694-454c-943f-cef63014ee08",
+				"method": "POST"
+			},
+			{
+				"id": "860f731b-defa-48b7-b198-a592bd7b2451",
+				"method": "POST"
+			},
+			{
+				"id": "e9045519-68fe-416b-b753-838fcadbb74e",
+				"method": "GET"
+			},
+			{
+				"id": "56f327b4-d4e6-4f3d-951b-f69f8ff4c2b0",
+				"method": "GET"
+			},
+			{
+				"id": "01fb7288-a86f-41a6-8e71-10cd577ce271",
+				"method": "GET"
+			},
+			{
+				"id": "c791c12c-5377-4d77-83a2-37c624b33268",
+				"method": "POST"
+			},
+			{
+				"id": "d80f1351-0423-4cba-81a2-c57d9590c3dc",
+				"method": "GET"
+			}
+		]
+	}
+}
